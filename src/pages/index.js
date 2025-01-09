@@ -272,20 +272,24 @@ export default function Home() {
     </section>
 
     <section
-  className="font-montserat rounded-[20px] relative flex flex-col items-center justify-center bg-cover mb-[100px] md:mb-[160px]"
+  className="font-montserat rounded-[20px] max-w-[1290px] relative flex flex-col items-center justify-center bg-cover mb-[100px] md:mb-[160px]"
   style={{
-    backgroundImage: "url('/images/White box.png')", // Replace with the path to your image
+    backgroundImage: "url('/images/White Box 1280.png')", 
+    marginLeft: 'auto', 
+    width:'1280px',
+    backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+    marginRight: 'auto',
   }}
 >
   <h2 className="text-center text-black text-[24px] lg:text-[44px] mt-[20px] font-[600] mb-[10px] md:w-[854px]">
     Starten Sie mit der Prime Home Care AG in eine sorgenfreie Zukunft
   </h2>
-  <p className="text-center text-black text-[16px] font-[400] md:mb-[40px]">
+  <p className="text-center text-black text-[16px] font-[400] md:mb-[35px]">
     Ab Frühsommer 2025 sind wir für Sie da!
   </p>
 
   {/* Button Section */}
-  <div className="flex flex-col items-center justify-center p-4">
+  <div className="flex flex-col items-center justify-center p-4 ">
     <button className="md:py-[12px] md:px-[30px] text-[14px] lg:text-[18px] font-[500] text-white bg-black rounded-[50px] md:mb-[16px] p-2">
       Lassen Sie sich bereits jetzt unverbindlich beraten oder <br /> registrieren Sie sich, um mehr über unser Angebot zu erfahren
     </button>
