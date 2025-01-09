@@ -272,12 +272,12 @@ export default function Home() {
     </section>
 
     <section
-  className="font-montserat relative flex flex-col items-center justify-center bg-cover bg-center mb-[100px] md:mb-[160px]"
+  className="font-montserat rounded-[20px] relative flex flex-col items-center justify-center bg-cover mb-[100px] md:mb-[160px]"
   style={{
     backgroundImage: "url('/images/White box.png')", // Replace with the path to your image
   }}
 >
-  <h2 className="text-center text-black text-[24px] lg:text-[44px] font-[600] mb-[10px] md:w-[854px]">
+  <h2 className="text-center text-black text-[24px] lg:text-[44px] mt-[20px] font-[600] mb-[10px] md:w-[854px]">
     Starten Sie mit der Prime Home Care AG in eine sorgenfreie Zukunft
   </h2>
   <p className="text-center text-black text-[16px] font-[400] md:mb-[40px]">
@@ -304,7 +304,8 @@ export default function Home() {
         {/* First Button */}
         <div className="flex flex-col justify-center items-start bg-[#04436F] text-white md:w-[608px] md:h-[209px] rounded-[37px] px-[40px] py-[52px] gap-4">
           <p className="text-[36px] font-[600] leading-[52px]">
-            Stundenweise Betreuung durch Prime Home Care AG
+          Werde Teil von <br></br>
+          Prime Home Care AG 
           </p>
           <Link href="/Registrierung-Jobs">
       <button className="bg-white text-[#04436F] text-[18px] leading-[21px] rounded-[50px] py-[12px] px-[20px] font-[500]">
@@ -353,7 +354,6 @@ export default function Home() {
                 className="text-black font-metropolis"
                 style={{
                 fontSize: "22px",
-                fontStyle: "italic",
                 fontWeight: "500",
                 lineHeight: "30.8px",
                 }}
