@@ -1,15 +1,17 @@
 import Link from "next/link";
 import ServicesGrid from "./Servicesgrid";
-
 export default function FormPage01() {
   return (
     <div className="min-h-screen bg-[#F1F1F1] flex flex-col items-center ">
       <div className="absolute top-6 left-4 lg:left-[170px]">
         <Link href="/Registrierung-Jobs">
           <button
-            className="inline-flex items-center px-4 py-2 rounded-l-full bg-gradient-to-r from-[#B2EAFF] to-transparent text-[#003588] text-sm font-normal"
+            className="text-white text-[16px] font-[400] inline-flex items-center px-4 py-2 mt-[25px] "
             style={{
               fontFamily: "Metropolis",
+              background: "linear-gradient(93deg, #B2EAFF 0%, #A9B4B9 50%, rgba(0, 0, 0, 0.00) 100%)",
+              borderRadius: "var(--opacity-50, 50px) 0px 0px var(--opacity-50, 50px)",
+              padding: "6px 12px",
             }}
           >
             &larr; Zurück
@@ -45,7 +47,7 @@ export default function FormPage01() {
                     </svg>
                 </div>
       <h1
-        className="text-center text-[#B99B5F] font-bold text-xl lg:text-4xl mt-8 lg:mt-16 mb-10"
+        className="text-center text-[#B99B5F] font-[700] md:text-[48px] leading-[55px] mt-2 lg:mt-[160px] mb-4"
         style={{
           fontFamily: "Metropolis",
         }}
@@ -53,9 +55,9 @@ export default function FormPage01() {
         Wählen Sie die gewünschte Region <br />
         und geben Sie Ihren Namen und Email an
       </h1>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-10 ">
         <select
-          className="w-full lg:w-[300px] h-14 px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-base"
+          className="w-full lg:w-[300px] h-14  border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] "
           style={{
             fontFamily: "Metropolis",
           }}
@@ -68,7 +70,7 @@ export default function FormPage01() {
         <input
           type="text"
           placeholder="Name"
-          className="w-full lg:w-[300px] h-14 px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-base placeholder-[#B7B6BA]"
+          className="w-full lg:w-[300px] h-14 text-[18px] px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D]  placeholder-[#1C1B1D]"
           style={{
             fontFamily: "Metropolis",
           }}
@@ -76,41 +78,41 @@ export default function FormPage01() {
         <input
           type="email"
           placeholder="E-Mail"
-          className="w-full lg:w-[300px] h-14 px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-base placeholder-[#B7B6BA]"
+          className="w-full lg:w-[300px] h-14 px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] placeholder-[#1C1B1D]"
           style={{
             fontFamily: "Metropolis",
           }}
         />
       </div>
       <h2
-        className="text-center text-[#B99B5F] font-bold text-lg lg:text-2xl mb-6"
+        className="text-center text-[#B99B5F] font-[700] text-lg md:text-[48px] md:leading-[55px] mb-6 mt-[160px]"
         style={{
           fontFamily: "Metropolis",
         }}
       >
         Ich interessiere mich für das Dossier <br /> zu folgendem Thema:
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-10">
-        <label className="flex items-center gap-2 text-[#1C1B1D] text-base font-normal">
-          <input type="checkbox" className="h-5 w-5 text-[#B99B5F]" />
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 mt-[40px] max-w-[1280px]">
+        <label className="flex items-center gap-2 text-[#1C1B1D] text-[18px] leading-[26px] text-[400]">
+          <input type="checkbox" className=" h-5 w-5 text-[#B99B5F]" />
           Alltagsbegleitung und Besorgungen
         </label>
-        <label className="flex items-center gap-2 text-[#1C1B1D] text-base font-normal">
+        <label className="flex items-center gap-2 text-[#1C1B1D] text-[18px] leading-[26px] text-[400]">
           <input type="checkbox" className="h-5 w-5 text-[#B99B5F]" />
           Freizeit und soziale Aktivitäten
         </label>
-        <label className="flex items-center gap-2 text-[#1C1B1D] text-base font-normal">
+        <label className="flex items-center gap-2 text-[#1C1B1D] text-[18px] leading-[26px] text-[400]">
           <input type="checkbox" className="h-5 w-5 text-[#B99B5F]" />
           Gesundheitsfürsorge
         </label>
-        <label className="flex items-center gap-2 text-[#1C1B1D] text-base font-normal">
+        <label className="flex items-center gap-2 text-[#1C1B1D] text-[18px] leading-[26px] text-[400]">
           <input type="checkbox" className="h-5 w-5 text-[#B99B5F]" />
           Haushaltshilfe und Wohnpflege
         </label>
       </div>
       <Link href="/Form-Page-2">
         <button
-          className="bg-[#B99B5F] text-white font-bold text-lg lg:text-2xl rounded-full px-12 py-4"
+          className="bg-[#B99B5F] text-white font-bold text-lg md:text-[36px] md:leading-[22px] rounded-[50px] px-[50px] py-[14px] mb-[160px] mt-[40px]"
           style={{
             fontFamily: "Metropolis",
           }}
