@@ -470,7 +470,7 @@ export default function Home() {
 </section>
  
 <section
-  className="flex flex-col justify-center items-center gap-[62px] px-10 py-12 w-[1019px] mx-auto"
+  className="flex flex-col justify-center items-center gap-[62px] px-10 w-[1019px] mx-auto"
   style={{
     color: "#04436F",
     textAlign: "center",
@@ -701,13 +701,15 @@ export default function Home() {
 </section>
 
 <section
-  className="relative flex flex-col justify-center items-center mt-[160px] p-16"
-  style={{
-    backgroundImage: "url('/images/White box.png')", // Replace with your image path
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
+   className="font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative flex flex-col items-center justify-center bg-cover md:mt-[160px]"
+   style={{
+     backgroundImage: "url('/images/White Box 1280.png')", 
+     marginLeft: 'auto', 
+     width:'1270px',
+     backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+     marginRight: 'auto',
+   }}
+ >
   {/* Main Heading */}
   <h1
     className="text-[#04436F] font-metropolis font-semibold text-[44px] leading-[52.8px] text-center"
@@ -742,7 +744,7 @@ export default function Home() {
 
   {/* Footer Note */}
   <p
-    className="text-[#04436F] font-metropolis text-[16px] italic font-normal leading-[25.6px] text-center mt-4"
+    className="text-[#04436F] font-metropolis text-[16px] font-normal leading-[25.6px] text-center mt-4"
     style={{
       fontWeight: "400",
     }}
@@ -784,7 +786,7 @@ export default function Home() {
             </p>
 
             <p
-                className="text-[#04436F] font-metropolis italic mt-[80px] text-left"
+                className="text-[#04436F] font-metropolis mt-[80px] text-left"
                 style={{
                 fontSize: "22px",
                 fontWeight: "500",
@@ -839,5 +841,4 @@ export default function Home() {
             </div>
     );
   }
-  
   
