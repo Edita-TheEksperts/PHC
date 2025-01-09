@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <div className="bg-[#F1F1F1] p-4">
-        <section className="relative max-w-[1300px] h-[800px] mx-auto mt-2 md:mt-[30px] lg:mb-[150px]">
+        <section className="relative max-w-[1300px] h-[800px] mx-auto mt-2 md:mt-[30px] lg:mb-[160px]">
   {/* Logo Positioned on Top Left */}
   <div className="absolute top-[5px] left-[5px] md:top-[20px] md:left-[67px] z-10">
     <Image src="/images/logo.png" alt="PHC Logo" width={131} height={60} />
@@ -87,7 +87,7 @@ export default function Home() {
 </section>
 
 <section
-  className="flex items-center gap-[60px] bg-white rounded-[20px] max-w-[1300px] mx-auto mt-[150px] mb-[150px]"
+  className="flex items-center gap-[60px] bg-white rounded-[20px] max-w-[1300px] mx-auto mt-[160px] mb-[160px]"
   style={{
     height: "630px",
   }}
@@ -289,7 +289,7 @@ export default function Home() {
 </section>
 
 <section
-  className="flex justify-between items-center max-w-[1242px] mx-auto mt-[160px] mb-[150px]"
+  className="flex justify-between items-center max-w-[1242px] mx-auto mt-[160px] mb-[160px]"
 >
   {/* Left Side - Image */}
   <div className='mt-[100px]'>
@@ -301,9 +301,9 @@ export default function Home() {
   </div>
 
   {/* Right Side - Text Section */}
-  <div className="flex flex-col w-[563px] text-left">
+  <div className="flex flex-col w-[563px] text-left mt-[100px]">
   <h2
-  className="text-[#FAFAFA] w-[490px] font-metropolis text-[24px] font-bold leading-[24px] mb-[30px] flex flex-col items-start px-[10px] py-[4px] rounded-[50px] bg-gradient-to-r from-[#B99B5F] to-[#B99B5F] bg-opacity-[0.51]"
+  className="text-[#FAFAFA] w-[499px] font-metropolis text-[22px] font-bold leading-[24px] mb-[30px] flex flex-col items-start px-[10px] py-[4px] rounded-[50px] bg-gradient-to-r from-[#B99B5F] to-[#B99B5F] bg-opacity-[0.51]"
   style={{
     fontFamily: "Metropolis",
     lineHeight: "100%",
@@ -329,26 +329,24 @@ export default function Home() {
 
     <ul className="space-y-6 text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px]">
       <li>
-        <strong className="text-[#B99B5F]">Wunschzeit eingeben:</strong> <br></br> Wählen Sie
-        Datum, Uhrzeit, Dauer und Regelmäßigkeit online aus.
+        <strong className="text-white bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Wunschzeit eingeben:</strong> <br></br> <p className='mt-2 ml-4 text-[#B99B5F]'>Wählen Sie
+        Datum, Uhrzeit, Dauer und Regelmäßigkeit online aus.</p>
       </li>
       <li>
-        <strong className="text-[#B99B5F]">Betreuungsperson auswählen:</strong> Wir
-        organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.
+        <strong className="text-white bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Betreuungsperson auswählen:</strong> <br></br> <p className='mt-2 ml-4 text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
       </li>
       <li>
-        <strong className="text-[#B99B5F]">Betreuung genießen:</strong> Unser Team
-        kümmert sich um den Rest – einfach, sicher und zuverlässig.
+        <strong className="text-white bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Betreuung geniessen:</strong> <br></br> <p className='mt-2 ml-4 text-[#B99B5F]'>Unser Team kümmert sich um den Rest – einfach, sicher und zuverlässig.</p>
       </li>
     </ul>
-    <p className="text-[#B99B5F] font-metropolis text-[24px] font-normal leading-[26px] mt-[40px]">
+    <p className="text-[#B99B5F] font-metropolis text-[24px] font-normal leading-[26px] mt-[40px] ml-2">
   Alles direkt über unsere benutzerfreundliche Plattform.
 </p>
   </div>
 
 </section>
 
-<section className="flex justify-center items-center w-full mb-[150px]">
+<section className="flex justify-center items-center w-full mb-[160px]">
   <div className="flex justify-between items-center w-[1167px] h-[552px] rounded-[20px]">
     {/* Text Section */}
     <div className="flex flex-col items-start w-[50%] pr-[20px]">
@@ -404,7 +402,7 @@ export default function Home() {
     }}
   >
     <img
-      src="/images/Experience.png" // Replace with your image path
+      src="/images/Experience (1).png" // Replace with your image path
       alt="Warum Prime Home Care"
       style={{
         width: "100%", // Ensure the image takes the full width of the container
@@ -454,7 +452,7 @@ export default function Home() {
 
 
 <section
-  className="font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative flex flex-col items-center justify-center bg-cover md:mb-[160px]"
+  className="font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative flex flex-col items-center justify-center bg-cover mt-[100px] md:mb-[160px]"
   style={{
     backgroundImage: "url('/images/Gold Box 1.png')", 
     marginLeft: 'auto', 
@@ -497,7 +495,7 @@ export default function Home() {
 
   {/* Footer Note */}
   <p
-    className="text-[#B99B5F] font-metropolis text-[16px] italic font-normal leading-[25.6px] text-center mt-4 "
+    className="text-[#B99B5F] font-metropolis text-[16px] font-normal leading-[25.6px] text-center mt-4 "
     style={{
       fontWeight: "400",
     }}
@@ -539,7 +537,7 @@ export default function Home() {
             </p>
 
             <p
-                className="text-[#B99B5F] font-metropolis italic mt-[80px] text-left"
+                className="text-[#B99B5F] font-metropolis mt-[80px] text-left"
                 style={{
                 fontSize: "22px",
                 fontWeight: "500",
