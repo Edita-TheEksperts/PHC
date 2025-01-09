@@ -7,19 +7,22 @@ export default function FormPage01() {
       <div className="flex items-center justify-between absolute top-6 left-4 lg:left-[170px]">
       <Link href="/Registrierung-Jobs">
       <p
-        className="inline-flex items-center justify-center px-4 py-2 rounded-[50px_0_0_50px]"
-        style={{
-          color: "#003588",
-          fontFamily: "Metropolis",
-          fontSize: "16px",
-          fontStyle: "normal",
-          fontWeight: "400",
-          lineHeight: "24px", // 150%
-          background: "linear-gradient(93deg, #B2EAFF 0%, rgba(0, 0, 0, 0.00) 100%)",
-        }}
-      >
-        &larr; Zurück
-      </p>
+  className="inline-flex items-start flex-col px-4 py-2"
+  style={{
+    color: "#003588",
+    fontFamily: "Metropolis",
+    fontSize: "16px",
+    fontStyle: "normal",
+    fontWeight: "400",
+    lineHeight: "24px", // 150%
+    background: "linear-gradient(93deg, #B2EAFF 0%, #A9B4B9 50%, rgba(0, 0, 0, 0.00) 100%)",
+    borderRadius: "var(--opacity-50, 50px) 0px 0px var(--opacity-50, 50px)",
+    padding: "6px 12px",
+  }}
+>
+  &larr; Zurück
+</p>
+
     </Link>
   
 
