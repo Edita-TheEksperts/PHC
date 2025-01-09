@@ -276,7 +276,7 @@ export default function Home() {
   style={{
     backgroundImage: "url('/images/White Box 1280.png')", 
     marginLeft: 'auto', 
-    width:'1280px',
+    width:'1270px',
     backgroundRepeat: 'no-repeat', // Prevents the image from repeating
     marginRight: 'auto',
   }}
@@ -366,7 +366,7 @@ export default function Home() {
             </p>
 
             <p
-                className="text-black font-metropolis italic mt-[80px] text-left"
+                className="text-black font-metropolis mt-[80px] text-left"
                 style={{
                 fontSize: "22px",
                 fontWeight: "500",
