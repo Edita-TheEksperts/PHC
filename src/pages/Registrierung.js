@@ -541,7 +541,7 @@ export default function Home() {
             {/* Left Section */}
             <div className="flex flex-col">
             <h1
-                className="text-[#B99B5F] font-metropolis font-bold"
+                className="text-[#B99B5F] font-metropolis font-bold mb-2"
                 style={{
                 fontSize: "48px",
                 lineHeight: "64.167%",
@@ -566,6 +566,8 @@ export default function Home() {
                 style={{
                 fontSize: "22px",
                 fontWeight: "500",
+                fontFamily: "Metropolis",
+                fontStyle: 'italic',
                 lineHeight: "30.8px",
                 }}
             >
@@ -617,4 +619,3 @@ export default function Home() {
             </div>
     );
   }
-  
