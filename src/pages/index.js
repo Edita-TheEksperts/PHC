@@ -106,11 +106,11 @@ export default function Home() {
           {/* Image and Heading Container (same row) */}
           <div className="flex items-center justify-start w-full mb-4 space-x-4">
             {/* Image Container */}
-            <div className="flex items-center justify-center bg-[#F6F6F6] rounded-full h-[100px] w-[100px] mr-4">
+            <div className="flex items-center justify-center bg-[#F6F6F6] rounded-full h-[100px] w-[105px] mr-4">
             <Image src="/images/links123.png" alt="Icon" width={50} height={50} />
             </div>
             {/* Heading */}
-            <h3 className="text-[#1C1B1D] text-[28px] font-semibold leading-[33.6px]">
+            <h3 className="text-[#1C1B1D] justify-center text-[28px] w-[450px] font-semibold leading-[33.6px]">
             Verlässliche und qualifizierte Betreuungskräfte  
             </h3>
           </div>
