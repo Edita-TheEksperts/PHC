@@ -78,7 +78,8 @@ export default function Home() {
 
                  <section className="flex flex-col items-center justify-center px-5 py-10  text-[#04436F]">
                     {/* Main heading */}
-                    <p className="text-center font-metropolis text-[16px] font-[400] leading-[24px] mb-5 px-2 py-1 rounded-[50px_0px_0px_50px] bg-gradient-to-r from-[#B2EAFF] to-transparent">
+                    <p style={  {background: "linear-gradient(70deg, #B2EAFF 0%, #A9B4B9 75%, rgba(0, 0, 0, 0.00) 100%)",}  
+}className="text-center font-metropolis text-[16px] font-[400] leading-[24px] mb-5 px-2 py-1 rounded-[50px_0px_0px_50px]">
                         Werde Teil von etwas Grossem.
                     </p>
 
@@ -301,7 +302,7 @@ export default function Home() {
                     <div
                 className="flex flex-col items-start rounded-[50px_0px_0px_50px] p-[4px_70px_4px_10px]"
                 style={{
-                    background: "linear-gradient(93deg, #04436F 0%, rgba(0, 0, 0, 0.00) 100%)",
+                    background: "linear-gradient(93deg, #04436F 60%, rgba(0, 0, 0, 0.00) 100%)",
                 }}
                 >
                 <p className="text-[#FAFCFF] font-metropolis text-[16px] font-[400] leading-[25.6px] whitespace-nowrap">
@@ -331,7 +332,7 @@ export default function Home() {
   </div>
 
   {/* Boxes Section */}
-  <div className="grid grid-cols-2 gap-6 w-full mb-6">
+  <div className="grid grid-cols-2 gap-6 w-[1000px] mb-6">
     {/* Box 1 */}
     <div
       className="flex flex-col justify-center h-[166px] px-8 rounded-[20px]"
@@ -395,7 +396,7 @@ export default function Home() {
 
   {/* Bottom Section */}
   <div
-  className="flex flex-col justify-center items-center gap-[10px] w-[998px] h-[72px] p-[10px] rounded-[20px] bg-white flex-shrink-0"
+  className="flex flex-col justify-center items-center gap-[10px] w-[1000px] h-[72px] p-[10px] rounded-[20px] bg-white flex-shrink-0"
 >
   <p className="text-[#04436F] text-center font-metropolis text-[24px] font-[600] leading-[71.5px]">
     Arbeiten mit Prime Home Care bedeutet, Freiheit und Erfüllung zu verbinden.
@@ -410,10 +411,10 @@ export default function Home() {
   <div className="flex flex-col gap-4 max-w-[600px]">
     {/* Top Label */}
     <span
-  className="text-[#04436F] text-[16px] font-metropolis font-normal leading-[24px] px-[10px] py-[4px]"
+  className="text-[#04436F] text-[16px] w-[390px] font-metropolis font-normal leading-[24px] px-[10px] py-[4px] inline-block"
   style={{
     borderRadius: "50px 0px 0px 50px",
-    background: "linear-gradient(100deg, #B2EAFF 0%, rgba(0, 0, 0, 0.00) 100%)",
+    background: "linear-gradient(70deg, #B2EAFF 0%, #A9B4B9 75%, rgba(0, 0, 0, 0.00) 100%)",
   }}
 >
   In wenigen Schritten zur Betreuungsperson:
