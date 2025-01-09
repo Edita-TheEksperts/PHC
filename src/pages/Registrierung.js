@@ -251,7 +251,7 @@ export default function Home() {
   {/* Cards Section */}
   <div className="flex justify-between gap-[40px] w-full">
     {/* Card 1 */}
-    <div className="flex flex-col items-center text-center p-[10px] bg-white rounded-[20px] ">
+    <div className="flex flex-col items-center text-center p-[10px]rounded-[20px] ">
       <img
         src="/images/Link.png"
         alt="Familien"
@@ -261,7 +261,7 @@ export default function Home() {
     </div>
 
     {/* Card 2 */}
-    <div className="flex flex-col items-center text-center p-[10px] bg-white rounded-[20px] ">
+    <div className="flex flex-col items-center text-center p-[10px] rounded-[20px] ">
       <img
         src="/images/Link (1).png"
         alt="Senioren"
@@ -271,7 +271,7 @@ export default function Home() {
     </div>
 
     {/* Card 3 */}
-    <div className="flex flex-col items-center text-center p-[10px] bg-white rounded-[20px] ">
+    <div className="flex flex-col items-center text-center p-[10px] rounded-[20px] ">
       <img
         src="/images/Link (2).png"
         alt="Berufstätige"
@@ -381,11 +381,216 @@ export default function Home() {
   </div>
 </section>
 
-<section>
+<section
+  style={{
+    display: "flex",
+    marginBottom: "160px",
+    width: "100%", // Ensures it stretches the full width of the screen
+    maxWidth: "1167px", // Limits the width to 1280px on larger screens
+    justifyContent: "center", // Centers the content horizontally
+    alignItems: "center", // Centers the content vertically
+    gap: "110px", // Maintains the gap between the left and right sections
+    flexShrink: "0",
+    textAlign: "center", // Centers the text in the right section
+    margin: "0 auto", // Centers the section within the parent container
+  }}
+  className="relative flex justify-center items-center"
+>
+  {/* Left Section (Image) */}
+  <div
+    style={{
+      width: "50%", // Adjust width for responsiveness
+      minHeight: "100%", // Ensures the container takes full height
+    }}
+  >
+    <img
+      src="/images/Experience.png" // Replace with your image path
+      alt="Warum Prime Home Care"
+      style={{
+        width: "100%", // Ensure the image takes the full width of the container
+        height: "100%", // Ensure the image takes full height
+        objectFit: "cover", // Ensures the image covers the container area without distortion
+      }}
+    />
+  </div>
 
+  {/* Right Section (Text) */}
+  <div class="w-[60%] flex flex-col justify-start items-start text-left mb-[120px]">
+  <h2
+      style={{
+        fontSize: "55px",
+        fontWeight: "600",
+        color: "#B99B5F",
+        marginBottom: "16px",
+        lineHeight: "71.5px",
+      }}
+    >
+      Warum Prime Home Care AG?
+    </h2>
+    <p
+      style={{
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "25.6px",
+        color: "#B99B5F",
+      }}
+    >
+      Wir sind die erste vollständig digitale Plattform in der Schweiz, die Betreuung so einfach und modern macht. Mit uns haben Sie die Kontrolle über Ihre Zeit – ohne Kompromisse bei Qualität und Sicherheit.
+    </p>
+    <p
+      className="bg-[#B99B5F] px-[20px] py-[12px] rounded-[50px] inline-block"
+      style={{
+        fontSize: "18px",
+        fontWeight: "500",
+        lineHeight: "21.6px",
+        marginTop: "20px",
+        color: "white",
+      }}
+    >
+      Ihre Zeit ist wertvoll. Lassen Sie uns helfen.
+    </p>
+  </div>
 </section>
 
 
+<section
+  className="font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative flex flex-col items-center justify-center bg-cover md:mb-[160px]"
+  style={{
+    backgroundImage: "url('/images/Gold Box 1.png')", 
+    marginLeft: 'auto', 
+    width:'1270px',
+    backgroundRepeat: 'no-repeat', 
+    marginRight: 'auto',
+  }}
+>
+  {/* Main Heading */}
+  <h1
+    className="text-[#B99B5F] font-metropolis font-semibold text-[44px] leading-[52.8px] text-center"
+    style={{
+      fontWeight: "600",
+    }}
+  >
+    Jetzt vormerken! 
+  </h1>
+
+  {/* Subheading */}
+  <p
+    className="text-[#B99B5F] font-metropolis text-[16px] leading-[25.6px] font-normal text-center mt-4"
+    style={{
+      fontWeight: "400",
+    }}
+  >
+    Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. 
+  </p>
+
+  {/* Button */}
+  <Link href="/Form-Page-1">
+  <button
+    className="mt-6 px-8 py-3 text-white font-metropolis text-[18px] font-medium leading-[21.6px] bg-[#B99B5F] rounded-full"
+    style={{
+      borderRadius: "50px",
+    }}
+  >
+    Klicken Sie hier, um sich unverbindlich zu registrieren und über den Start informiert zu werden! 
+  </button>
+  </Link>
+
+  {/* Footer Note */}
+  <p
+    className="text-[#B99B5F] font-metropolis text-[16px] italic font-normal leading-[25.6px] text-center mt-4 "
+    style={{
+      fontWeight: "400",
+    }}
+  >
+(Frühbucher erhalten exklusive Angebote!) 
+  </p>
+</section>
+
+<section className="mt-[160px] mb-[120px] flex flex-col justify-center items-center">
+        {/* Main Content */}
+        <div
+            className="flex justify-between items-start w-[1238px] h-[193px] px-6"
+            style={{
+            color: "#B99B5F",
+            fontFamily: "Metropolis",
+            }}
+        >
+            {/* Left Section */}
+            <div className="flex flex-col">
+            <h1
+                className="text-[#B99B5F] font-metropolis font-bold"
+                style={{
+                fontSize: "48px",
+                lineHeight: "64.167%",
+                }}
+            >
+                Prime Home Care AG
+            </h1>
+        
+            <p
+                className="text-[#B99B5F] font-metropolis"
+                style={{
+                fontSize: "22px",
+                fontWeight: "500",
+                lineHeight: "30.8px",
+                }}
+            >
+                Zusammen Gutes bewirken.
+            </p>
+
+            <p
+                className="text-[#B99B5F] font-metropolis italic mt-[80px] text-left"
+                style={{
+                fontSize: "22px",
+                fontWeight: "500",
+                lineHeight: "30.8px",
+                }}
+            >
+                Einfach. Flexibel. Digital.
+            </p>
+            </div>
+
+            {/* Right Section */}
+            <div
+        className="flex flex-col mt-[25px] items-left text-left gap-4"
+        style={{
+            color: "#B99B5F",
+            fontFamily: "Metropolis",
+        }}
+        >
+        <h2
+            className="font-bold"
+            style={{
+            fontSize: "24px",
+            lineHeight: "30.8px", // 128.333%
+            }}
+        >
+            Kontakt:
+        </h2>
+        <p
+            className="font-normal"
+            style={{
+            fontSize: "24px",
+            lineHeight: "30.8px", // 128.333%
+            }}
+        >
+            jobs@phc.ch
+        </p>
+        <Link href="www.phc.ch">
+        <p
+            className="font-normal"
+            style={{
+            fontSize: "24px",
+            lineHeight: "30.8px", // 128.333%
+            }}
+        >
+            www.phc.ch
+        </p>
+        </Link>
+        </div>
+
+                </div>
+                </section>
             </div>
     );
   }
