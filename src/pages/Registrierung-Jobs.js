@@ -657,7 +657,6 @@ export default function Home() {
                 className="text-[#04436F] font-metropolis"
                 style={{
                 fontSize: "22px",
-                fontStyle: "italic",
                 fontWeight: "500",
                 lineHeight: "30.8px",
                 }}
