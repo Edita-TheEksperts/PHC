@@ -787,7 +787,7 @@ export default function Home() {
 <section
   className="md:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative md:flex flex-col items-center justify-center bg-cover mt-[100px] md:mb-[160px]"
   style={{
-    backgroundImage: "url('/images/Gold Box 1.png')", 
+    backgroundImage: "url('/images/goldboxes.png')", 
     marginLeft: 'auto', 
     width:'1270px',
     backgroundRepeat: 'no-repeat', 
