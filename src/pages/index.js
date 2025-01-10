@@ -558,7 +558,9 @@ Ab Frühsommer 2025 sind wir für Sie da!  </p>
             lineHeight: "30.8px", // 128.333%
             }}
         >
-            jobs@phc.ch
+             <a href="mailto:jobs@phc.ch">
+               jobs@phc.ch
+             </a>
         </p>
         <p
             className="font-normal"
@@ -567,7 +569,9 @@ Ab Frühsommer 2025 sind wir für Sie da!  </p>
             lineHeight: "30.8px", // 128.333%
             }}
         >
-            www.phc.ch
+              <a href="https://www.phc.ch" target="_blank" rel="noopener noreferrer">
+                      www.phc.ch
+                    </a>
         </p>
         </div>
        </div>
@@ -635,7 +639,9 @@ Ab Frühsommer 2025 sind wir für Sie da!  </p>
           lineHeight: "30.8px", // 128.333%
         }}
       >
-        jobs@phc.ch
+        <a href="mailto:jobs@phc.ch">
+           jobs@phc.ch
+        </a>
       </p>
       <p
         className="font-normal"
@@ -644,7 +650,9 @@ Ab Frühsommer 2025 sind wir für Sie da!  </p>
           lineHeight: "30.8px", // 128.333%
         }}
       >
-        www.phc.ch
+         <a href="https://www.phc.ch" target="_blank" rel="noopener noreferrer">
+                      www.phc.ch
+        </a>
       </p>
     </div>
   </div>
@@ -653,3 +661,4 @@ Ab Frühsommer 2025 sind wir für Sie da!  </p>
     </div>
   );
 }
+
