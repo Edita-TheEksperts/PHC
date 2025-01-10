@@ -103,7 +103,7 @@ export default function Home() {
 
 
     {/* Call-to-Action Button */}
-    <Link href="/Form-Page-3">
+    <Link href="/Form-page-3">
     <button
       className="px-[20px] py-[10px] text-[18px] font-[500] leading-[21.6px] rounded-[50px] bg-[#B99B5F] lg:mt-[30px]"
     >
@@ -172,7 +172,7 @@ export default function Home() {
       <p className="md:hidden block text-[15px] font-[400] leading-[17px] text-[#F1F1F1] px-2 ">
       Flexible Betreuung – Ihre Unterstützung,<br></br> genau wann Sie sie brauchen!    </p>
 
-      <Link href="/Form-Page-1">
+      <Link href="/Form-page-3">
                             <button
                                 className="font-metropolis flex flex-col items-center text-center font-metropolis text-[18px] font-[500] leading-[21.6px] rounded-[15px] mt-[30px] px-[20px] py-[12px] bg-[#B99B5F] transition-all duration-0"
                             >
@@ -714,15 +714,15 @@ export default function Home() {
 
 <section
   
-  className="relative flex flex-col md:flex-row justify-center items-center mb-[160px] w-full md:max-w-[1167px] md:gap-[110px] md:flex-shrink-0 text-center mx-auto"
+  className="md:px-6 relative flex flex-col md:flex-row justify-center items-center mb-[160px] w-full md:max-w-[1167px] md:gap-[90px] md:flex-shrink-0 text-center mx-auto"
 >
   <div className='md:block hidden'>
     <img className='flex justify-center'
       src="/images/Experience (1).png" 
       alt="Warum Prime Home Care"
       style={{
-        width: "100%", 
-        height: "100%", 
+        width: "437px", 
+        height: "470px", 
       }}
     />
   </div>
@@ -815,7 +815,7 @@ export default function Home() {
   </p>
 
   {/* Button */}
-  <Link href="/Form-Page-1">
+  <Link href="/Form-page-3">
   <button
     className="mt-6 px-8 py-3 text-white font-metropolis text-[18px] font-medium leading-[21.6px] bg-[#B99B5F] rounded-full"
     style={{
@@ -966,24 +966,22 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
             Kontakt:
         </h2>
         <p
-            className="font-normal"
-            style={{
-            fontSize: "24px",
-            lineHeight: "30.8px", // 128.333%
-            }}
-        >
-            jobs@phc.ch
-        </p>
+            className="font-normal text-[24px] leading-[30.8px]"
+          >
+            <a href="mailto:jobs@phc.ch">
+              jobs@phc.ch
+            </a>
+          </p>
+
         <Link href="www.phc.ch">
         <p
-            className="font-normal"
-            style={{
-            fontSize: "24px",
-            lineHeight: "30.8px", // 128.333%
-            }}
+          className="font-normal text-[24px] leading-[30.8px]"
         >
+          <a href="https://www.phc.ch" target="_blank" rel="noopener noreferrer">
             www.phc.ch
+          </a>
         </p>
+
         </Link>
         </div>
 
@@ -1047,15 +1045,11 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
                     >
                       Kontakt:
                     </h2>
-                    <p
-                      className="font-normal"
-                      style={{
-                        fontSize: "24px",
-                        lineHeight: "30.8px", // 128.333%
-                      }}
-                    >
+                    <p className="font-normal text-[24px] leading-[30.8px]">
+                    <a href="mailto:jobs@phc.ch">
                       jobs@phc.ch
-                    </p>
+                    </a>
+                  </p>
                     <p
                       className="font-normal"
                       style={{
@@ -1063,7 +1057,9 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
                         lineHeight: "30.8px", // 128.333%
                       }}
                     >
+                     <a href="https://www.phc.ch" target="_blank" rel="noopener noreferrer">
                       www.phc.ch
+                    </a>
                     </p>
                   </div>
                 </div>
