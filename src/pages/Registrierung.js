@@ -103,11 +103,13 @@ export default function Home() {
 
 
     {/* Call-to-Action Button */}
+    <Link href="/Form-Page-3">
     <button
       className="px-[20px] py-[10px] text-[18px] font-[500] leading-[21.6px] rounded-[50px] bg-[#B99B5F] lg:mt-[30px]"
     >
       Einfach, digital und individuell – Ihr Zuhause, unsere Fürsorge.
     </button>
+    </Link>
   </div>
 </section>
 
@@ -1070,4 +1072,4 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
             </div>
     );
   }
-
+  
