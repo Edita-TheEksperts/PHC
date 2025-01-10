@@ -145,7 +145,7 @@ export default function Home() {
   </div>
 
   {/* Background Image */}
-  <div className="absolute w-[391px] h-[625px] mt-[70px]">
+  <div className="absolute w-[391px] h-[625px] mt-[80px]">
     <img
       src="/images/mobile2.png"
       alt="Hero Image"
