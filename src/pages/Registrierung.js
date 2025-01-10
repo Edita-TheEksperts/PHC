@@ -69,7 +69,7 @@ export default function Home() {
     lineHeight: "25.6px", // 160%
   }}
 >
-  Ab Frühsommer 2025 bringt die
+  Ab Frühsommer 2025
 </p>
 
 
@@ -202,7 +202,7 @@ export default function Home() {
       style={{
         color: "#B99B5F",
         fontWeight: "700",
-        marginLeft: "20px" // Bold weight for strong text
+        marginLeft: "30px" // Bold weight for strong text
       }}
     >
       Flexibilität:
@@ -220,7 +220,7 @@ export default function Home() {
       style={{
         color: "#B99B5F",
         fontWeight: "700",
-        marginLeft: "20px" // Bold weight for strong text
+        marginLeft: "30px" // Bold weight for strong text
 
       }}
     >
@@ -237,7 +237,7 @@ export default function Home() {
       style={{
         color: "#B99B5F",
         fontWeight: "700",
-        marginLeft: "20px",
+        marginLeft: "30px",
       }}
     >
       Qualität:
@@ -354,14 +354,14 @@ export default function Home() {
 
     <ul className="space-y-6 text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px]">
       <li>
-        <strong className="text-white bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Wunschzeit eingeben:</strong> <br></br> <p className='mt-2 ml-4 text-[#B99B5F]'>Wählen Sie
+        <strong className="text-white text-[24px] text-[700] bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Wunschzeit eingeben:</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wählen Sie
         Datum, Uhrzeit, Dauer und Regelmäßigkeit online aus.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Betreuungsperson auswählen:</strong> <br></br> <p className='mt-2 ml-4 text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
+        <strong className="text-white bg-[#B99B5F] text-[24px] text-[700] rounded-[50px] px-[20px] py-[10px]">Betreuungsperson auswählen:</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Betreuung geniessen:</strong> <br></br> <p className='mt-2 ml-4 text-[#B99B5F]'>Unser Team kümmert sich um den Rest – einfach, sicher und zuverlässig.</p>
+        <strong className="text-white bg-[#B99B5F] text-[24px] text-[700] rounded-[50px] px-[20px] py-[10px]">Betreuung geniessen:</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Unser Team kümmert sich um den Rest – einfach, sicher und zuverlässig.</p>
       </li>
     </ul>
     <p className="text-[#B99B5F] font-metropolis text-[24px] font-normal leading-[26px] mt-[40px] ml-2">
@@ -381,12 +381,12 @@ export default function Home() {
         Unsere <br></br>Betreuungs­personen
       </h2>
       
-      <div className="text-[#B99B5F] font-metropolis text-[20px] font-normal leading-[26px] space-y-[15px]">
+      <div className="text-[#B99B5F] font-metropolis text-[20px] font-[600] leading-[26px] space-y-[15px]">
         <div className='bg-white p-[20px] rounded-[20px]'>Vertrauen Sie den Profis.</div>
         <div className='bg-white p-[20px] rounded-[20px]'>Geprüft und qualifiziert.</div>
         <div className='bg-white p-[20px] rounded-[20px]'>Freundlich, erfahren und engagiert.</div>
         <div className='bg-white p-[20px] rounded-[20px]'>Flexibel und an Ihre Bedürfnisse angepasst.</div>
-        <div className='bg-white p-[20px] rounded-[20px]'>Ihre Bedürfnisse und Zufriedenheit stehen für uns an erster Stelle.</div>
+        <div className='bg-white p-[20px] md:w-[600px] rounded-[20px]'>Ihre Bedürfnisse und Zufriedenheit stehen <br></br> für uns an erster Stelle.</div>
       </div>
     </div>
 
@@ -458,7 +458,7 @@ export default function Home() {
         color: "#B99B5F",
       }}
     >
-      Wir sind die erste vollständig digitale Plattform in der Schweiz, die Betreuung so einfach und modern macht. Mit uns haben Sie die Kontrolle über Ihre Zeit – ohne Kompromisse bei Qualität und Sicherheit.
+      Wir sind die erste vollständig digitale Plattform in der Schweiz, die <br></br> Betreuung so einfach und modern macht. Mit uns haben Sie die<br></br> Kontrolle über Ihre Zeit – ohne Kompromisse bei Qualität und <br></br>Sicherheit.
     </p>
     <p
       className="bg-[#B99B5F] px-[20px] py-[12px] rounded-[50px] inline-block"
@@ -523,6 +523,8 @@ export default function Home() {
     className="text-[#B99B5F] font-metropolis text-[16px] font-normal leading-[25.6px] text-center mt-4 "
     style={{
       fontWeight: "400",
+      fontFamily: 'Metropolis',
+      fontStyle:'italic',
     }}
   >
 (Frühbucher erhalten exklusive Angebote!) 
