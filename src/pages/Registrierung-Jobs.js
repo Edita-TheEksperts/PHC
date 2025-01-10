@@ -1534,7 +1534,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
             lineHeight: "30.8px", // 128.333%
             }}
         >
-            jobs@phc.ch
+             <a href="mailto:jobs@phc.ch">
+                      jobs@phc.ch
+                    </a>
         </p>
         <Link href="www.phc.ch">
         <p
@@ -1544,7 +1546,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
             lineHeight: "30.8px", // 128.333%
             }}
         >
-            www.phc.ch
+            <a href="https://www.phc.ch" target="_blank" rel="noopener noreferrer">
+                      www.phc.ch
+            </a>
         </p>
         </Link>
         </div>
@@ -1616,7 +1620,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         lineHeight: "30.8px", // 128.333%
                       }}
                     >
+                       <a href="mailto:jobs@phc.ch">
                       jobs@phc.ch
+                    </a>
                     </p>
                     <p
                       className="font-normal"
@@ -1625,7 +1631,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         lineHeight: "30.8px", // 128.333%
                       }}
                     >
+                      <a href="https://www.phc.ch" target="_blank" rel="noopener noreferrer">
                       www.phc.ch
+                    </a>
                     </p>
                   </div>
                 </div>
@@ -1633,5 +1641,4 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
             </div>
     );
   }
-  
   
