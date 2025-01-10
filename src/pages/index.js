@@ -614,7 +614,9 @@ Ab Frühsommer 2025 sind wir für Sie da!  </p>
         style={{
           fontSize: "22px",
           fontWeight: "500",
-          lineHeight: "25.6px", // 160%
+          lineHeight: "25.6px", 
+          fontFamily: "Metropolis",
+          fontStyle: 'italic', 
         }}
       >
         Einfach. Flexibel. Digital.
