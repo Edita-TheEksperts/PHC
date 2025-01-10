@@ -145,7 +145,7 @@ export default function Home() {
   </div>
 
   {/* Background Image */}
-  <div className="absolute w-[390px] h-full mt-[70px]">
+  <div className="absolute w-[391px] h-[625px] mt-[70px]">
     <img
       src="/images/mobile2.png"
       alt="Hero Image"
@@ -165,7 +165,7 @@ export default function Home() {
                     Ab Frühsommer 2025
                     </p>
 
-      <h2 className="md:hidden block mb-[20px] text-[24px] leading-[23px] font-[600]">
+      <h2 className="md:hidden block mb-[20px] text-[32px] leading-[32px] font-[600]">
       Stundenweise <br></br> Betreuung durch <br></br>Prime Home Care AG 
       </h2>
 
@@ -176,7 +176,7 @@ export default function Home() {
                             <button
                                 className="font-metropolis flex flex-col items-center text-center font-metropolis text-[18px] font-[500] leading-[21.6px] rounded-[15px] mt-[30px] px-[20px] py-[12px] bg-[#B99B5F] transition-all duration-0"
                             >
-                                Gestalte deine Arbeit so <br></br>individuell wie du bist.
+                                Einfach, digital und individuell – <br></br>Ihr Zuhause, unsere Fürsorge.
                             </button>
         </Link>
     </div>
@@ -323,7 +323,7 @@ export default function Home() {
 
 
 <section
-  className="md:hidden block flex items-center mx-auto mt-[210px] mb-[160px]"
+  className="md:hidden block flex items-center mx-auto mt-[20px] mb-[160px]"
 >
 
   {/* Text Section */}
@@ -376,7 +376,7 @@ export default function Home() {
   className="font-metropolis "
   style={{
     color: "#B99B5F",
-    fontSize: "16px", 
+    fontSize: "24px", 
     fontStyle: "normal",
     fontWeight: "400", 
     lineHeight: "24px", 
@@ -661,14 +661,14 @@ export default function Home() {
 
     <ul className="space-y-6 text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px] gap-6">
       <li>
-        <strong className="text-white text-[14px] leading-[21px] text-[700] bg-[#B99B5F] rounded-[5px] px-[20px] py-[10px]">Wunschzeit eingeben:</strong> <br></br> <p className='mt-2 text-[20px] text-[400] text-[#B99B5F]'>Wählen Sie
-        Datum, Uhrzeit, Dauer und Regelmäßigkeit online aus.</p>
+        <strong className="text-white text-[14px] leading-[21px] text-[700] bg-[#B99B5F] rounded-[5px] px-[20px] py-[10px]">Wunschzeit eingeben:</strong> <br></br> <p className='mt-2 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>
+        Wählen Sie Datum, Uhrzeit, Dauer und Regelmässigkeit online aus.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[14px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuungsperson auswählen:</strong> <br></br> <p className='mt-2 text-[20px] text-[400] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
+        <strong className="text-white bg-[#B99B5F] text-[14px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuungsperson auswählen:</strong> <br></br> <p className='mt-2 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[14px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuung geniessen:</strong> <br></br> <p className='mt-2 text-[20px] text-[400] text-[#B99B5F]'>Unser Team kümmert sich um den Rest <br></br> – einfach, sicher und zuverlässig.</p>
+        <strong className="text-white bg-[#B99B5F] text-[14px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuung geniessen:</strong> <br></br> <p className='mt-2 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Unser Team kümmert sich um den Rest <br></br> – einfach, sicher und zuverlässig.</p>
       </li>
     </ul>
     <p className="text-[#B99B5F] font-metropolis text-[16px] font-normal leading-[26px] mt-[40px] ml-2">
@@ -844,7 +844,7 @@ export default function Home() {
   className="font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[160px] block md:hidden"
 >
   <h2
-    className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[50px]"
+    className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[16px]"
     style={{
       color: '#B99B5F',
       textAlign: 'center',
@@ -854,7 +854,7 @@ export default function Home() {
       lineHeight: '32px', // 100%
     }}
   >
-   Jetzt bewerben und <br></br> ab Frühsommer <br></br> 2025 loslegen!  
+   Jetzt vormerken! 
   </h2>
 
   <p
@@ -868,12 +868,12 @@ export default function Home() {
       lineHeight: '25.6px', // 160%
     }}
   >
-Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
+Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. </p>
 
   {/* Button Section */}
   <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
     <button
-      className="md:py-[12px] md:px-[30px] text-[14px] lg:text-[18px] font-[500] text-white bg-[#B99B5F] rounded-[10px] p-2 "
+      className="md:py-[12px] md:px-[30px] text-[14px] lg:text-[18px] font-[500] text-white bg-[#B99B5F] rounded-[10px] px-4 py-2 "
       style={{
         fontSize: '16px',
         fontWeight: '500',
@@ -885,11 +885,11 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
         borderRadius: '10px',
       }}
     >
-      Lassen Sie sich bereits jetzt unverbindlich beraten oder registrieren Sie sich, um mehr über unser Angebot zu erfahren. 
+      Klicken Sie hier, um sich<br></br> unverbindlich zu registrieren und<br></br> über den Start informiert zu werden!  
     </button>
   </div>
   <p
-    className="text-center text-[16px] font-[400] mb-[50px]"
+    className="text-center text-[16px] font-[400] mb-[16px]"
     style={{
       color: '#B99B5F',
       textAlign: 'center',
@@ -900,7 +900,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
       lineHeight: '25.6px', // 160%
     }}
   >
-(Die ersten 50 Bewerber erhalten eine kostenlose <br></br> Schulung und Willkommensprämie!)  </p>
+(Frühbucher erhalten exklusive Angebote!)  </p>
 </section>
 
 <section className="md:block hidden mt-[160px] mb-[120px] md:flex flex-col justify-center items-center">
