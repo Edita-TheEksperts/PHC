@@ -190,7 +190,7 @@ export default function Home() {
   }}
 >
   {/* Image Section */}
-  <div className="flex-shrink-0">
+  <div className="flex-shrink-0 ">
     <img
       src="/images/sectionhome.png"
       alt="Prime Home Care AG"
@@ -606,8 +606,7 @@ export default function Home() {
 
     <ul className="space-y-6 text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px]">
       <li>
-        <strong className="text-white text-[24px] text-[700] bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Wunschzeit eingeben:</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wählen Sie
-        Datum, Uhrzeit, Dauer und Regelmäßigkeit online aus.</p>
+        <strong className="text-white text-[24px] text-[700] bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Wunschzeit eingeben:</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wählen Sie Datum, Uhrzeit, Dauer und Regelmässigkeit online aus.</p>
       </li>
       <li>
         <strong className="text-white bg-[#B99B5F] text-[24px] text-[700] rounded-[50px] px-[20px] py-[10px]">Betreuungsperson auswählen:</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
