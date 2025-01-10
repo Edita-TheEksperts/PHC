@@ -140,12 +140,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Wir bieten Ihnen eine abwechslungsreiche Teilzeitbeschäftigung auf
-              Stundenlohnbasis. Sie profitieren von viel Flexibilität, einem
-              innovativen Unternehmen mit modernen Strukturen,
-              fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser
-              Backoffice und einem angenehmen Arbeitsklima. Ihr Arbeitsort
-              befindet sich immer in der Nähe Ihres Wohnortes.
+              Wir bieten Ihnen eine abwechslungsreiche Teilzeitbeschäftigung auf Stundenlohnbasis. Sie profitieren von viel Flexibilität, einem innovativen Unternehmen mit modernen Strukturen, fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser Backoffice und einem angenehmen Arbeitsklima. Ihr Arbeitsort befindet sich immer in der Nähe Ihres Wohnortes.
             </p>
             </div>
           </div>
@@ -167,11 +162,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Als engagierte Persönlichkeit arbeiten Sie selbstständig und effizient
-              und setzen die Firmenphilosophie konsequent um. Ihre Fachkenntnisse
-              ermöglichen es Ihnen, auf die Bedürfnisse der Kunden einzugehen.
-              Gute Deutschkenntnisse sind zwingend erforderlich. Ein eigenes
-              Fahrzeug ist von Vorteil, aber keine Bedingung.
+              Als engagierte Persönlichkeit arbeiten Sie selbstständig und effizient und setzen die Firmenphilosophie konsequent um. Ihre Fachkenntnisse ermöglichen es Ihnen, auf die Bedürfnisse der Kunden einzugehen. Gute Deutschkenntnisse sind zwingend erforderlich. Ein eigenes Fahrzeug ist von Vorteil, aber keine Bedingung.
             </p>
             </div>
           </div>
@@ -194,9 +185,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Sie betreuen fest zugewiesene Privatkunden in Ihrer Region. Je nach
-              Bedarf kann Ihr Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die
-              Betreuung der Kunden erfolgt in einem regelmäßigen Rhythmus.
+             Sie betreuen fest zugewiesene Privatkunden in Ihrer Region. Je nach Bedarf kann Ihr Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.
             </p>
           </div>
         </div>
@@ -298,3 +287,4 @@ export default function FormPage02() {
     </div>
   );
 }
+
