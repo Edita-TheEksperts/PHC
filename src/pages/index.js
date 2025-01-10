@@ -390,7 +390,7 @@ export default function Home() {
       {/* Button Section */}
       <div className="flex flex-col items-center justify-center p-4 ">
         <button className="md:py-[12px] md:px-[30px] text-[16px] lg:text-[18px] font-[500] text-white bg-black rounded-[50px] md:mb-[16px] p-2">
-          Lassen Sie sich bereits jetzt unverbindlich beraten oder <br /> registrieren Sie sich, um mehr über unser Angebot zu erfahren
+          Lassen Sie sich bereits jetzt unverbindlich beraten oder <br /> registrieren Sie sich, um mehr über unser Angebot zu erfahren.
         </button>
       </div>
     </section>
