@@ -58,7 +58,7 @@ export default function FormPage01() {
       </div>
       </div>
 
-      <div className="md:hidden block ">
+      <div className="md:hidden block mt-0">
         <div className="mb-[100px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="131" height="64" viewBox="0 0 131 64" fill="none">
   <g clip-path="url(#clip0_428_1830)">
