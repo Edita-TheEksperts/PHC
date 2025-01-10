@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function FormPage02() {
   return (
-    <div className="min-h-screen bg-[#F1F1F1] flex flex-col items-center justify-start p-4">
+    <div className="md:min-h-screen bg-[#F1F1F1] flex flex-col items-center justify-start p-4">
       {/* Back Button and Logo */}
       <div className="md:block hidden md:flex items-center justify-between absolute top-6 left-4 lg:left-[170px]">
       <Link href="/Form-Page-1">
