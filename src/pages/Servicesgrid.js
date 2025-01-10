@@ -1,7 +1,7 @@
 export default function ServicesGrid() {
     return (
-        <div className="bg-[#F1F1F1] py-10 lg:py-20">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 px-6">
+        <div className="py-10 lg:py-20">
+            <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 px-6 ">
                 {/* Reusable Column Component */}
                 {[
                     {
@@ -61,9 +61,9 @@ export default function ServicesGrid() {
                         ],
                     },
                 ].map((column, index) => (
-                    <div key={index} className="bg-white shadow-md rounded-lg">
+                    <div key={index} className="rounded-lg">
                         <div
-                            className="bg-[#B99B5F] text-white text-lg font-bold px-6 py-4 relative"
+                            className="text-white text-lg font-bold px-6 py-4 relative"
                             style={{
                                 fontFamily: "Metropolis",
                                 borderTopLeftRadius: "20px",
@@ -73,8 +73,7 @@ export default function ServicesGrid() {
                         >
                             {column.title}
                         </div>
-
-                        <div className="p-6 text-[#1C1B1D] text-base leading-7">
+                        <div className="p-6 bg-[#FAFAFA] text-[#1C1B1D] text-base leading-7">
                             <ul className="space-y-4">
                                 {column.items.map((item, i) => (
                                     <li key={i}>
