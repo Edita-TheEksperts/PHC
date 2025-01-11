@@ -107,35 +107,64 @@ export default function FormPage01() {
       </section>
 
 
-      <section className="flex flex-col justify-center items-center md:pt-[160px] text-center">
+      <section className="flex flex-col justify-center items-center md:pt-[160px] text-center mb-[16px]">
         <p
-          className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
+          className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
           Wählen Sie die gewünschte
         </p>
         <p
-          className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
+          className="text-[#B99B5F] md:block hidden font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
 
-Region und geben Sie Ihren Namen und Email an
+            Region und geben Sie Ihren Namen und Email an
+        </p>
+        <p
+          className="text-[#B99B5F] md:block block font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
+        >
+
+            Region und geben Sie Ihren<br></br> Namen und Email an
         </p>
       </section>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-10 ">
         <select
-          className="w-full lg:w-[300px] h-14  border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] "
+          className=" w-[270px] md:w-[300px] h-14  border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] "
           style={{
             fontFamily: "Metropolis",
           }}
         >
-          <option>Region</option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
+         <option>Region</option>
+            <option>Kanton Aargau</option>
+            <option>Kanton Appenzell Ausserrhoden</option>
+            <option>Kanton Appenzell Innerrhoden</option>
+            <option>Kanton Basel-Landschaft</option>
+            <option>Kanton Basel-Stadt</option>
+            <option>Kanton Bern</option>
+            <option>Kanton Freiburg</option>
+            <option>Kanton Genf</option>
+            <option>Kanton Glarus</option>
+            <option>Kanton Graubünden</option>
+            <option>Kanton Jura</option>
+            <option>Kanton Luzern</option>
+            <option>Kanton Neuenburg</option>
+            <option>Kanton Nidwalden</option>
+            <option>Kanton Obwalden</option>
+            <option>Kanton Schaffhausen</option>
+            <option>Kanton Schwyz</option>
+            <option>Kanton Solothurn</option>
+            <option>Kanton St. Gallen</option>
+            <option>Kanton Tessin</option>
+            <option>Kanton Thurgau</option>
+            <option>Kanton Uri</option>
+            <option>Kanton Waadt</option>
+            <option>Kanton Wallis</option>
+            <option>Kanton Zug</option>
+            <option>Kanton Zürich</option>
         </select>
         <input
           type="text"
           placeholder="Name"
-          className="w-full lg:w-[300px] h-14 text-[18px] px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D]  placeholder-[#1C1B1D]"
+          className="w-[270px] md:w-[300px] h-14 text-[18px] px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D]  placeholder-[#1C1B1D]"
           style={{
             fontFamily: "Metropolis",
           }}
@@ -143,14 +172,14 @@ Region und geben Sie Ihren Namen und Email an
         <input
           type="email"
           placeholder="E-Mail"
-          className="w-full lg:w-[300px] h-14 px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] placeholder-[#1C1B1D]"
+          className="w-[270px] md:w-[300px] h-14 px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] placeholder-[#1C1B1D]"
           style={{
             fontFamily: "Metropolis",
           }}
         />
       </div>
       <h2
-        className="text-center text-[#B99B5F] font-[700] text-lg md:text-[48px] md:leading-[55px] mb-2 mt-[160px]"
+        className="text-center text-[#B99B5F] md:block hidden font-[700] text-[24px] leading-[30px] md:text-[48px] md:leading-[55px] mb-2 mt-[160px]"
         style={{
           fontFamily: "Metropolis",
         }}
@@ -158,13 +187,22 @@ Region und geben Sie Ihren Namen und Email an
         Ich interessiere mich für das Dossier <br></br> zu folgendem Thema:
 
       </h2>
-      <div className="py-10 lg:py-20">
-        <div className="flex flex-col gap-6 mt-10 max-w-[1280px] mx-auto items-start sm:items-center">
+      <h2
+        className="text-center text-[#B99B5F] md:hidden block font-[700] text-[24px] leading-[30px] md:text-[48px] md:leading-[55px] mb-2 mt-[160px]"
+        style={{
+          fontFamily: "Metropolis",
+        }}
+      >
+        Ich interessiere mich für das Dossier zu folgendem Thema:
+
+      </h2>
+      <div>
+        <div className="flex md:flex-row flex-col gap-8 md:gap-6 mt-10 w-[340px] md:max-w-[1280px] mx-auto items-start sm:items-center">
           {[
             "Alltagsbegleitung und Besorgungen",
-            "Freizeit und soziale AktivitÃ¤ten",
-            "GesundheitsfÃ¼rsorge",
-            "Haushaltshilfe und Wohnpflege",
+            "Freizeit und soziale Aktivitäten",
+            "Gesundheitsfürsorge",
+            "Haushaltshilfe und Wohnpflege​",
           ].map((labelText, index) => (
             <label
               key={index}
@@ -172,7 +210,7 @@ Region und geben Sie Ihren Namen und Email an
             >
               <input
                 type="checkbox"
-                className="h-5 w-5 border-2 border-gray-400 rounded-sm appearance-none checked:bg-[#B99B5F] checked:border-[#B99B5F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B99B5F]"
+                className="h-[22px] w-[22px] border-2 border-gray-400 rounded-[3px] appearance-none checked:bg-[#B99B5F] checked:border-[#B99B5F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B99B5F]"
               />
               <span>{labelText}</span>
             </label>
