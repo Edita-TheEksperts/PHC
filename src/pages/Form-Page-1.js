@@ -1,6 +1,32 @@
 import Link from "next/link";
+import React, { useState } from 'react';
+
 
 export default function FormPage01() {
+  const [cv, setCv] = useState(null);
+
+  const handleDrop = (event) => {
+    event.preventDefault();
+    const file = event.dataTransfer.files[0];
+    if (file && file.type === "application/pdf") {
+      setCv(file);
+    } else {
+      alert("Only PDF files are allowed.");
+    }
+  };
+
+  const handleDragOver = (event) => {
+    event.preventDefault();
+  };
+
+  const handleChange = (event) => {
+    const file = event.target.files[0];
+    if (file && file.type === "application/pdf") {
+      setCv(file);
+    } else {
+      alert("Only PDF files are allowed.");
+    }
+  };
   return (
     <div className="md:min-h-screen bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
       {/* Back Button */}
@@ -149,10 +175,32 @@ export default function FormPage01() {
     <select
       className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
     >
-      <option>Region</option>
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
+        <option>Kanton Aargau</option>
+            <option>Kanton Appenzell Ausserrhoden</option>
+            <option>Kanton Appenzell Innerrhoden</option>
+            <option>Kanton Basel-Landschaft</option>
+            <option>Kanton Basel-Stadt</option>
+            <option>Kanton Bern</option>
+            <option>Kanton Freiburg</option>
+            <option>Kanton Genf</option>
+            <option>Kanton Glarus</option>
+            <option>Kanton Graubünden</option>
+            <option>Kanton Jura</option>
+            <option>Kanton Luzern</option>
+            <option>Kanton Neuenburg</option>
+            <option>Kanton Nidwalden</option>
+            <option>Kanton Obwalden</option>
+            <option>Kanton Schaffhausen</option>
+            <option>Kanton Schwyz</option>
+            <option>Kanton Solothurn</option>
+            <option>Kanton St. Gallen</option>
+            <option>Kanton Tessin</option>
+            <option>Kanton Thurgau</option>
+            <option>Kanton Uri</option>
+            <option>Kanton Waadt</option>
+            <option>Kanton Wallis</option>
+            <option>Kanton Zug</option>
+            <option>Kanton Zürich</option>
     </select>
   </div>
 
@@ -179,25 +227,41 @@ export default function FormPage01() {
     }}
   />
 
-  {/* CV Upload */}
-  <div
-    className="flex flex-col justify-between items-start w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
-    style={{
-      border: "1px solid #B7B6BA",
-      borderRadius: "8px",
-    }}
-  >
-    <p
-      className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
+<div
+      className="flex flex-col justify-between items-start w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
+      style={{
+        border: "1px solid #B7B6BA",
+        borderRadius: "8px",
+      }}
+      onDrop={handleDrop}
+      onDragOver={handleDragOver}
     >
-      CV hochladen
-    </p>
-    <span
-      className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal"
-    >
-      Optional
-    </span>
-  </div>
+      <p className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal">
+        CV hochladen
+      </p>
+      <span className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal">
+        Optional
+      </span>
+
+      <input
+        type="file"
+        accept=".pdf"
+        onChange={handleChange}
+        style={{ display: 'none' }}
+        id="cv-upload"
+      />
+      <label htmlFor="cv-upload" className="cursor-pointer">
+        {cv ? (
+          <p className="text-[#1C1B1D] font-metropolis text-[14px] leading-[22px]">
+            {cv.name}
+          </p>
+        ) : (
+          <p >
+            
+          </p>
+        )}
+      </label>
+    </div>
 </div>
 
       {/* Submit Button */}
@@ -222,4 +286,3 @@ export default function FormPage01() {
     </div>
   );
 }
-
