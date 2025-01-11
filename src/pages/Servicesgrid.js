@@ -83,7 +83,7 @@ function Servicegrid() {
   ];
 
   return (
-    <div className="py-10 lg:py-20">
+    <div className="mt-[160px] mb-[160px]">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-[0.6rem] px-6">
         {columnsData.map((column, i) => (
           <div key={i} className="rounded-lg flex flex-col h-full">
