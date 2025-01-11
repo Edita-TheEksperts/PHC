@@ -197,7 +197,7 @@ export default function FormPage01() {
 
       </h2>
       <div>
-        <div className="flex md:flex-row flex-col gap-8 md:gap-6 mt-10 w-[340px] md:max-w-[1280px] mx-auto items-start sm:items-center">
+        <div className="flex md:flex-row flex-col gap-8 md:gap-6 mt-10 w-[340px] md:min-w-[1280px] mx-auto items-start md:items-center md:justify-center  ">
           {[
             "Alltagsbegleitung und Besorgungen",
             "Freizeit und soziale Aktivitäten",
