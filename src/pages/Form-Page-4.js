@@ -47,7 +47,7 @@ const FormPage4 = () => {
       {/* Section 1: Logo and Zuruk */}
       <section className="md:block hidden md:flex justify-center items-center pt-[60px] md:pt-[60px]">
       <div className="absolute top-6 left-4 lg:left-[170px]">
-        <Link href="/Registrierung-Jobs">
+        <Link href="/Form-page-3">
           <button
             className="text-white text-[16px] font-[400] inline-flex items-center px-4 py-2 mt-[25px] "
             style={{
@@ -123,7 +123,7 @@ const FormPage4 = () => {
         </div>
 
         <div className="mb-[16px] flex justify-center">
-        <Link href="/Registrierung-Jobs">
+        <Link href="/Form-page-3">
       <p
   className="inline-flex items-center justify-center flex-col px-4 py-2"
   style={{
