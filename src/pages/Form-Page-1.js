@@ -175,7 +175,8 @@ export default function FormPage01() {
     <select
       className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
     >
-        <option>Kanton Aargau</option>
+             <option>Region</option>
+            <option>Kanton Aargau</option>
             <option>Kanton Appenzell Ausserrhoden</option>
             <option>Kanton Appenzell Innerrhoden</option>
             <option>Kanton Basel-Landschaft</option>
@@ -286,3 +287,4 @@ export default function FormPage01() {
     </div>
   );
 }
+
