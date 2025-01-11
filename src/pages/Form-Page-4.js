@@ -22,23 +22,23 @@ const FormPage4 = () => {
     const faqData = [
       {
         question: 'Stundenweise Seniorenbetreuung: Was bedeutet das?',
-        answer: 'Antwort detail 1: Stundenweise Seniorenbetreuung bedeutet, dass qualifiziertes Personal stundenweise zu Ihnen nach Hause kommt, um Senioren bei alltäglichen Aufgaben zu unterstützen.'
+        answer: 'Stundenweise Seniorenbetreuung bezieht sich auf eine Art von Pflege- und Unterstützungsdienst, bei dem Betreuungspersonen für eine bestimmte Anzahl von Stunden pro Tag oder Woche bei hilfsbedürftigen Menschen zu Hause im Einsatz sind. - Flexible Einsatzzeiten Die Betreuung erfolgt nicht rund um die Uhr, sondern für eine im Voraus festgelegte Anzahl von Stunden, die je nach Bedarf variieren kann. Dies kann täglich, mehrmals pro Woche oder auch nur gelegentlich sein. - Individuell angepasste Unterstützung Die Betreuungsleistungen werden auf die individuellen Bedürfnisse zugeschnitten. Dazu können Aufgaben wie Unterstützung bei der Körperpflege, Haushaltsarbeiten, Begleitung zu Arztterminen oder einfach Gesellschaft leisten gehören. - Entlastung für Angehörige Stundenweise Betreuung kann Angehörigen eine dringend benötigte Pause bieten und sie unterstützen, wenn sie selbst Verpflichtungen haben. Es ermöglicht Familienmitgliedern, ihre eigenen Aufgaben und Freizeitaktivitäten zu bewältigen, während sie wissen, dass ihr Familienmitglied bestens versorgt ist. - Erhaltung der Selbstständigkeit Diese Art der stundenweisen Betreuung hilft Senioren, so lange wie möglich in ihrer vertrauten Umgebung zu bleiben. Sie erhalten die Unterstützung, die sie benötigen, ohne vollständig auf Fremdpflege angewiesen zu sein. - Soziale Interaktion Stundenweise Betreuungsmitarbeiter bieten nicht nur praktische Hilfe im eigenen Zuhause, sondern auch soziale Interaktionen, die für das emotionale Wohlbefinden sehr wichtig ist. Gemeinsame Aktivitäten wie Gespräche, Spaziergänge oder Spiele können Einsamkeit und Isolation reduzieren. Insgesamt bietet die stundenweise Seniorenbetreuung eine flexible und bedarfsgerechte Lösung für Menschen und ihre Familien, um Unterstützung und Entlastung im Alltag zu erhalten.'
       },
       {
         question: 'Besteht die Option, das Betreuungspersonal selbst zu wählen?',
-        answer: 'Antwort detail 2: Ja, Sie haben die Möglichkeit, das Betreuungspersonal selbst auszuwählen, basierend auf Ihren Bedürfnissen und Vorlieben.'
+        answer: 'Leider nein, aber wir legen sehr grossen Wert darauf, die passenden Mitarbeiter für Ihre Bedürfnisse zu finden. Unser Ziel ist es, Ihnen eine Betreuungskraft zur Seite zu stellen, die optimal auf Ihre individuellen Anforderungen und Wünsche abgestimmt ist. Wir achten dabei sorgfältig auf Qualifikationen, Erfahrungen und persönliche Eigenschaften, um eine vertrauensvolle und harmonische Betreuung sicherzustellen.'
       },
       {
         question: 'Können die Betreuungszeiten individuell und bedarfsorientiert festgelegt werden?',
-        answer: 'Antwort detail 3: Ja, die Betreuungszeiten können flexibel und nach Ihren individuellen Anforderungen festgelegt werden.'
+        answer: 'Ja, die Betreuungszeiten können online angepasst und ausgewählt werden. Wir benötigen dabei eine Vorlaufzeit von 7 Tagen, um sicherzustellen, dass wir die bestmögliche stundenweise Betreuung für Sie organisieren können. Unsere flexible Planung ermöglicht es Ihnen, die Betreuung nach Ihren individuellen Bedürfnissen zu gestalten und Änderungen rechtzeitig vorzunehmen.'
       },
       {
         question: 'Wann ist eine stundenweise Betreuung ratsam und für wen ist sie besonders geeignet?',
-        answer: 'Antwort detail 4: Stundenweise Betreuung ist ideal für Senioren, die nur an bestimmten Tagen oder zu bestimmten Zeiten Unterstützung benötigen.'
+        answer: 'Eine stundenweise Betreuung ist ratsam, wenn nur zeitweise Unterstützung benötigt wird, zum Beispiel bei der Entlastung von pflegenden Angehörigen oder bei speziellen Aufgaben wie Arztbesuche, Gesellschaft leisten oder Haushaltshilfe. Sie ist besonders geeignet für Senioren, die noch weitgehend selbstständig sind, aber gelegentlich Hilfe und/oder Gesellschaft brauchen.'
       },
       {
         question: 'Wann reicht eine stundenweise Betreuung nicht mehr aus?',
-        answer: 'Antwort detail 5: Wenn ein kontinuierlicher Betreuungsbedarf besteht oder medizinische Hilfe rund um die Uhr erforderlich ist, reicht stundenweise Betreuung nicht aus.'
+        answer: 'Eine stundenweise Betreuung reicht nicht mehr aus, wenn ein Senior umfassendere und kontinuierlichere Unterstützung benötigt, wie bei schwerwiegenden gesundheitlichen Einschränkungen, fortgeschrittener Demenz oder wenn rund um die Uhr Pflege erforderlich ist. In solchen Fällen ist eine intensivere Betreuung und allenfalls auch Pflege notwendig. Wir verfügen über ein grosses Netzwerk von Spitex-Partnern sowie 24 Stunden Betreuungs-Partnern, um auch in solchen Situationen die passende Unterstützung für Sie sicherzustellen.'
       }
     ];
 
@@ -221,3 +221,4 @@ const FormPage4 = () => {
 };
 
 export default FormPage4;
+
