@@ -25,7 +25,7 @@ export default function FormPage01() {
 
     try {
       setLoading(true); // Fillon ngarkimi
-      const response = await fetch("/api/sendEmail", {
+      const response = await fetch("/api/hello", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
