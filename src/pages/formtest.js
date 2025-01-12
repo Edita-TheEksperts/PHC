@@ -4,17 +4,18 @@ export default function FormPage01() {
   const [region, setRegion] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     const data = {
-      name: "Your Name",
-      email: "example@example.com",
-      subject: "Test Subject",
-      message: "This is a test message",
+      name,
+      email,
+      subject: `Region: ${region}`, // Dërgon rajonin si pjesë të subjektit
+      message,
     };
-  
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -23,19 +24,18 @@ export default function FormPage01() {
         },
         body: JSON.stringify(data),
       });
-  
+
       const result = await response.json();
       if (response.ok) {
-        alert(result.message);
+        alert(result.message); // Tregon mesazhin e suksesit nga backend-i
       } else {
-        alert(result.message);
+        alert(result.message); // Tregon mesazhin e gabimit nga backend-i
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("Something went wrong.");
+      alert("Something went wrong. Please try again.");
     }
   };
-  
 
   return (
     <form onSubmit={handleSubmit} className="form-container">
@@ -71,6 +71,17 @@ export default function FormPage01() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Your email"
+          required
+        />
+      </div>
+
+      <div>
+        <label>Message:</label>
+        <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="Your message"
+          rows="4"
           required
         />
       </div>
