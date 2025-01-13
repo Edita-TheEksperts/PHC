@@ -1,6 +1,24 @@
 import Link from "next/link";
+import React, { useState } from 'react';
 import ServicesGrid from "./Servicesgrid";
+
 export default function FormPage01() {
+     const [region, setRegion] = useState("");
+      const [name, setName] = useState("");
+      const [email, setEmail] = useState("");
+      const [isFormValid, setIsFormValid] = useState(false);
+    
+      // Email validation regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+      // Form validation handler
+      const handleValidation = () => {
+        if (region && name && emailRegex.test(email)) {
+          setIsFormValid(true);
+        } else {
+          setIsFormValid(false);
+        }
+      };
   return (
 
     <div className="bg-[#F1F1F1] text-[#B99B5F] min-h-screen p-4 md:p-0">
@@ -127,54 +145,82 @@ export default function FormPage01() {
         </p>
       </section>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-10 ">
-        <select
-          className=" w-[270px] md:w-[300px] h-14  border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] "
-          style={{
-            fontFamily: "Metropolis",
-          }}
-        >
-         <option>Region</option>
-            <option>Kanton Aargau</option>
-            <option>Kanton Appenzell Ausserrhoden</option>
-            <option>Kanton Appenzell Innerrhoden</option>
-            <option>Kanton Basel-Landschaft</option>
-            <option>Kanton Basel-Stadt</option>
-            <option>Kanton Bern</option>
-            <option>Kanton Freiburg</option>
-            <option>Kanton Genf</option>
-            <option>Kanton Glarus</option>
-            <option>Kanton Graubünden</option>
-            <option>Kanton Jura</option>
-            <option>Kanton Luzern</option>
-            <option>Kanton Neuenburg</option>
-            <option>Kanton Nidwalden</option>
-            <option>Kanton Obwalden</option>
-            <option>Kanton Schaffhausen</option>
-            <option>Kanton Schwyz</option>
-            <option>Kanton Solothurn</option>
-            <option>Kanton St. Gallen</option>
-            <option>Kanton Tessin</option>
-            <option>Kanton Thurgau</option>
-            <option>Kanton Uri</option>
-            <option>Kanton Waadt</option>
-            <option>Kanton Wallis</option>
-            <option>Kanton Zug</option>
-            <option>Kanton Zürich</option>
-        </select>
+      {/* Region */}
+  <div
+    className="flex justify-between items-center w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
+    style={{
+      border: "1px solid #B7B6BA",
+      borderRadius: "8px",
+    }}
+  >
+    <select
+  className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
+  required
+  value={region}
+  onChange={(e) => {
+    setRegion(e.target.value);
+    handleValidation();
+  }}
+>
+  <option value="" disabled selected>
+    Region
+  </option>
+  <option>Kanton Aargau</option>
+  <option>Kanton Appenzell Ausserrhoden</option>
+  <option>Kanton Appenzell Innerrhoden</option>
+  <option>Kanton Basel-Landschaft</option>
+  <option>Kanton Basel-Stadt</option>
+  <option>Kanton Bern</option>
+  <option>Kanton Freiburg</option>
+  <option>Kanton Genf</option>
+  <option>Kanton Glarus</option>
+  <option>Kanton Graubünden</option>
+  <option>Kanton Jura</option>
+  <option>Kanton Luzern</option>
+  <option>Kanton Neuenburg</option>
+  <option>Kanton Nidwalden</option>
+  <option>Kanton Obwalden</option>
+  <option>Kanton Schaffhausen</option>
+  <option>Kanton Schwyz</option>
+  <option>Kanton Solothurn</option>
+  <option>Kanton St. Gallen</option>
+  <option>Kanton Tessin</option>
+  <option>Kanton Thurgau</option>
+  <option>Kanton Uri</option>
+  <option>Kanton Waadt</option>
+  <option>Kanton Wallis</option>
+  <option>Kanton Zug</option>
+  <option>Kanton Zürich</option>
+</select>
+
+  </div>
+
         <input
           type="text"
           placeholder="Name"
-          className="w-[270px] md:w-[300px] h-14 text-[18px] px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D]  placeholder-[#1C1B1D]"
+          required
+          className="w-[271px] h-[75px] px-[13px] py-[17px] text-[18px] border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D]  placeholder-[#1C1B1D]"
           style={{
             fontFamily: "Metropolis",
           }}
+          value={name}
+            onChange={(e) => {
+                setName(e.target.value);
+                handleValidation();
+            }}
         />
         <input
           type="email"
           placeholder="E-Mail"
-          className="w-[270px] md:w-[300px] h-14 px-4 border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] placeholder-[#1C1B1D]"
+          required
+          className="w-[271px] h-[75px] px-[13px] py-[17px]  border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] placeholder-[#1C1B1D]"
           style={{
             fontFamily: "Metropolis",
+          }}
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            handleValidation();
           }}
         />
       </div>
@@ -217,9 +263,15 @@ export default function FormPage01() {
           ))}
         </div>
         <div className="flex justify-center mt-10">
-          <Link href="/Form-Page-4">
-            <button
-              className="bg-[#B99B5F] text-white font-bold text-lg md:text-[36px] md:leading-[22px] rounded-[50px] px-[50px] py-[14px]"
+        <Link href={isFormValid ? "/Form-Page-4" : "#"}>
+        <button
+            disabled={!isFormValid}
+
+            className={`${
+                isFormValid
+                  ? "bg-[#04436F] text-[#F5F5F5]"
+                  : "bg-gray-400 text-gray-200"
+              } bg-[#B99B5F] text-white font-bold text-lg md:text-[36px] md:leading-[22px] rounded-[50px] px-[50px] py-[14px]`}
               style={{
                 fontFamily: "Metropolis",
               }}
