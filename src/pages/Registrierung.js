@@ -871,6 +871,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
 
   {/* Button Section */}
   <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
+    <Link href="/Form-page-3">
     <button
       className="md:py-[12px] md:px-[30px] text-[14px] lg:text-[18px] font-[500] text-white bg-[#B99B5F] rounded-[10px] px-4 py-2 "
       style={{
@@ -886,6 +887,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
     >
       Klicken Sie hier, um sich<br></br> unverbindlich zu registrieren und<br></br> über den Start informiert zu werden!  
     </button>
+ </Link>
   </div>
   <p
     className="text-center text-[16px] font-[400] mb-[16px]"
