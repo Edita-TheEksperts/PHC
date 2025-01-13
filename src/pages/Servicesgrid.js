@@ -138,7 +138,7 @@ function Servicegrid() {
                       {item.heading}
                     </span>
                     {item.subItems && (
-                      <ul className="pl-6 mt-2 space-y-1 text-[14px] leading-[24px]">
+                      <ul className="pl-6 mt-2 text-[#5E5E5E] space-y-1 text-[14px] leading-[24px]">
                         {item.subItems.map((subItem, k) => (
                           <li key={k}>• {subItem}</li>
                         ))}
