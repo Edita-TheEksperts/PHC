@@ -27,10 +27,28 @@ export default function FormPage01() {
       alert("Only PDF files are allowed.");
     }
   };
+
+  const [region, setRegion] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  // Email validation regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Form validation handler
+  const handleValidation = () => {
+    if (region && name && emailRegex.test(email)) {
+      setIsFormValid(true);
+    } else {
+      setIsFormValid(false);
+    }
+  };
+  
   return (
-    <div className="bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
+    <div className=" bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
       {/* Back Button */}
-     <section className="md:block hidden md:flex justify-center items-center pt-[25px] md:pt-[25px]">
+      <section className="md:block hidden md:flex justify-center items-center pt-[25px] md:pt-[25px]">
         <div className="absolute top-6 left-4 lg:left-[170px]">
           <Link href="/Registrierung-Jobs">
             <button
@@ -155,7 +173,7 @@ export default function FormPage01() {
 
 
 <div
-  className="flex flex-col md:flex-row justify-between items-center md:w-[1109px] h-[75px] gap-[11px]"
+  className="flex flex-col md:flex-row justify-between items-center gap-[11px] w-full md:w-[1109px] h-auto"
   style={{ opacity: 1 }}
 >
   {/* Region */}
@@ -167,46 +185,61 @@ export default function FormPage01() {
     }}
   >
     <select
-      className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
-    >
-             <option>Region</option>
-            <option>Kanton Aargau</option>
-            <option>Kanton Appenzell Ausserrhoden</option>
-            <option>Kanton Appenzell Innerrhoden</option>
-            <option>Kanton Basel-Landschaft</option>
-            <option>Kanton Basel-Stadt</option>
-            <option>Kanton Bern</option>
-            <option>Kanton Freiburg</option>
-            <option>Kanton Genf</option>
-            <option>Kanton Glarus</option>
-            <option>Kanton Graubünden</option>
-            <option>Kanton Jura</option>
-            <option>Kanton Luzern</option>
-            <option>Kanton Neuenburg</option>
-            <option>Kanton Nidwalden</option>
-            <option>Kanton Obwalden</option>
-            <option>Kanton Schaffhausen</option>
-            <option>Kanton Schwyz</option>
-            <option>Kanton Solothurn</option>
-            <option>Kanton St. Gallen</option>
-            <option>Kanton Tessin</option>
-            <option>Kanton Thurgau</option>
-            <option>Kanton Uri</option>
-            <option>Kanton Waadt</option>
-            <option>Kanton Wallis</option>
-            <option>Kanton Zug</option>
-            <option>Kanton Zürich</option>
-    </select>
+  className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
+  required
+  value={region}
+  onChange={(e) => {
+    setRegion(e.target.value);
+    handleValidation();
+  }}
+>
+  <option value="" disabled selected>
+    Region
+  </option>
+  <option>Kanton Aargau</option>
+  <option>Kanton Appenzell Ausserrhoden</option>
+  <option>Kanton Appenzell Innerrhoden</option>
+  <option>Kanton Basel-Landschaft</option>
+  <option>Kanton Basel-Stadt</option>
+  <option>Kanton Bern</option>
+  <option>Kanton Freiburg</option>
+  <option>Kanton Genf</option>
+  <option>Kanton Glarus</option>
+  <option>Kanton Graubünden</option>
+  <option>Kanton Jura</option>
+  <option>Kanton Luzern</option>
+  <option>Kanton Neuenburg</option>
+  <option>Kanton Nidwalden</option>
+  <option>Kanton Obwalden</option>
+  <option>Kanton Schaffhausen</option>
+  <option>Kanton Schwyz</option>
+  <option>Kanton Solothurn</option>
+  <option>Kanton St. Gallen</option>
+  <option>Kanton Tessin</option>
+  <option>Kanton Thurgau</option>
+  <option>Kanton Uri</option>
+  <option>Kanton Waadt</option>
+  <option>Kanton Wallis</option>
+  <option>Kanton Zug</option>
+  <option>Kanton Zürich</option>
+</select>
+
   </div>
 
   {/* Name */}
   <input
   type="text"
   placeholder="Name"
+  required
   className="w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal placeholder-[#1C1B1D]"
   style={{
     border: "1px solid #B7B6BA",
     borderRadius: "8px",
+  }}
+  value={name}
+  onChange={(e) => {
+    setName(e.target.value);
+    handleValidation();
   }}
 />
 
@@ -215,10 +248,16 @@ export default function FormPage01() {
   <input
     type="email"
     placeholder="E-Mail"
+    required
     className="w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal placeholder-[#1C1B1D]"
     style={{
       border: "1px solid #B7B6BA",
       borderRadius: "8px",
+    }}
+    value={email}
+    onChange={(e) => {
+      setEmail(e.target.value);
+      handleValidation();
     }}
   />
 
@@ -260,10 +299,16 @@ export default function FormPage01() {
 </div>
 
       {/* Submit Button */}
-      <Link href="/Form-Page-2">
+      <Link href={isFormValid ? "/Form-Page-2" : "#"}>
   <button
     type="button"
-    className=" bg-[#04436F] text-[#F5F5F5] font-metropolis font-[700] text-[24px] md:text-[36px] leading-[21.6px] rounded-[8px] md:rounded-full md:mt-[50px] mt-[210px]"
+    disabled={!isFormValid}
+
+    className={`${
+      isFormValid
+        ? "bg-[#04436F] text-[#F5F5F5]"
+        : "bg-gray-400 text-gray-200"
+    } font-metropolis font-[700] text-[24px] md:text-[36px] leading-[21.6px] rounded-[8px] md:rounded-full mt-[50px]`}
     style={{
       display: "inline-flex",
       padding: "18px 50px",
@@ -271,6 +316,8 @@ export default function FormPage01() {
       justifyContent: "center",
       alignItems: "center",
       lineHeight: "21.6px", // Explicit line height
+      cursor: isFormValid ? "pointer" : "not-allowed",
+
     }}
   >
     Weiter geht's!
@@ -281,4 +328,3 @@ export default function FormPage01() {
     </div>
   );
 }
-
