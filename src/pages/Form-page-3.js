@@ -120,7 +120,7 @@ export default function FormPage01() {
             Region und geben Sie Ihren Namen und Email an
         </p>
         <p
-          className="text-[#B99B5F] md:block block font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
+          className="text-[#B99B5F] md:hidden block font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
 
             Region und geben Sie Ihren<br></br> Namen und Email an
