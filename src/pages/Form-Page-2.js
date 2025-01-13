@@ -1,10 +1,17 @@
 import Link from "next/link";
+import { useState } from "react";
+  
 
 export default function FormPage02() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleClick = () => {
+    setIsSubmitted(true); // Update the state to show the thank-you message
+  };
   return (
     <div className="bg-[#F1F1F1] flex flex-col items-center justify-start p-4">
       {/* Back Button and Logo */}
-     <section className="md:block hidden md:flex justify-center items-center pt-[25px] md:pt-[25px]">
+      <section className="md:block hidden md:flex justify-center items-center pt-[25px] md:pt-[25px]">
         <div className="absolute top-6 left-4 lg:left-[170px]">
           <Link href="/Form-Page-1">
             <button
@@ -271,17 +278,22 @@ export default function FormPage02() {
           className="flex flex-col items-start self-stretch text-center border-[1px] rounded-[20px] border-[#B7B6BA6A] p-[20px] placeholder:text-[#04436F] text-[#04436F] font-metropolis text-[20px] font-light leading-[26px] w-full bg-transparent focus:outline-none"
           />
 
-
-        <Link href="/Form-Page-1">
-          <button
-            type="button"
-            className="bg-[#04436F] text-[#F5F5F5] font-metropolis font-bold text-[24px] md:text-[36px] leading-[21.6px] rounded-[8px] md:rounded-full px-8 py-4 mb-[150px]"
-          >
-            Senden
-          </button>
-        </Link>
+<div className="container flex justify-center items-center">
+      {!isSubmitted ? (
+        <button
+          type="button"
+          className="bg-[#04436F] text-[#F5F5F5] font-metropolis font-bold text-[24px] md:text-[36px] leading-[21.6px] rounded-[8px] md:rounded-full px-8 py-4 mb-[150px]"
+          onClick={handleClick} // Trigger state change on click
+        >
+          Senden
+        </button>
+      ) : (
+        <p className="text-[#04436F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[50px] leading-[26.2px] md:leading-[50.2px] text-center">
+          Vielen Dank - Wir melden uns so schnell wie möglich!
+        </p>
+      )}
+    </div>
       </div>
     </div>
   );
 }
-
