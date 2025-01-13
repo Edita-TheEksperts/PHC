@@ -17,7 +17,7 @@ function Servicegrid() {
             "Arzt",
             "Physiotherapien",
             "Behördengänge",
-            "Andere: Freitext",
+            "Andere",
           ],
         },
         {
