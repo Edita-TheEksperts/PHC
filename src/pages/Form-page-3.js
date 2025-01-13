@@ -17,7 +17,7 @@ export default function FormPage01() {
                 padding: "6px 12px",
               }}
             >
-              &larr; Zuruck
+              &larr; Zurück
             </button>
           </Link>
         </div>
@@ -98,7 +98,7 @@ export default function FormPage01() {
                   padding: "6px 12px",
                 }}
               >
-                &larr; Zuruck
+                &larr; Zurück
               </p>
 
             </Link>
