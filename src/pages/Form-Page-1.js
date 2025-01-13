@@ -28,7 +28,7 @@ export default function FormPage01() {
     }
   };
   return (
-    <div className="md:min-h-screen bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
+    <div className="bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
       {/* Back Button */}
      <section className="md:block hidden md:flex justify-center items-center pt-[25px] md:pt-[25px]">
         <div className="absolute top-6 left-4 lg:left-[170px]">
