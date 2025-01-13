@@ -125,7 +125,7 @@ function Servicegrid() {
             {/* Përmbajtja e kolonës */}
             <div
               className={`
-                p-6 bg-[#FAFAFA] text-[#1C1B1D] text-[16px] leading-[24px]
+                p-6 bg-[#FAFAFA] text-[#1C1B1D] text-[16px] leading-[25.6px]
                 flex-grow min-h-[400px] rounded-[12px]
                 ${openIndex === i ? 'block' : 'hidden'}
                 lg:block
@@ -134,11 +134,11 @@ function Servicegrid() {
               <ul className="space-y-4">
                 {column.items.map((item, j) => (
                   <li key={j}>
-                    <span className="font-semibold text-[#B99B5F] text-[16px] leading-[24px]">
+                    <span className="font-semibold text-[#B99B5F] text-[16px] leading-[25.6x]">
                       {item.heading}
                     </span>
                     {item.subItems && (
-                      <ul className="pl-6 mt-2 space-y-1 text-[16px] leading-[24px]">
+                      <ul className="pl-6 mt-2 space-y-1 text-[14px] leading-[24px]">
                         {item.subItems.map((subItem, k) => (
                           <li key={k}>• {subItem}</li>
                         ))}
