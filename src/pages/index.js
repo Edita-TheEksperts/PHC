@@ -478,7 +478,7 @@ export default function Home() {
     </section>
 
     <section
-      className="font-montserat rounded-[20px] max-w-[1290px] relative flex flex-col items-center justify-center bg-cover mb-[100px] md:mb-[160px] hidden md:flex"
+      className="font-montserat rounded-[20px] max-w-[1290px] h-[280px] relative flex flex-col items-center justify-center bg-cover mb-[100px] md:mb-[160px] hidden md:flex"
       style={{
         backgroundImage: "url('/images/White Box 1280.png')", 
         marginLeft: 'auto', 
@@ -756,5 +756,3 @@ export default function Home() {
     </div>
   );
 }
-
-
