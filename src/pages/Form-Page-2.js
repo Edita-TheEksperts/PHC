@@ -114,7 +114,7 @@ export default function FormPage02() {
 
       {/* Heading */}
       <h1
-        className="text-[#04436F] font-metropolis font-[700] text-[48px] leading-[55.2px] text-center md:mb-10 md:mt-[200px]"
+        className="text-[#04436F] font-metropolis font-[700] text-[48px] leading-[55.2px] text-center md:mb-10 md:mt-[80px]"
         style={{
           letterSpacing: "-0.96px", 
         }}
@@ -144,8 +144,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Wir bieten Ihnen eine abwechslungsreiche Teilzeitbeschäftigung auf Stundenlohnbasis. Sie profitieren von viel Flexibilität, einem innovativen Unternehmen mit modernen Strukturen, fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser Backoffice und einem angenehmen Arbeitsklima. Ihr Arbeitsort befindet sich immer in der Nähe Ihres Wohnortes.
-            </p>
+Wir bieten dir eine abwechslungsreiche Teilzeitbeschäftigung auf Stundenlohnbasis. Du profitierst von viel Flexibilität, einem innovativen Unternehmen mit modernen Strukturen, fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser Backoffice und einem angenehmen Arbeitsklima. Dein Arbeitsort befindet sich immer in der Nähe deines Wohnortes.            </p>
             </div>
           </div>
 
@@ -157,7 +156,7 @@ export default function FormPage02() {
                 lineHeight: "297.917%",
               }}
             >
-              Was bringen Sie mit
+              Was bringst du mit
             </h2>
             <div className=" bg-white rounded-lg lg:w-[548px] lg:h-[200px]">
             <p
@@ -166,7 +165,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Als engagierte Persönlichkeit arbeiten Sie selbstständig und effizient und setzen die Firmenphilosophie konsequent um. Ihre Fachkenntnisse ermöglichen es Ihnen, auf die Bedürfnisse der Kunden einzugehen. Gute Deutschkenntnisse sind zwingend erforderlich. Ein eigenes Fahrzeug ist von Vorteil, aber keine Bedingung.
+            Als engagierte Persönlichkeit arbeitest du selbstständig und effizient und setzt die Firmenphilosophie konsequent um. Deine Fachkenntnisse ermöglichen es dir, auf die Bedürfnisse der Kunden einzugehen. Gute Deutschkenntnisse sind zwingend erforderlich. Ein eigenes Fahrzeug ist von Vorteil, aber keine Bedingung.
             </p>
             </div>
           </div>
@@ -180,7 +179,7 @@ export default function FormPage02() {
               lineHeight: "297.917%",
             }}
           >
-            Ihr Aufgabenbereich
+           Dein Aufgabenbereich
           </h2>
           <div className="bg-white rounded-lg">
             <p
@@ -189,8 +188,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-             Sie betreuen fest zugewiesene Privatkunden in Ihrer Region. Je nach Bedarf kann Ihr Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.
-            </p>
+Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann dein Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.            </p>
           </div>
         </div>
       </section>
@@ -213,8 +211,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Wir bieten Ihnen eine abwechslungsreiche Teilzeitbeschäftigung auf Stundenlohnbasis. Sie profitieren von viel Flexibilität, einem innovativen Unternehmen mit modernen Strukturen, fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser Backoffice<br></br> und einem angenehmen Arbeitsklima. Ihr Arbeitsort befindet sich immer in der<br></br> Nähe Ihres Wohnortes.
-            </p>
+Wir bieten dir eine abwechslungsreiche Teilzeitbeschäftigung auf Stundenlohnbasis. Du profitierst von viel Flexibilität, einem innovativen Unternehmen mit modernen Strukturen, fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser Backoffice und einem angenehmen Arbeitsklima. Dein Arbeitsort befindet sich immer in der Nähe deines Wohnortes.            </p>
           </div>
         </div>
 
@@ -225,7 +222,7 @@ export default function FormPage02() {
               lineHeight: "50px",
             }}
           >
-            Was bringen Sie mit
+            Was bringst du mit
           </h2>
           <div className="bg-white rounded-lg">
             <p
@@ -234,8 +231,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Als engagierte Persönlichkeit arbeiten Sie selbstständig und effizient und setzen die Firmenphilosophie konsequent um. Ihre Fachkenntnisse ermöglichen es Ihnen, auf die Bedürfnisse der Kunden einzugehen. Gute Deutschkenntnisse sind zwingend erforderlich. Ein eigenes Fahrzeug ist von Vorteil, aber keine Bedingung.
-            </p>
+Als engagierte Persönlichkeit arbeitest du selbstständig und effizient und setzt die Firmenphilosophie konsequent um. Deine Fachkenntnisse ermöglichen es dir, auf die Bedürfnisse der Kunden einzugehen. Gute Deutschkenntnisse sind zwingend erforderlich. Ein eigenes Fahrzeug ist von Vorteil, aber keine Bedingung.            </p>
           </div>
         </div>
 
@@ -246,7 +242,7 @@ export default function FormPage02() {
               lineHeight: "50px",
             }}
           >
-           Ihr Aufgabenbereich
+           Dein Aufgabenbereich
           </h2>
           <div className="bg-white rounded-lg">
             <p
@@ -255,8 +251,7 @@ export default function FormPage02() {
                 lineHeight: "162.5%",
               }}
             >
-              Sie betreuen fest zugewiesene Privatkunden in Ihrer Region. Je nach Bedarf kann Ihr Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.
-            </p>
+Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann dein Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.            </p>
           </div>
         </div>
 
@@ -270,11 +265,11 @@ export default function FormPage02() {
             letterSpacing: "-0.96px",
           }}
         >
-          Haben Sie noch weitere Fragen?
+          Hast du noch Fragen?
         </h1>
         <input
           type="text"
-          placeholder="Ihre Frage eintippen"
+          placeholder="Deine Fragen eintippen"
           className="flex flex-col items-start self-stretch text-center border-[1px] rounded-[20px] border-[#B7B6BA6A] p-[20px] placeholder:text-[#04436F] text-[#04436F] font-metropolis text-[20px] font-light leading-[26px] w-full bg-transparent focus:outline-none"
           />
 
@@ -282,7 +277,7 @@ export default function FormPage02() {
       {!isSubmitted ? (
         <button
           type="button"
-          className="bg-[#04436F] text-[#F5F5F5] font-metropolis font-bold text-[24px] md:text-[36px] leading-[21.6px] rounded-[8px] md:rounded-full px-8 py-4 mb-[150px]"
+          className="bg-[#04436F] text-[#F5F5F5] font-metropolis font-bold text-[24px] md:text-[32px] leading-[21.6px] rounded-[8px] md:rounded-full px-8 py-4 mb-[150px]"
           onClick={handleClick} // Trigger state change on click
         >
           Senden
