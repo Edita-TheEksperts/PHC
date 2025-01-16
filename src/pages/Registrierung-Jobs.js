@@ -249,7 +249,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                     </p>
 
                     {/* Subheading */}
-                    <h1 className="text-center font-metropolis text-[32px] md:text-[55px] font-[600] leading-[32px] md:leading-[71.5px] mb-4 md:mb-8">
+                    <h1 className="text-center font-metropolis text-[32px] md:text-[55px] font-[600] leading-[32px] md:leading-[71.5px] mb-4 md:mb-2">
                         Deine Chance – Betreuung neu gedacht
                     </h1>
 
