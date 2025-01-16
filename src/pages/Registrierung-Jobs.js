@@ -245,7 +245,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                     {/* Main heading */}
                     <p style={  {background: "linear-gradient(70deg, #B2EAFF 0%, #A9B4B9 75%, rgba(0, 0, 0, 0.00) 100%)",}  
 }className="text-center font-metropolis text-[16px] font-[400] leading-[24px] mb-5 px-2 py-1 rounded-[50px_0px_0px_50px]">
-                        Werde Teil von etwas grösser.
+                        Werde Teil von etwas Grossem.
                     </p>
 
                     {/* Subheading */}
