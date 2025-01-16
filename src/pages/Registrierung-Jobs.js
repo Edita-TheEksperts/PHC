@@ -553,8 +553,8 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                     {/* Call to Action */}
                     <div
                 className="flex flex-col items-start rounded-[50px_0px_0px_50px] p-[4px_70px_4px_10px]"
-                style={{
-                    background: "linear-gradient(93deg, #04436F 60%, rgba(0, 0, 0, 0.00) 100%)",
+               style={{
+                    background: "linear-gradient(92deg, #04436F 85.1%, rgba(255, 255, 255, 0.00) 99.45%)",
                 }}
                 >
                 <p className="text-[#FAFCFF] font-metropolis text-[16px] font-[400] leading-[25.6px] whitespace-nowrap">
