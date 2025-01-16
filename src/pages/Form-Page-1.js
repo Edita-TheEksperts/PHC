@@ -157,8 +157,7 @@ export default function FormPage01() {
     letterSpacing: "-0.96px", // Adjusted letter spacing
   }}
 >
-  Wählen Sie die gewünschte Region <br />
-  und geben Sie Ihren Namen und Email an
+Wähle deine gewünschte Region in der du<br></br> arbeiten möchtest und gib deinen Namen<br></br> und E-Mail Adresse an
 </h1>
 
 <h1
@@ -167,8 +166,7 @@ export default function FormPage01() {
     letterSpacing: "-0.96px", // Adjusted letter spacing
   }}
 >
-  Wählen Sie die gewünschte  <br /> Region
-  und geben Sie Ihren  <br /> Namen und Email an
+Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest und gib deinen<br></br> Namen und E-Mail Adresse an
 </h1>
 
 
@@ -271,10 +269,10 @@ export default function FormPage01() {
       onDragOver={handleDragOver}
     >
       <p className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal">
-        CV hochladen
+      Lebenslauf
       </p>
       <span className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal">
-        Optional
+      Zwingend
       </span>
 
       <input
