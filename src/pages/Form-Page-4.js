@@ -157,7 +157,7 @@ const FormPage4 = () => {
   <p
     className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
   >
-    Vielen Dank
+    Vielen Dank!
   </p>
   <p
     className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
