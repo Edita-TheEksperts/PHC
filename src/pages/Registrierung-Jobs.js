@@ -335,7 +335,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                                 <h3 className="text-[28px] text-[#04436F] font-metropolis font-[600] leading-[33.6px] mb-2">
                                 Flexibilität
                                 </h3>
-                                <p className="text-[16px] text-[#04436F] font-metropolis font-normal leading-[16px]">
+                                <p className="text-[16px] text-[#1C1B1D] font-metropolis font-normal leading-[16px]">
                                 Plane deine Einsätze,<br></br> wie es dir passt.
                                 </p>
                                 </div>
@@ -375,7 +375,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                                 <h3 className="text-[28px] text-[#04436F] font-metropolis font-[600] leading-[33.6px] mb-2">
                                 Fairer Verdienst
                                 </h3>
-                                <p className="text-[16px] text-[#04436F] font-metropolis font-normal leading-[18px]">
+                                <p className="text-[16px] text-[#1C1B1D] font-metropolis font-normal leading-[18px]">
                                 Transparent und pünktlich.
                                 </p>
                                 </div>
@@ -395,7 +395,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                                 <h3 className="text-[28px] text-[#04436F] font-metropolis font-[600] leading-[33.6px] mb-2">
                                 Unterstützung
                                 </h3>
-                                <p className="text-[16px] text-[#04436F] font-metropolis font-normal leading-[18px]">
+                                <p className="text-[16px] text-[#1C1B1D] font-metropolis font-normal leading-[18px]">
                                 Wir kümmern uns um die Organisation – du konzentrierst dich auf die Betreuung.
                                 </p>
                                 </div>
@@ -615,7 +615,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#04436F] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#1C1B1D] font-metropolis text-[16px] font-normal leading-[16px]">
                             Deine Fürsorge macht den Unterschied.
                             </p>
                         </div>
@@ -645,11 +645,11 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         <div>
                             {/* Title */}
                             <h3 className="text-[#04436F] font-metropolis text-[24px] font-semibold leading-[24px] mb-2">
-                            Erfahren und motiviert
+                            Erfahren und<br></br> motiviert
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#04436F] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#1C1B1D] font-metropolis text-[16px] font-normal leading-[16px]">
                             Ob Profi oder Quereinsteiger –<br></br> wir bringen dich weiter. 
                             </p>
                         </div>
@@ -693,7 +693,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#04436F] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#1C1B1D] font-metropolis text-[16px] font-normal leading-[16px]">
                             Du bestimmst, wann und wo du arbeitest.
                             </p>
                         </div>
