@@ -127,21 +127,21 @@ export default function FormPage01() {
 
       <section className="flex flex-col justify-center items-center md:pt-[160px] text-center mb-[16px]">
         <p
-          className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
+          className="md:block hidden text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
-          Wählen Sie die gewünschte
+          Wählen Sie die gewünschte Region
         </p>
         <p
           className="text-[#B99B5F] md:block hidden font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
 
-            Region und geben Sie Ihren Namen und Email an
+        und geben Sie Ihre E-Mail Adresse an
         </p>
         <p
           className="text-[#B99B5F] md:hidden block font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
 
-            Region und geben Sie Ihren<br></br> Namen und Email an
+Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Adresse an
         </p>
       </section>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-10 ">
@@ -230,7 +230,7 @@ export default function FormPage01() {
           fontFamily: "Metropolis",
         }}
       >
-        Ich interessiere mich für das Dossier <br></br> zu folgendem Thema:
+       Ich interessiere mich <br></br>für folgende Themen
 
       </h2>
       <h2
@@ -239,7 +239,7 @@ export default function FormPage01() {
           fontFamily: "Metropolis",
         }}
       >
-        Ich interessiere mich für das Dossier zu folgendem Thema:
+        Ich interessiere mich für folgende Themen
 
       </h2>
       <div>
@@ -248,7 +248,7 @@ export default function FormPage01() {
             "Alltagsbegleitung und Besorgungen",
             "Freizeit und soziale Aktivitäten",
             "Gesundheitsfürsorge",
-            "Haushaltshilfe und Wohnpflege​",
+            "Haushaltshilfe und Wohnpflege​​",
           ].map((labelText, index) => (
             <label
               key={index}
