@@ -76,5 +76,20 @@ body {
   font-style: normal;
 }
 
+.bullet {
+  position: relative;
+  margin-left: 10px; /* Align the text */
+  padding-left: 15px; /* Space for the bullet */
+  font-weight: 600; /* Make the heading bold */
+}
+
+.bullet::before {
+  content: '•'; /* Bullet point */
+  position: absolute;
+  left: 0;
+  color: #B99B5F; /* Bullet color */
+  font-size: 1.2rem; /* Bullet size */
+  font-weight: bold;
+}
 
 
