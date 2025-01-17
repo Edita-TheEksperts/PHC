@@ -153,7 +153,7 @@ const FormPage4 = () => {
       </section>
       
 
-      <section className="flex flex-col justify-center items-center md:pt-[160px] text-center">
+      <section className="flex flex-col justify-center items-center md:pt-[100px] text-center">
   <p
     className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
   >
@@ -210,7 +210,7 @@ const FormPage4 = () => {
                 type="text"
                 value={question}
                 onChange={handleInputChange}
-                placeholder="Ihre Frage eintippen"
+                placeholder="Hier Ihre Fragen eintippen"
                 className="text-center focus:outline-none text-[#B99B5F] w-full md:w-[890px] px-4 py-4 border rounded-[20px] mb-4 placeholder:text-[#B99B5F] placeholder:font-metropolis placeholder:text-[20px] placeholder:font-light placeholder:leading-[26px]"
                 />
 
@@ -219,7 +219,7 @@ const FormPage4 = () => {
       {!isSubmitted ? (
         <button
           type="button"
-          className="bg-[#B99B5F] text-[#F5F5F5] font-metropolis font-bold text-[24px] md:text-[36px] leading-[21.6px] rounded-[8px] md:rounded-full px-8 py-4 md:mb-[150px]"
+          className="bg-[#B99B5F] text-[#F5F5F5] font-metropolis font-bold text-[24px] md:text-[20px] leading-[21.6px] rounded-[8px] md:rounded-full px-8 py-4"
           onClick={handleClick} // Trigger state change on click
         >
           Senden
@@ -237,4 +237,3 @@ const FormPage4 = () => {
 };
 
 export default FormPage4;
-
