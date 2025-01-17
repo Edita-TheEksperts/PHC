@@ -28,7 +28,28 @@ const FormPage4 = () => {
     const faqData = [
       {
         question: 'Stundenweise Seniorenbetreuung: Was bedeutet das?',
-        answer: 'Stundenweise Seniorenbetreuung bezieht sich auf eine Art von Pflege- und Unterstützungsdienst, bei dem Betreuungspersonen für eine bestimmte Anzahl von Stunden pro Tag oder Woche bei hilfsbedürftigen Menschen zu Hause im Einsatz sind. - Flexible Einsatzzeiten Die Betreuung erfolgt nicht rund um die Uhr, sondern für eine im Voraus festgelegte Anzahl von Stunden, die je nach Bedarf variieren kann. Dies kann täglich, mehrmals pro Woche oder auch nur gelegentlich sein. - Individuell angepasste Unterstützung Die Betreuungsleistungen werden auf die individuellen Bedürfnisse zugeschnitten. Dazu können Aufgaben wie Unterstützung bei der Körperpflege, Haushaltsarbeiten, Begleitung zu Arztterminen oder einfach Gesellschaft leisten gehören. - Entlastung für Angehörige Stundenweise Betreuung kann Angehörigen eine dringend benötigte Pause bieten und sie unterstützen, wenn sie selbst Verpflichtungen haben. Es ermöglicht Familienmitgliedern, ihre eigenen Aufgaben und Freizeitaktivitäten zu bewältigen, während sie wissen, dass ihr Familienmitglied bestens versorgt ist. - Erhaltung der Selbstständigkeit Diese Art der stundenweisen Betreuung hilft Senioren, so lange wie möglich in ihrer vertrauten Umgebung zu bleiben. Sie erhalten die Unterstützung, die sie benötigen, ohne vollständig auf Fremdpflege angewiesen zu sein. - Soziale Interaktion Stundenweise Betreuungsmitarbeiter bieten nicht nur praktische Hilfe im eigenen Zuhause, sondern auch soziale Interaktionen, die für das emotionale Wohlbefinden sehr wichtig ist. Gemeinsame Aktivitäten wie Gespräche, Spaziergänge oder Spiele können Einsamkeit und Isolation reduzieren. Insgesamt bietet die stundenweise Seniorenbetreuung eine flexible und bedarfsgerechte Lösung für Menschen und ihre Familien, um Unterstützung und Entlastung im Alltag zu erhalten.'
+        answer: (
+          <div className='text-[16px] font-[300] leading-[26px] text-[#B99B5F]'>
+            <p>
+            Stundenweise Seniorenbetreuung bezieht sich auf eine Art von Pflege- und Unterstützungsdienst, bei dem Betreuungspersonen für eine bestimmte Anzahl von Stunden pro Tag oder Woche bei hilfsbedürftigen Menschen zu Hause im Einsatz sind.
+            </p>
+            <p className='bullet mt-2'>Soziale Interaktion</p>
+            <p className='ml-6'>
+            Stundenweise Betreuungsmitarbeiter bieten nicht nur praktische Hilfe im eigenen Zuhause, sondern auch soziale Interaktionen, die für das emotionale Wohlbefinden sehr wichtig ist. Gemeinsame Aktivitäten wie Gespräche, Spaziergänge oder Spiele können Einsamkeit und Isolation reduzieren. Insgesamt bietet die stundenweise Seniorenbetreuung eine flexible und bedarfsgerechte Lösung für Menschen und ihre Familien, um Unterstützung und Entlastung im Alltag zu erhalten.           
+            </p>
+            <p className='bullet ml-6 mt-2'>Erhaltung der Selbstständigkeit</p>
+            <p className='ml-6'>
+            Diese Art der stundenweisen Betreuung hilft Senioren, so lange wie möglich in ihrer vertrauten Umgebung zu bleiben. Sie erhalten die Unterstützung, die sie benötigen, ohne vollständig auf Fremdpflege angewiesen zu sein.            </p>
+            <p className='bullet ml-6 mt-2'>Entlastung für Angehörige</p>
+            <p className='ml-6'>
+            Stundenweise Betreuung kann Angehörigen eine dringend benötigte Pause bieten und sie unterstützen, wenn sie selbst Verpflichtungen haben. Es ermöglicht Familienmitgliedern, ihre eigenen Aufgaben und Freizeitaktivitäten zu bewältigen, während sie wissen, dass ihr Familienmitglied bestens versorgt ist.            </p>
+            <p className='bullet ml-6 mt-2'>Individuell angepasste Unterstützung</p>
+            <p className='ml-6'>
+            Die Betreuungsleistungen werden auf die individuellen Bedürfnisse zugeschnitten. Dazu können Aufgaben wie Unterstützung bei der Körperpflege, Haushaltsarbeiten, Begleitung zu Arztterminen oder einfach Gesellschaft leisten gehören.            </p>
+            <p className='bullet ml-6 mt-2'>Flexible Einsatzzeiten</p>
+            <p className='ml-6'>Die Betreuung erfolgt nicht rund um die Uhr, sondern für eine im Voraus festgelegte Anzahl von Stunden, die je nach Bedarf variieren kann. Dies kann täglich, mehrmals pro Woche oder auch nur gelegentlich sein.</p>
+          </div>
+        ),
       },
       {
         question: 'Besteht die Option, das Betreuungspersonal selbst zu wählen?',
