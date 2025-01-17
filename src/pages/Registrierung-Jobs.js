@@ -1022,7 +1022,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
       lineHeight: "33.6px", // 120%
     }}
   >
-    Flexible Arbeitszeiten.
+    Flexible Arbeitszeiten
   </p>
 </div>
 
@@ -1052,7 +1052,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
       
     }}
   >
-    Faire Bezahlung und transparente Abrechnung. 
+    Faire Bezahlung und transparente Abrechnung
   </p>
 </div>
 
@@ -1099,7 +1099,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
       lineHeight: "33.6px", // 120%
     }}
   >
-  Einfache Organisation <br></br> <p className='ml-[4px]'>über unsere Plattform. </p>
+  Einfache Organisation <br></br> <p className='ml-[4px]'>über unsere Plattform </p>
   </p>
   
 </div>
@@ -1190,7 +1190,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
       minWidth:"350 px",// 120%
     }}
   >
-    Wertvolle Erfahrung in einem sinnvollen Beruf. 
+    Wertvolle Erfahrung in einem sinnvollen Beruf
   </p>
 </div>
 
