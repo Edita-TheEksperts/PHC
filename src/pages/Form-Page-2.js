@@ -119,7 +119,7 @@ export default function FormPage02() {
           letterSpacing: "-0.96px", 
         }}
       >
-        Vielen Dank <br />
+        Vielen Dank! <br />
         Wir melden uns so schnell wie möglich
       </h1>
 
