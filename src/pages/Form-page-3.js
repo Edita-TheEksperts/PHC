@@ -230,7 +230,7 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
           fontFamily: "Metropolis",
         }}
       >
-       Ich interessiere mich <br></br>für folgende Themen
+       Ich interessiere mich für folgende Themen
 
       </h2>
       <h2
