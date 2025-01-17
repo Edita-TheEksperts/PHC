@@ -163,14 +163,14 @@ export default function Home() {
           Bewirb Dich jetzt und werde Teil der Prime Home Care AG
           </p>
           <Link href="/Registrierung-Jobs">
-      <button className="bg-white text-[#04436F] text-[18px] leading-[21px] rounded-[50px] py-[12px] px-[20px] font-[500]">
+      <button className="bg-white text-[#04436F] text-[18px] leading-[21px] rounded-[50px] mt-[42px] py-[12px] px-[20px] font-[500]">
         weiter
       </button>
     </Link>
         </div>
 
         {/* Second Button */}
-        <div className="flex md:flex-col justify-center items-center md:items-start bg-[#B99B5F] text-white md:w-[608px] md:h-[240px] rounded-[10px] md:rounded-[37px] px-[10px] py-[30px] md:px-[40px] md:py-[52px] gap-4">
+        <div className="flex md:flex-col justify-center items-center md:items-start bg-[#B99B5F] text-white md:w-[608px] md:h-[240px] rounded-[10px] md:rounded-[37px] px-[10px] py-[30px] md:px-[40px] md:py-[52px] gap-2">
           <p className="text-[24px] md:text-[36px] font-[600] leading-[32px] md:leading-[52px]">
           Stundenweise Betreuung durch die Prime Home Care AG organisieren
           </p>
@@ -558,14 +558,14 @@ export default function Home() {
           Bewirb Dich jetzt und werde Teil der Prime Home Care AG
           </p>
           <Link href="/Registrierung-Jobs">
-      <button className="bg-white text-[#04436F] text-[18px] leading-[21px] rounded-[50px] py-[12px] px-[20px] font-[500]">
+      <button className="bg-white text-[#04436F] text-[18px] leading-[21px] mt-[42px] rounded-[50px] py-[12px] px-[20px] font-[500]">
         weiter
       </button>
     </Link>
         </div>
 
         {/* Second Button */}
-        <div className="flex md:flex-col justify-center items-center md:items-start bg-[#B99B5F] text-white md:w-[608px] md:h-[240px] rounded-[10px] md:rounded-[37px] px-[10px] py-[30px] md:px-[40px] md:py-[52px] gap-4">
+        <div className="flex md:flex-col justify-center items-center md:items-start bg-[#B99B5F] text-white md:w-[608px] md:h-[240px] rounded-[10px] md:rounded-[37px] px-[10px] py-[30px] md:px-[40px] md:py-[52px] gap-2">
           <p className="text-[24px] md:text-[36px] font-[600] leading-[32px] md:leading-[52px]">
           Stundenweise Betreuung durch die Prime Home Care AG organisieren
           </p>
