@@ -361,7 +361,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
     marginBottom: "20px", // Added to match your previous margin-bottom style
   }}
 >
-  Prime Home Care AG – Betreuung neu gedacht. <br />
+  Prime Home Care AG – Betreuung neu gedacht<br />
   Unsere volldigitale Online-Plattform bietet Ihnen genau die Unterstützung,
   die Sie brauchen – stundenweise, flexibel und in bester Qualität. Egal, ob
   Sie Entlastung im Alltag suchen, Unterstützung für Ihre Liebsten oder
@@ -707,7 +707,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
     background: "linear-gradient(100deg, #B99B5F 0%, rgba(185, 155, 95, 0.51) 100%)",
   }}
 >
-  In 3 einfachen Schritten zu Ihrer Betreuung:
+  In 3 einfachen Schritten zu Ihrer Betreuung
 </h2>
 
 
