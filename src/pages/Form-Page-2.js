@@ -251,7 +251,7 @@ Als engagierte Persönlichkeit arbeitest du selbstständig und effizient und set
                 lineHeight: "162.5%",
               }}
             >
-Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann dein Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.            </p>
+Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann dein Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.</p>
           </div>
         </div>
 
@@ -270,7 +270,7 @@ Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann 
         <input
           type="text"
           placeholder="Deine Fragen eintippen"
-          className="flex flex-col items-start self-stretch text-center border-[1px] rounded-[20px] border-[#B7B6BA6A] p-[20px] placeholder:text-[#04436F] text-[#04436F] font-metropolis text-[20px] font-light leading-[26px] w-full bg-transparent focus:outline-none"
+          className="flex flex-col items-start self-stretch text-center border-[1px] rounded-[20px] border-[#B7B6BA6A] p-[20px] placeholder:text-[#04436F] text-[#04436F] font-metropolis text-[20px] font-light leading-[26px] w-full md:w-[826px] bg-transparent focus:outline-none"
           />
 
 <div className="container flex justify-center items-center">
