@@ -47,7 +47,7 @@ export default function Home() {
 
   {/* Text Content */}
   <div
-    className="absolute top-[30%] right-[5%] flex flex-col items-start text-[#F1F1F1]"
+    className="absolute top-[26%] right-[8%] flex flex-col items-start text-[#F1F1F1]"
     style={{
       width: "587px",
       height: "449px",
@@ -92,13 +92,13 @@ export default function Home() {
 <p
   className="font-metropolis font-normal text-[#F1F1F1]"
   style={{
-    fontSize: "20px", // var(--font-size-16, 16px)
+    fontSize: "20px", 
     fontStyle: "normal",
     fontWeight: "400",
-    lineHeight: "25.6px", // var(--line-height-25_6, 25.6px)
+    lineHeight: "25.6px", 
   }}
 >
-  Flexible Betreuung – Ihre Unterstützung, genau wann Sie sie brauchen!
+Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
 </p>
 
 
@@ -205,18 +205,18 @@ export default function Home() {
 
   {/* Subheading */}
   <p
-    className="text-[#B99B5F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-1"
+    className="text-[#B99B5F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-[12px]"
     style={{
       fontWeight: "400",
     }}
   >
-    Seien Sie unter den Ersten, die von unserer<br></br> innovativen Betreuung profitieren. 
+    Seien Sie unter den Ersten, die von unserer<br></br> innovativen Betreuung profitieren 
   </p>
 
   {/* Button */}
   <Link href="/Form-page-3">
   <button
-    className="px-8 py-3 text-white font-metropolis text-[20px] font-medium leading-[21.6px] bg-[#B99B5F] rounded-full mt-[36px] "
+    className="px-8 py-3 text-white font-metropolis text-[20px] font-medium leading-[21.6px] bg-[#B99B5F] rounded-full mt-[40px] "
     style={{
       borderRadius: "50px",
     }}
@@ -266,7 +266,7 @@ export default function Home() {
       lineHeight: '25.6px', // 160%
     }}
   >
-Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. </p>
+Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p>
 
   {/* Button Section */}
   <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
@@ -337,7 +337,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
     justifyContent: "center",
     flexShrink: 0,
     alignSelf: "stretch",
-    marginBottom: "20px", // As per previous code
+    marginBottom: "24px", // As per previous code
   }}
 >
   Was macht uns besonders?
@@ -358,7 +358,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
     flexShrink: 0,
     fontStyle: "normal",
     color: "#B99B5F",
-    marginBottom: "20px", // Added to match your previous margin-bottom style
+    marginBottom: "40px", // Added to match your previous margin-bottom style
   }}
 >
   Prime Home Care AG – Betreuung neu gedacht<br />
@@ -700,7 +700,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
   {/* Right Side - Text Section */}
   <div className="flex flex-col md:w-[563px] text-left mt-[100px]">
   <h2
-  className="text-[#FAFAFA] w-[499px] font-metropolis text-[32px] font-bold leading-[32px] mb-[30px] flex flex-col items-start px-[14px] py-[6px] rounded-[50px] bg-gradient-to-r from-[#B99B5F] to-[#B99B5F] bg-opacity-[0.51]"
+  className="text-[#FAFAFA] w-[499px] font-metropolis text-[32px] font-bold leading-[32px] mb-[16px] flex flex-col items-start px-[14px] py-[6px] rounded-[50px] bg-gradient-to-r from-[#B99B5F] to-[#B99B5F] bg-opacity-[0.51]"
   style={{
     fontFamily: "Metropolis",
     lineHeight: "100%",
@@ -712,7 +712,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
 
 
 <h3
-  className="text-[#B99B5F] font-metropolis text-[48px] font-semibold leading-[71.5px] mb-[30px]"
+  className="text-[#B99B5F] font-metropolis text-[48px] font-semibold leading-[71.5px] mb-[16px]"
   style={{
     fontFamily: "Metropolis",
     fontSize: "48px",
@@ -724,19 +724,19 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
 </h3>
 
 
-    <ul className="space-y-6 text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px]">
+    <ul className="space-y-[30px] text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px]">
       <li>
-        <strong className="text-white text-[24px] text-[700] bg-[#B99B5F] rounded-[50px] px-[20px] py-[10px]">Wunschzeit eingeben</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wählen Sie Datum, Uhrzeit, Dauer und Regelmässigkeit online aus.</p>
+        <strong className="text-white text-[24px] text-[700] bg-[#B99B5F] rounded-[50px] px-[20px] py-[7px]">Wunschzeit eingeben</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wählen Sie Datum, Uhrzeit, Dauer und Regelmässigkeit online aus</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[24px] text-[700] rounded-[50px] px-[20px] py-[10px]">Betreuungsperson auswählen</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
+        <strong className="text-white bg-[#B99B5F] text-[24px] text-[700] rounded-[50px] px-[20px] py-[7px]">Betreuungsperson auswählen</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[24px] text-[700] rounded-[50px] px-[20px] py-[10px]">Betreuung geniessen</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Unser Team kümmert sich um den Rest – einfach, sicher und zuverlässig.</p>
+        <strong className="text-white bg-[#B99B5F] text-[24px] text-[700] rounded-[50px] px-[20px] py-[7px]">Betreuung geniessen</strong> <br></br> <p className='mt-2 ml-4 text-[24px] text-[500] text-[#B99B5F]'>Unser Team kümmert sich um den Rest – einfach, sicher und zuverlässig</p>
       </li>
     </ul>
-    <p className="text-[#B99B5F] font-metropolis text-[24px] font-normal leading-[26px] mt-[40px] ml-3">
-  Alles direkt über unsere benutzerfreundliche Plattform.
+    <p className="text-[#B99B5F] font-metropolis text-[24px] font-normal leading-[26px] mt-[60px] ml-3">
+    Alles direkt über unsere benutzerfreundliche online Plattform.
 </p>
   </div>
 
@@ -926,18 +926,18 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
 
   {/* Subheading */}
   <p
-    className="text-[#B99B5F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-1"
+    className="text-[#B99B5F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-[12px]"
     style={{
       fontWeight: "400",
     }}
   >
-    Seien Sie unter den Ersten, die von unserer<br></br> innovativen Betreuung profitieren. 
+    Seien Sie unter den Ersten, die von unserer<br></br> innovativen Betreuung profitieren 
   </p>
 
   {/* Button */}
   <Link href="/Form-page-3">
   <button
-    className="px-8 py-3 text-white font-metropolis text-[20px] font-medium leading-[21.6px] bg-[#B99B5F] rounded-full mt-[36px] "
+    className="px-8 py-3 text-white font-metropolis text-[20px] font-medium leading-[21.6px] bg-[#B99B5F] rounded-full mt-[40px] "
     style={{
       borderRadius: "50px",
     }}
@@ -987,7 +987,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
       lineHeight: '25.6px', // 160%
     }}
   >
-Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. </p>
+Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p>
 
   {/* Button Section */}
   <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
@@ -1064,6 +1064,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
                 fontFamily: "Metropolis",
                 fontStyle: 'italic',
                 lineHeight: "30.8px",
+                wordSpacing: "12px",
                 }}
             >
                 Einfach. Flexibel. Digital.
@@ -1072,7 +1073,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren. <
 
             {/* Right Section */}
             <div
-        className="flex flex-col mt-[25px] items-left text-left gap-4"
+        className="flex flex-col mt-[25px] items-left text-left gap-6"
         style={{
             color: "#B99B5F",
             fontFamily: "Metropolis",
