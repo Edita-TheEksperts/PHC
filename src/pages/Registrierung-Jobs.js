@@ -417,18 +417,18 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
 
                     {/* Right Content */}
-                    <div className="flex flex-col gap-6 max-w-[600px]">
+                    <div className="flex flex-col gap-[30px] max-w-[600px]">
                         {/* Title */}
-                        <h2 className="text-[#04436F] font-metropolis text-[55px] font-semibold leading-[61.5px]">
+                        <h2 className="text-[#04436F] font-metropolis md:mb-[-30px] text-[55px] font-semibold leading-[61.5px]">
                         Wen suchen wir?
                     </h2>
                         {/* Subtitle */}
-                        <p className="text-[#04436F] font-metropolis text-[24px] font-normal leading-[40px]">
-                        Wir suchen engagierte Menschen, die Betreuung mit Leidenschaft und Herz leisten möchten.
+                        <p className="text-[#04436F] font-metropolis text-[24px] font-normal leading-[40px] w-[687px]">
+                        Wir suchen engagierte Menschen, die Betreuung mit Leidenschaft und Herz leisten möchten. 
                     </p>
 
                         {/* Points */}
-                        <ul className="flex flex-col gap-6">
+                        <ul className="flex flex-col gap-[30px]">
                         {/* Point 1 */}
                         <li className="flex items-start gap-4">
                     {/* Icon Container */}
@@ -456,7 +456,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         </div>
 
                         {/* Text Content */}
-                        <div className='w-[550px]'>
+                        <div className='w-[550px] space-y-[6px]'>
                             {/* Title */}
                             <h3 className="text-[#04436F] font-metropolis text-[24px] font-semibold leading-[34px]">
                             Empathisch und zuverlässig
@@ -490,7 +490,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         </div>
 
                         {/* Text Content */}
-                        <div className='w-[550px]'>
+                        <div className='w-[550px] space-y-[6px]'>
                             {/* Title */}
                             <h3 className="text-[#04436F] font-metropolis text-[24px] font-semibold leading-[34px]">
                             Erfahren und motiviert
@@ -534,7 +534,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         </div>
 
                         {/* Text Content */}
-                        <div className='w-[550px]'>
+                        <div className='w-[550px] space-y-[6px]'>
                             {/* Title */}
                             <h3 className="text-[#04436F] font-metropolis text-[24px] font-semibold leading-[34px]">
                             Mobil und flexibel
@@ -551,9 +551,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
                     {/* Call to Action */}
                     <div
-                className="md:w-[610px] flex flex-col items-start rounded-[50px_0px_0px_50px] p-[4px_70px_4px_10px]"
+                className="md:w-[620px] flex flex-col items-start rounded-[50px_0px_0px_50px] p-[4px_70px_4px_10px]"
                 style={{
-                    background: "linear-gradient(92deg, #04436F 85.9%, rgba(255, 255, 255, 0.00) 99.95%)",
+                    background: "linear-gradient(92deg, #04436F 85.1%, rgba(255, 255, 255, 0.00) 99.45%)",
                 }}
                 >
                 <p className="text-[#FAFCFF] font-metropolis text-[16px] font-[400] leading-[25.6px] whitespace-nowrap">
