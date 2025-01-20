@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <div className="bg-[#F1F1F1] p-4">
-          <section className="md:block hidden relative max-w-[1300px] h-[800px] mx-auto mt-2 md:mt-[20px] lg:mb-[160px]">
+          <section className="lg:block hidden relative max-w-[1300px] h-[800px] mx-auto mt-2 md:mt-[20px] lg:mb-[160px]">
                    {/* Logo Positioned on Top Left */}
                    <div className="absolute top-[5px] left-[5px] md:top-[12px] md:left-[58px] z-10">
                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="79" viewBox="0 0 160 79" fill="none">
@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
                  </section>
 
-                 <section className="md:hidden block relative lg:max-w-[1300px] h-[690px] md:h-[800px] mx-auto mt-2 mb-[160px]">
+                 <section className="lg:hidden block relative lg:max-w-[1300px] h-[690px] md:h-[800px] mx-auto mt-2 mb-[160px]">
   {/* Logo Positioned on Top Center */}
   <div className="absolute top-0 left-0 right-0 flex justify-center items-center z-10">
   <svg xmlns="http://www.w3.org/2000/svg" width="107" height="52" viewBox="0 0 107 52" fill="none">
@@ -107,11 +107,11 @@ export default function Home() {
   </div>
 
   {/* Background Image */}
-  <div className="absolute w-[392px] h-[625px] mt-[70px]">
+  <div className="absolute w-[392px] md:w-auto h-[625px] mt-[70px]">
     <img
       src="/images/mobile2.png"
       alt="Hero Image"
-      className="rounded-[20px] bg-[#F1F1F1]"
+      className="rounded-[20px] bg-[#F1F1F1] w-[392px] md:w-[1000px] md:h-[725px]"
     />
   </div>
 
@@ -126,11 +126,11 @@ export default function Home() {
                     Ab Frühsommer 2025
                     </p>
 
-      <h2 className="md:hidden block mb-[8px] text-[32px] leading-[32px] font-[600]">
+      <h2 className="lg:hidden block mb-[8px] text-[32px] leading-[32px] font-[600]">
       Bewirb Dich jetzt und <br></br> werde Teil der Prime<br></br> Home Care AG
       </h2>
 
-      <p className="md:hidden block text-[20px] font-[400] leading-[20px] text-[#F1F1F1] px-2 ">
+      <p className="lg:hidden block text-[20px] font-[400] leading-[20px] text-[#F1F1F1] px-2 ">
       "Betreuung mit Herz – Flexibel,<br></br> digital, genau nach deinem Zeitplan!"      </p>
 
       <Link href="/Form-Page-1">
@@ -145,7 +145,7 @@ export default function Home() {
 </section>
 
 <section
-   className="mb-[160px] md:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[280px] relative md:flex flex-col items-center justify-center bg-cover md:mt-[160px]"
+   className="mb-[160px] lg:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[280px] relative lg:flex flex-col items-center justify-center bg-cover md:mt-[160px]"
    style={{
      backgroundImage: "url('/images/White Box 1280.png')", 
      marginLeft: 'auto', 
@@ -166,7 +166,7 @@ export default function Home() {
 
   {/* Subheading */}
   <p
-    className="text-[#04436F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-4"
+    className="text-[#04436F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-[12px]"
     style={{
       fontWeight: "400",
     }}
@@ -177,7 +177,7 @@ export default function Home() {
   {/* Button */}
   <Link href="/Form-Page-1">
   <button
-    className="mt-6 px-8 py-3 text-white font-metropolis text-[18px] font-medium leading-[21.6px] bg-[#04436F] rounded-full"
+    className="mt-[40px] px-8 py-3 text-white font-metropolis text-[18px] font-medium leading-[21.6px] bg-[#04436F] rounded-full"
     style={{
       borderRadius: "50px",
     }}
@@ -189,7 +189,7 @@ export default function Home() {
 </section>
 
 <section
-  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[160px] block md:hidden"
+  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-[16px] py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[160px] block lg:hidden"
 >
   <h2
     className="text-[#04436F] text-center text-[32px] font-[600] mb-2 mt-[16px]"
@@ -219,10 +219,10 @@ export default function Home() {
 Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
   {/* Button Section */}
-  <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
+  <div className="flex flex-col items-center justify-center px-[2px] ">
   <Link href="/Form-Page-1">
     <button
-      className="md:py-[12px] md:px-[20px] text-[18px] font-[500] text-white bg-[#04436F] rounded-[10px] px-8 py-2"
+      className="md:py-[12px] md:px-[20px] text-[18px] font-[500] text-white bg-[#04436F] rounded-[10px] px-[20px] py-[12px] "
       style={{
         fontSize: '18px',
         fontWeight: '500',
@@ -243,23 +243,23 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                  <section className="flex flex-col items-center justify-center px-2 md:px-5 md:py-2  text-[#04436F]">
                     {/* Main heading */}
                     <p style={  {background: "linear-gradient(70deg, #B2EAFF 0%, #A9B4B9 75%, rgba(0, 0, 0, 0.00) 100%)",}  
-}className="text-center font-metropolis text-[16px] font-[400] leading-[24px] mb-5 px-2 py-1 rounded-[50px_0px_0px_50px]">
+}className="text-center font-metropolis text-[16px] font-[400] leading-[24px] mb-[16px] px-2 py-1 rounded-[50px_0px_0px_50px]">
                         Werde Teil von etwas Grossem.
                     </p>
 
                     {/* Subheading */}
-                    <h1 className="text-center font-metropolis text-[32px] md:text-[55px] font-[600] leading-[32px] md:leading-[71.5px] mb-4 md:mb-2">
+                    <h1 className="text-center font-metropolis text-[32px] lg:text-[55px] font-[600] leading-[32px] lg:leading-[71.5px] mb-[16px] md:mb-2">
                         Deine Chance – Betreuung neu gedacht
                     </h1>
 
                     {/* Paragraph */}
-                    <p className="md:block hidden lg:min-w-[1240px] text-center font-metropolis text-[16px] md:text-[24px] font-[400] leading-[25px] md:leading-[40px] max-w-[800px]">
+                    <p className="lg:block hidden lg:min-w-[1240px] text-center font-metropolis text-[16px] md:text-[24px] font-[400] leading-[25px] md:leading-[40px] max-w-[800px]">
                     Prime Home Care AG ist die erste volldigitale Plattform in der Schweiz, die Betreuung und Technologie <br></br> verbindet. Als Betreuungsperson hilfst du Familien, Senioren und Menschen im Alltag – flexibel und genau<br></br> dann, wann sie dich brauchen.                     </p>
-                    <p className="md:hidden block lg:min-w-[1240px] text-center font-metropolis text-[16px] md:text-[24px] font-[400] leading-[25px] md:leading-[40px] max-w-[800px]">
+                    <p className="lg:hidden block lg:min-w-[1240px] text-center font-metropolis text-[16px] lg:text-[24px] font-[400] leading-[25px] lg:leading-[40px] max-w-[800px]">
                         Prime Home Care AG ist die erste volldigitale Plattform in der Schweiz, die Betreuung und Technologie verbindet. Als Betreuungsperson hilfst du Familien, Senioren und Menschen im Alltag – flexibel und genau dann, wann sie dich brauchen.
                     </p>
 
-                    <div className="md:block hidden md:flex gap-6 mt-[60px] md:min-w-[1280px]">
+                    <div className="lg:block hidden lg:flex gap-6 mt-[60px] lg:min-w-[1280px]">
                             {/* Card 1 */}
                             <div
                                 className="flex flex-col justify-start items-start bg-cover bg-no-repeat rounded-[20px] p-[40px] w-1/3 h-[370px]"
@@ -318,7 +318,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                             </div>
 
 
-                            <div className="md:hidden block md:flex  gap-6 mt-[32px] md:max-w-[1280px] mb-[160px]">
+                            <div className="lg:hidden block lg:flex  gap-6 mt-[32px] md:w-[730px] lg:max-w-[1280px] mb-[160px]">
                             {/* Card 1 */}
                             <div
                                 className="flex flex-row justify-center items-center bg-white rounded-[20px] bg-no-repeat px-6 gap-6 mt-[16px]"
@@ -405,7 +405,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
                     </section>
 
-                    <section className="md:block hidden md:flex justify-center items-center gap-16 lg:mt-[160px]">
+                    <section className="lg:block hidden lg:flex justify-center items-center gap-16 lg:mt-[160px]">
                     {/* Left Image */}
                     <div
                     className="w-[309.83px] h-[629px] flex-shrink-0 rounded-[20px]"
@@ -566,7 +566,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                 </section>
 
 
-                <section className="md:hidden block md:flex justify-center items-center gap-6 lg:mt-[160px] p-2">
+                <section className="lg:hidden block lg:flex justify-center items-center gap-6 lg:mt-[160px] p-2">
                 
                     {/* Right Content */}
                     <div className="flex flex-col gap-2 ">
@@ -575,16 +575,16 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         Wen suchen wir?
                     </h2>
                         {/* Subtitle */}
-                        <p className="text-[#04436F] font-metropolis text-center text-[16px] font-normal leading-[16px] mb-[16px]">
+                        <p className="text-[#04436F] font-metropolis text-center text-[16px] font-normal leading-[16px] mb-[32px]">
                         Wir suchen engagierte Menschen, die<br></br> Betreuung mit Leidenschaft und Herz leisten möchten.
                     </p>
 
                         {/* Points */}
-                        <ul className="flex flex-col gap-8 ">
+                        <ul className="flex flex-col md:items-center gap-[32px]">
                         {/* Point 1 */}
                         <li className="flex items-start gap-8">
                     {/* Icon Container */}
-                    <div className="flex items-center gap-8 ">
+                    <div className="flex items-center gap-[40px]">
                         {/* Icon Container */}
                         <div
                             className="flex justify-center items-center rounded-full"
@@ -610,12 +610,12 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         {/* Text Content */}
                         <div>
                             {/* Title */}
-                            <h3 className="text-[#04436F] font-metropolis text-[24px] font-semibold leading-[24px] mb-2">
+                            <h3 className="text-[#04436F] md:w-[300px] font-metropolis text-[24px] font-semibold leading-[24px] mb-2">
                             Empathisch und zuverlässig
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#1C1B1D] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#1C1B1D] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
                             Deine Fürsorge macht den Unterschied.
                             </p>
                         </div>
@@ -625,7 +625,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                 {/* Point 2 */}
                 <li className="flex items-start gap-8 ">
                     {/* Icon Container */}
-                    <div className="flex items-center gap-8">
+                    <div className="flex items-center gap-[40px]">
                         {/* Icon Container */}
                         <div
                             className="flex justify-center items-center rounded-full"
@@ -644,12 +644,12 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         {/* Text Content */}
                         <div>
                             {/* Title */}
-                            <h3 className="text-[#04436F] font-metropolis text-[24px] font-semibold leading-[24px] mb-2">
+                            <h3 className="text-[#04436F] md:w-[300px] font-metropolis text-[24px] font-semibold leading-[24px] mb-2">
                             Erfahren und<br></br> motiviert
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#1C1B1D] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#1C1B1D] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
                             Ob Profi oder Quereinsteiger –<br></br> wir bringen dich weiter. 
                             </p>
                         </div>
@@ -658,7 +658,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                 {/* Point 3 */}
                 <li className="flex items-start gap-8">
                     {/* Icon Container */}
-                    <div className="flex items-center gap-8">
+                    <div className="flex items-center gap-[40px]">
                         {/* Icon Container */}
                         <div
                             className="flex justify-center items-center rounded-full"
@@ -688,12 +688,12 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                         {/* Text Content */}
                         <div>
                             {/* Title */}
-                            <h3 className="text-[#04436F] font-metropolis text-[24px] font-semibold leading-[24px] mb-2">
+                            <h3 className="text-[#04436F] md:w-[300px] font-metropolis text-[24px] font-semibold leading-[24px] mb-2">
                             Mobil und flexibel
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#1C1B1D] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#1C1B1D] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
                             Du bestimmst, wann und wo du arbeitest.
                             </p>
                         </div>
@@ -718,7 +718,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                 </section>
 
 
-                 <section className='md:block hidden  mt-[160px] justify-center md:flex items-center'>
+                 <section className='lg:block hidden  mt-[160px] justify-center lg:flex items-center'>
                 <div
   className="flex flex-col justify-between items-center p-[24px_44px] w-[1244px] h-[649px] flex-shrink-0"
   style={{
@@ -731,7 +731,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
     <h2 className="text-white font-metropolis text-[55px] font-[600] leading-[71.5px]">
       Warum Prime Home Care AG?
     </h2>
-    <p className="text-white font-metropolis text-[24px] font-normal leading-[40px] mt-2 mb-6">
+    <p className="text-white font-metropolis text-[24px] font-normal leading-[40px] mb-[32px]">
       Wir bieten dir mehr als nur einen Job:
     </p>
   </div>
@@ -812,9 +812,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 </section>
 
 
-<section className='md:hidden block mt-[160px] justify-center flex items-center'>
+<section className='lg:hidden block mt-[160px] justify-center flex items-center'>
                 <div
-  className="flex flex-col justify-between items-center p-4 w-[390px]"
+  className="flex flex-col justify-between items-center p-4 w-[390px] md:w-[736px]"
   style={{
     backgroundColor: "#04436F",
     borderRadius: "20px",
@@ -822,10 +822,10 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 >
   {/* Title Section */}
   <div className="text-center">
-    <h2 className="text-white font-metropolis text-[32px] font-[600] leading-[32px] mt-[50px]">
+    <h2 className="text-white font-metropolis text-[32px] font-[600] leading-[32px] mt-[32px]">
       Warum Prime Home Care AG?
     </h2>
-    <p className="text-white font-metropolis leading-tight text-[16px] font-normal leading-[40px] mt-2 mb-6">
+    <p className="text-white font-metropolis leading-tight text-[16px] font-normal leading-[40px] mt-2 mb-[40px]">
       Wir bieten dir mehr als nur einen Job:
     </p>
   </div>
@@ -895,7 +895,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
   {/* Bottom Section */}
   <div
-  className="flex flex-col justify-center items-center gap-[10px] p-4 mb-[30px] md:p-[10px] rounded-[10px] bg-white flex-shrink-0"
+  className="flex flex-col justify-center items-center gap-[10px] px-[20px] py-[2px] mb-[30px] md:p-[10px] rounded-[10px] bg-white flex-shrink-0"
 >
   <p className="text-[#04436F] text-center font-metropolis text-[24px] font-[400] leading-[32px]">
     Arbeiten mit Prime Home Care bedeutet, Freiheit und Erfüllung zu verbinden.
@@ -905,9 +905,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 </div>
 </section>
 
-<section className="flex md:flex-row flex-col justify-between items-center lg:w-[1204px] mx-auto mb-[160px] mt-[160px]">
+<section className="flex lg:flex-row flex-col justify-between items-center lg:w-[1204px] mx-auto mb-[160px] mt-[160px]">
   {/* Left Content */}
-  <div className="flex flex-col gap-4 max-w-[380px] md:max-w-[600px]">
+  <div className="flex flex-col gap-4 max-w-[380px] md:max-w-[730px]">
     {/* Top Label */}
     <span
   className="text-[#04436F] text-center md:text-left text-[20px] md:w-[440px] font-metropolis font-normal leading-[24px] px-[10px] py-[4px] inline-block"
@@ -929,12 +929,12 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
     <img
       src="/images/phceld.png"
       alt="Assisting elderly person"
-      className=" w-full h-[198px] rounded-[20px] mb-[32px]"
+      className=" w-full h-[198px] rounded-[20px] mb-[30px]"
     />
   </div>
 
     {/* Steps */}
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-[22px]">
       {/* Step 1 */}
       <div className="flex flex-col items-center md:items-start gap-2">
         <span className="bg-[#04436F] text-white w-[200px] text-[20px] font-metropolis font-[700] md:font-[400] leading-[21.6px] px-4 py-1 rounded-full">
@@ -968,7 +968,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
   </div>
 
   {/* Right Image */}
-  <div className="md:block hidden md:flex-shrink-0 md:w-[550px]">
+  <div className="md:mt-[32px] lg:mt-0 md:block hidden md:flex-shrink-0 md:w-[550px]">
     <img
       src="/images/phc-elderly.png"
       alt="Assisting elderly person"
@@ -978,7 +978,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 </section>
  
 <section
-  className="md:block hidden md:flex flex-col justify-center items-center gap-[62px] px-10 w-[1019px] mx-auto"
+  className="lg:block hidden lg:flex flex-col justify-center items-center gap-[62px] px-10 w-[1019px] mx-auto"
   style={{
     color: "#04436F",
     textAlign: "center",
@@ -1211,7 +1211,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
 
 <section
-  className="md:hidden block flex flex-col justify-center items-center gap-[32px] px-2 mx-auto"
+  className="lg:hidden block flex flex-col justify-center items-center gap-[32px] px-[10px] mx-auto"
   style={{
     color: "#04436F",
     textAlign: "center",
@@ -1219,7 +1219,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 >
   {/* Title */}
   <h2
-    className="text-center font-metropolis text-[32px] font-semibold leading-[32px]"
+    className="text-center font-metropolis text-[32px] font-[700] leading-[32px]"
     style={{
       color: "#04436F",
     }}
@@ -1427,7 +1427,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
   {/* Bottom Text */}
   <p
-  className="text-[#04436F] text-center font-metropolis font-[400]"
+  className="text-[#04436F] text-center font-metropolis font-[400] "
   style={{
     fontSize: "16px",
     lineHeight: "24px",
@@ -1441,7 +1441,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
 
 <section
-   className="md:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[280px] relative md:flex flex-col items-center justify-center bg-cover md:mt-[160px]"
+   className="lg:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[280px] relative lg:flex flex-col items-center justify-center bg-cover md:mt-[160px]"
    style={{
      backgroundImage: "url('/images/White Box 1280.png')", 
      marginLeft: 'auto', 
@@ -1462,7 +1462,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
   {/* Subheading */}
   <p
-    className="text-[#04436F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-4"
+    className="text-[#04436F] font-metropolis text-[20px] leading-[25.6px] font-normal text-center mt-[12px]"
     style={{
       fontWeight: "400",
     }}
@@ -1473,7 +1473,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
   {/* Button */}
   <Link href="/Form-Page-1">
   <button
-    className="mt-6 px-8 py-3 text-white font-metropolis text-[18px] font-medium leading-[21.6px] bg-[#04436F] rounded-full"
+    className="mt-[40px] px-8 py-3 text-white font-metropolis text-[18px] font-medium leading-[21.6px] bg-[#04436F] rounded-full"
     style={{
       borderRadius: "50px",
     }}
@@ -1484,7 +1484,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 </section>
 
 <section
-  className="font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[160px] block md:hidden"
+  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-[16px] py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[160px] block lg:hidden"
 >
   <h2
     className="text-[#04436F] text-center text-[32px] font-[600] mb-2 mt-[16px]"
@@ -1501,12 +1501,12 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
   </h2>
 
   <p
-    className="text-center text-[20px] font-[400] mb-[32px]"
+    className="text-center text-[16px] font-[400] mb-[32px]"
     style={{
       color: '#04436F',
       textAlign: 'center',
       fontFamily: 'Metropolis',
-      fontSize: '20px',
+      fontSize: '16px',
       fontWeight: '400',
       lineHeight: '25.6px', // 160%
     }}
@@ -1514,12 +1514,12 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
   {/* Button Section */}
-  <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
+  <div className="flex flex-col items-center justify-center px-[2px] ">
   <Link href="/Form-Page-1">
     <button
-      className="md:py-[12px] md:px-[30px] text-[14px] lg:text-[18px] font-[500] text-white bg-[#04436F] rounded-[10px] px-10 py-2"
+      className="md:py-[12px] md:px-[20px] text-[18px] font-[500] text-white bg-[#04436F] rounded-[10px] px-[20px] py-[12px] "
       style={{
-        fontSize: '16px',
+        fontSize: '18px',
         fontWeight: '500',
         lineHeight: '21.6px', // 135%
         color: '#FFF',
@@ -1529,13 +1529,13 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
         borderRadius: '10px',
       }}
     >
-      Hier klicken, um dein Profil zu <br></br> erstellen und mehr zu erfahren! 
+      Hier klicken, um dein Profil zu erstellen und mehr zu erfahren! 
     </button>
     </Link>
   </div>
 </section>
 
-        <section className="md:block hidden mt-[160px] mb-[120px] md:flex flex-col justify-center items-center">
+        <section className="lg:block hidden mt-[160px] mb-[120px] lg:flex flex-col justify-center items-center">
         {/* Main Content */}
         <div
             className="flex justify-between items-start w-[1238px] h-[193px] px-6"
@@ -1583,7 +1583,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
             {/* Right Section */}
             <div
-        className="flex flex-col mt-[25px] items-left text-left gap-4"
+        className="flex flex-col mt-[14px] items-left text-left gap-8"
         style={{
             color: "#04436F",
             fontFamily: "Metropolis",
@@ -1627,7 +1627,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                 </div>
                 </section>
 
-                <section className="block md:hidden mt-[160px] mb-[160px] flex flex-col justify-start items-left">
+                <section className="block lg:hidden mt-[160px] mb-[160px] flex flex-col justify-start items-left">
                 {/* Main Content */}
                 <div
                   className="flex flex-col justify-start items-left text-left px-2"
@@ -1674,7 +1674,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                   </div>
 
                   {/* Right Section */}
-                  <div className="flex text-[#04436F] flex-col text-left gap-4">
+                  <div className="flex text-[#04436F] flex-col text-left gap-8">
                     <h2
                       className="font-bold"
                       style={{
