@@ -521,7 +521,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     >
       Flexibilität
     </strong>{" "}
-    <p className='ml-[16px] text-[16px] text-[400]'>Stundenweise Betreuung nach Ihrem Zeitplan.</p>
+    <p className='ml-[16px] text-[16px] text-[400]'>Stundenweise Betreuung nach Ihrem Zeitplan</p>
   </li>
   <li className='flex flex-col'
     style={{
@@ -539,7 +539,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     >
       Komfort
     </strong>{" "}
-    <p className='ml-[16px] text-[16px] text-[400]'>Einfach online buchen und anpassen.</p>
+    <p className='ml-[16px] text-[16px] text-[400]'>Einfach online buchen und anpassen</p>
   </li>
   <li className='flex flex-col'
     style={{
@@ -556,7 +556,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     >
       Qualität
     </strong>{" "}
-    <p className='ml-[16px] text-[16px] text-[400]'>Geprüfte, erfahrene Betreuungspersonen.</p>
+    <p className='ml-[16px] text-[16px] text-[400]'>Geprüfte, erfahrene Betreuungspersonen</p>
   </li>
 </ul>
 
@@ -834,14 +834,14 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 
 <section
   
-  className="lg:px-6 relative flex flex-col lg:flex-row justify-center items-center mb-[160px] w-full lg:max-w-[1167px] lg:gap-[90px] lg:flex-shrink-0 text-center mx-auto"
+  className="lg:px-[50px] relative flex flex-col lg:flex-row justify-center items-center mb-[160px] w-full lg:max-w-[1167px] lg:gap-[100px] lg:flex-shrink-0 text-center mx-auto"
 >
   <div className='lg:block hidden'>
     <img className='flex justify-center'
       src="/images/Experience (1).png" 
       alt="Warum Prime Home Care"
       style={{
-        width: "437px", 
+        width: "467px", 
         height: "470px", 
       }}
     />
