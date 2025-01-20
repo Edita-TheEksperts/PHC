@@ -147,7 +147,7 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
   {/* Background Image */}
   <div className="absolute w-[392px] md:w-auto h-[625px] mt-[80px]">
     <img
-      src="/images/mobile2.png"
+      src="/images/mobile3.png"
       alt="Hero Image"
       className="rounded-[20px] bg-[#F1F1F1] w-[392px] md:w-[1000px] md:h-[725px]"
     />
@@ -837,8 +837,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   className="lg:px-[50px] relative flex flex-col lg:flex-row justify-center items-center mb-[160px] w-full lg:max-w-[1167px] lg:gap-[100px] lg:flex-shrink-0 text-center mx-auto"
 >
   <div className='lg:block hidden'>
-    <img className='flex justify-center'
-      src="/images/Experience (1).png" 
+    <img className='flex justify-center rounded-[20px]'
+      src="/images/Mobile-Experience 1.png" 
       alt="Warum Prime Home Care"
       style={{
         width: "467px", 
@@ -848,8 +848,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   </div>
 
   <div className='lg:hidden block'>
-    <img className='flex justify-center mb-[40px]'
-      src="/images/Mobile-Experience.png" 
+    <img className='flex justify-center mb-[40px] rounded-[20px]'
+      src="/images/Mobile-Experience 1.png" 
       alt="Warum Prime Home Care"
       style={{
         width: "100%", 
