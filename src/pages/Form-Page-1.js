@@ -48,7 +48,7 @@ export default function FormPage01() {
   return (
     <div className=" bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
       {/* Back Button */}
-      <section className="md:block hidden md:flex justify-center items-center pt-[25px] md:pt-[25px]">
+      <section className="lg:block hidden lg:flex justify-center items-center pt-[25px] md:pt-[25px]">
         <div className="absolute top-6 left-4 lg:left-[170px]">
           <Link href="/Registrierung-Jobs">
             <button
@@ -94,7 +94,7 @@ export default function FormPage01() {
         </div>
       </section>
 
-      <section className='md:hidden block flex justify-center items-center '>
+      <section className='lg:hidden block flex justify-center items-center '>
         <div className=" mt-0">
           <div className="mb-[100px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="131" height="64" viewBox="0 0 131 64" fill="none">
@@ -152,7 +152,7 @@ export default function FormPage01() {
       
       {/* Heading */}
       <h1
-  className="md:block hidden text-[#04436F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[48px] leading-[32px] md:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] md:mb-[40px]"
+  className="lg:block hidden text-[#04436F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[48px] leading-[32px] md:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] md:mb-[40px]"
   style={{
     letterSpacing: "-0.96px", // Adjusted letter spacing
   }}
@@ -161,7 +161,7 @@ Wähle deine gewünschte Region in der du<br></br> arbeiten möchtest und gib de
 </h1>
 
 <h1
-  className="md:hidden block text-[#04436F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[48px] leading-[32px] md:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] md:mb-[40px]"
+  className="lg:hidden block text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[48px] leading-[32px] lg:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] md:mb-[40px]"
   style={{
     letterSpacing: "-0.96px", // Adjusted letter spacing
   }}
@@ -171,7 +171,7 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
 
 
 <div
-  className="flex flex-col md:flex-row justify-between items-center gap-[11px] w-full md:w-[1109px] h-auto"
+  className="flex flex-col lg:flex-row justify-between items-center gap-[11px] w-full lg:w-[1027px] h-auto"
   style={{ opacity: 1 }}
 >
   {/* Region */}
