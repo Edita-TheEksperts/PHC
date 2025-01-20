@@ -686,7 +686,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="lg:block hidden lg:flex justify-between items-center lg:max-w-[1242px] mx-auto mt-[160px] mb-[160px]"
+  className="lg:block hidden lg:flex justify-between items-center lg:max-w-[1242px] mx-auto mt-[190px] mb-[190px]"
 >
   {/* Left Side - Image */}
   <div className='mt-[100px]'>
