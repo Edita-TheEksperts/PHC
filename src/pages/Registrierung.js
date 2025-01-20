@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <div className="bg-[#F1F1F1] p-4">
-        <section className="md:block hidden relative max-w-[1300px] h-[800px] mx-auto mt-2 md:mt-[20px] lg:mb-[160px]">
+        <section className="lg:block hidden relative max-w-[1300px] h-[800px] mx-auto mt-2 md:mt-[20px] lg:mb-[160px]">
   {/* Logo Positioned on Top Left */}
   <div className="absolute top-[5px] left-[5px] md:top-[12px] md:left-[58px] z-10">
   <svg xmlns="http://www.w3.org/2000/svg" width="160" height="79" viewBox="0 0 160 79" fill="none">
@@ -113,7 +113,7 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
   </div>
 </section>
 
-<section className="md:hidden block relative h-[800px] mx-auto mt-2">
+<section className="lg:hidden block relative h-[800px] mx-auto mt-2">
   {/* Logo Positioned on Top Left */}
   <div className="absolute top-0 left-0 right-0 flex justify-center items-center z-10">
   <svg xmlns="http://www.w3.org/2000/svg" width="131" height="64" viewBox="0 0 131 64" fill="none">
@@ -145,11 +145,11 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
   </div>
 
   {/* Background Image */}
-  <div className="absolute w-[391px] h-[625px] mt-[80px]">
+  <div className="absolute w-[392px] md:w-auto h-[625px] mt-[80px]">
     <img
       src="/images/mobile2.png"
       alt="Hero Image"
-      className="w-full h-full rounded-[20px] bg-[#F1F1F1]"
+      className="rounded-[20px] bg-[#F1F1F1] w-[392px] md:w-[1000px] md:h-[725px]"
     />
   </div>
 
@@ -165,11 +165,11 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
                     Ab Frühsommer 2025
                     </p>
 
-      <h2 className="md:hidden block mb-[16px] text-[32px] leading-[32px] font-[600]">
+      <h2 className="lg:hidden block mb-[16px] text-[32px] leading-[32px] font-[600]">
       Stundenweise <br></br> Betreuung durch <br></br>Prime Home Care AG 
       </h2>
 
-      <p className="md:hidden block text-[20px] font-[400] leading-[17px] text-[#F1F1F1] px-2 ">
+      <p className="lg:hidden block text-[20px] font-[400] leading-[17px] text-[#F1F1F1] px-2 ">
       Flexible Betreuung – Ihre Unterstützung,<br></br> genau wann Sie sie brauchen!    </p>
 
       <Link href="/Form-page-3">
@@ -184,7 +184,7 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
 </section>
 
 <section
-  className="md:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative md:flex flex-col items-center justify-center bg-cover mt-[100px] md:mb-[160px]"
+  className="lg:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative lg:flex flex-col items-center justify-center bg-cover mt-[100px] lg:mb-[160px]"
   style={{
     backgroundImage: "url('/images/goldboxes.png')", 
     marginLeft: 'auto', 
@@ -239,10 +239,10 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
 </section>
 
 <section
-  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[50px] block md:hidden"
+  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover md:mt-[150px] mt-[50px] block lg:hidden"
 >
   <h2
-    className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[16px]"
+    className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[4px]"
     style={{
       color: '#B99B5F',
       textAlign: 'center',
@@ -272,7 +272,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
   <Link href="/Form-page-3">
     <button
-      className="md:py-[12px] md:px-[30px] text-[18px] lg:text-[18px] font-[500] text-white bg-[#B99B5F] rounded-[10px] px-4 py-2 "
+      className="lg:py-[12px] lg:px-[30px] text-[18px] lg:text-[18px] font-[500] text-white bg-[#B99B5F] rounded-[10px] px-[15px] py-2 "
       style={{
         fontSize: '18px',
         fontWeight: '500',
@@ -289,7 +289,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     </Link>
   </div>
   <p
-    className="text-center text-[16px] font-[400] mb-[16px]"
+    className="text-center text-[16px] font-[400] mb-[4px]"
     style={{
       color: '#B99B5F',
       textAlign: 'center',
@@ -304,7 +304,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="md:block hidden md:flex items-center gap-[60px] bg-white rounded-[20px] md:max-w-[1300px] mx-auto mt-[160px] mb-[160px]"
+  className="lg:block hidden lg:flex items-center gap-[60px] bg-white rounded-[20px] md:max-w-[1300px] mx-auto mt-[160px] mb-[160px]"
   style={{
     height: "630px",
   }}
@@ -443,7 +443,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 
 
 <section
-  className="md:hidden block flex items-center mx-auto mt-[20px] mb-[160px]"
+  className="lg:hidden block flex items-center mx-auto mt-[20px] mb-[160px]"
 >
 
   {/* Text Section */}
@@ -519,9 +519,9 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
         marginLeft: "16px" // Bold weight for strong text
       }}
     >
-      Flexibilität -
+      Flexibilität
     </strong>{" "}
-    <p className='ml-[16px] text-[16px] text-[400]'>Stundenweise Betreuung nach Ihrem Zeitplan</p>
+    <p className='ml-[16px] text-[16px] text-[400]'>Stundenweise Betreuung nach Ihrem Zeitplan.</p>
   </li>
   <li className='flex flex-col'
     style={{
@@ -537,9 +537,9 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
         marginLeft: "16px" // Bold weight for strong text
       }}
     >
-      Komfort -
+      Komfort
     </strong>{" "}
-    <p className='ml-[16px] text-[16px] text-[400]'>Einfach online buchen und anpassen</p>
+    <p className='ml-[16px] text-[16px] text-[400]'>Einfach online buchen und anpassen.</p>
   </li>
   <li className='flex flex-col'
     style={{
@@ -554,9 +554,9 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
         marginLeft: "16px" // Bold weight for strong text
       }}
     >
-      Qualität -
+      Qualität
     </strong>{" "}
-    <p className='ml-[16px] text-[16px] text-[400]'>Geprüfte, erfahrene Betreuungspersonen</p>
+    <p className='ml-[16px] text-[16px] text-[400]'>Geprüfte, erfahrene Betreuungspersonen.</p>
   </li>
 </ul>
 
@@ -564,7 +564,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="md:block hidden md:flex flex-col items-center gap-[60px] max-w-[1920px] px-[100px] mx-auto"
+  className="lg:block hidden lg:flex flex-col items-center gap-[60px] max-w-[1920px] px-[100px] mx-auto"
   style={{
     width: "1472px",
     height: "531px",
@@ -628,7 +628,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="md:hidden block flex flex-col items-center gap-[32px]  mx-auto"
+  className="lg:hidden block flex flex-col items-center gap-[32px]  mx-auto"
 >
   {/* Title Section */}
   <div className="text-center">
@@ -646,9 +646,9 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   </div>
 
   {/* Cards Section */}
-  <div className="flex flex-col justify-between gap-[40px] w-full">
+  <div className="flex flex-col justify-between gap-[50px] w-full">
     {/* Card 1 */}
-    <div className="flex flex-col items-center text-center py-[10px] rounded-[20px] ">
+    <div className="flex flex-col items-center text-center py-[2px] rounded-[20px] ">
       <img
         src="/images/Link.png"
         alt="Familien"
@@ -658,7 +658,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     </div>
 
     {/* Card 2 */}
-    <div className="flex flex-col items-center text-center py-[10px] rounded-[20px] ">
+    <div className="flex flex-col items-center text-center py-[2px] rounded-[20px] ">
       <img
         src="/images/Link (1).png"
         alt="Senioren"
@@ -668,7 +668,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     </div>
 
     {/* Card 3 */}
-    <div className="flex flex-col items-center text-center py-[10px] rounded-[20px] ">
+    <div className="flex flex-col items-center text-center py-[2px] rounded-[20px] ">
       <img
         src="/images/Link (2).png"
         alt="Berufstätige"
@@ -686,7 +686,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="md:block hidden md:flex justify-between items-center md:max-w-[1242px] mx-auto mt-[160px] mb-[160px]"
+  className="lg:block hidden lg:flex justify-between items-center lg:max-w-[1242px] mx-auto mt-[160px] mb-[160px]"
 >
   {/* Left Side - Image */}
   <div className='mt-[100px]'>
@@ -698,7 +698,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   </div>
 
   {/* Right Side - Text Section */}
-  <div className="flex flex-col md:w-[563px] text-left mt-[100px]">
+  <div className="flex flex-col lg:w-[563px] text-left mt-[100px]">
   <h2
   className="text-[#FAFAFA] w-[499px] font-metropolis text-[32px] font-bold leading-[32px] mb-[16px] flex flex-col items-start px-[14px] py-[6px] rounded-[50px] bg-gradient-to-r from-[#B99B5F] to-[#B99B5F] bg-opacity-[0.51]"
   style={{
@@ -743,24 +743,24 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="md:hidden block md:flex justify-center items-center  mx-auto mt-[160px] mb-[160px]"
+  className="lg:hidden block lg:flex justify-center items-center  mx-auto mt-[160px] mb-[160px]"
 >
 
 
   {/* Right Side - Text Section */}
-  <div className="flex flex-col md:w-[563px] text-center">
+  <div className="flex flex-col lg:w-[563px] text-center">
   <h2
-  className="text-[#FAFAFA] md:w-[499px] px-[10px] py-[4px] font-metropolis text-[16px] font-[400] leading-[24px] mb-[16px] flex flex-col text-center  rounded-[50px] bg-[#B99B5F]"
+  className="text-[#FAFAFA] lg:w-[499px] px-[10px] py-[4px] font-metropolis text-[20px] font-[500] leading-[24px] mb-[16px] flex flex-col text-center rounded-[50px] bg-[#B99B5F]"
   style={{
     fontFamily: "Metropolis",
   }}
 >
-  In 3 einfachen Schritten zu Ihrer Betreuung:
+  In 3 einfachen Schritten<br></br> zu Ihrer Betreuung:
 </h2>
 
 
 <h3
-  className="text-[#B99B5F] font-metropolis text-[32px] font-semibold leading-[35px]"
+  className="text-[#B99B5F] font-metropolis text-[32px] font-semibold leading-[35px] mb-1"
   style={{
     fontFamily: "Metropolis",
     fontWeight: "600",
@@ -774,20 +774,20 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     <img
       src="/images/phcback.png"
       alt="Working with senior"
-      className="w-[387px] h-[198px] object-cover mb-[16px] mt-[12px] items-center flex justify-center"
+      className="w-[387px] md:w-[730px] md:h-auto h-[198px] object-cover mb-[16px] mt-[12px] items-center flex justify-center "
     />
   </div>
 
     <ul className="space-y-6 text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px] gap-6">
       <li>
-        <strong className="text-white text-[14px] leading-[21px] text-[700] bg-[#B99B5F] rounded-[5px] px-[20px] py-[10px]">Wunschzeit eingeben</strong> <br></br> <p className='mt-2 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>
+        <strong className="text-white text-[20px] leading-[21px] text-[700] bg-[#B99B5F] rounded-[5px] px-[20px] py-[10px]">Wunschzeit eingeben</strong> <br></br> <p className='mt-4 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>
         Wählen Sie Datum, Uhrzeit, Dauer und Regelmässigkeit online aus.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[14px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuungsperson auswählen</strong> <br></br> <p className='mt-2 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
+        <strong className="text-white bg-[#B99B5F] text-[20px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuungsperson auswählen</strong> <br></br> <p className='mt-4 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[14px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuung geniessen</strong> <br></br> <p className='mt-2 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Unser Team kümmert sich um den Rest <br></br> – einfach, sicher und zuverlässig.</p>
+        <strong className="text-white bg-[#B99B5F] text-[20px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuung geniessen</strong> <br></br> <p className='mt-4 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Unser Team kümmert sich um den Rest <br></br> – einfach, sicher und zuverlässig.</p>
       </li>
     </ul>
     <p className="text-[#B99B5F] font-metropolis text-[16px] font-normal leading-[26px] mt-[40px] ml-2">
@@ -800,11 +800,11 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 
 
 <section className="flex justify-center items-center w-full mb-[160px]">
-  <div className="flex justify-between items-center md:w-[1167px] md:h-[552px] rounded-[20px]">
+  <div className="flex justify-between items-center lg:w-[1167px] lg:h-[552px] rounded-[20px]">
     {/* Text Section */}
-    <div className="flex flex-col items-center md:items-start md:w-[50%] md:pr-[20px]">
+    <div className="flex flex-col items-center lg:items-start lg:w-[50%] lg:pr-[20px]">
       <h2
-        className="text-[#B99B5F] md:text-left text-center font-metropolis text-[32px] md:text-[55px] font-semibold leading-[40px] md:leading-[71.5px] mb-[20px]"
+        className="text-[#B99B5F] lg:text-left text-center font-metropolis text-[32px] lg:text-[55px] font-semibold leading-[40px] lg:leading-[71.5px] mb-[20px]"
       >
         Unsere <br></br>Betreuungs­personen
       </h2>
@@ -820,7 +820,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 
     {/* Image Section */}
   <div
-  className="md:block hidden w-[42%] h-[552px] bg-lightgray rounded-[20px] max-w-[790px]"
+  className="lg:block hidden w-[42%] h-[552px] bg-lightgray rounded-[20px] max-w-[790px]"
   style={{
     backgroundImage: `url(/images/66501b5ca75a448031e5dcfa_hero-02.jpg.png)`,
     backgroundSize: "cover",
@@ -834,9 +834,9 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 
 <section
   
-  className="md:px-6 relative flex flex-col md:flex-row justify-center items-center mb-[160px] w-full md:max-w-[1167px] md:gap-[90px] md:flex-shrink-0 text-center mx-auto"
+  className="lg:px-6 relative flex flex-col lg:flex-row justify-center items-center mb-[160px] w-full lg:max-w-[1167px] lg:gap-[90px] lg:flex-shrink-0 text-center mx-auto"
 >
-  <div className='md:block hidden'>
+  <div className='lg:block hidden'>
     <img className='flex justify-center'
       src="/images/Experience (1).png" 
       alt="Warum Prime Home Care"
@@ -847,7 +847,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     />
   </div>
 
-  <div className='md:hidden block'>
+  <div className='lg:hidden block'>
     <img className='flex justify-center mb-[40px]'
       src="/images/Mobile-Experience.png" 
       alt="Warum Prime Home Care"
@@ -858,8 +858,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     />
   </div>
 
-  <div class="md:w-[60%] flex flex-col md:justify-start md:items-start text-left md:mb-[120px]">
-  <h2 className='md:text-[55px] text-[32px] md:leading-[71.5px] leading-[40px]'
+  <div class="lg:w-[60%] flex flex-col lg:justify-start lg:items-start text-left lg:mb-[120px]">
+  <h2 className='lg:text-[55px] text-[32px] lg:leading-[71.5px] leading-[40px]'
       style={{
         fontWeight: "600",
         color: "#B99B5F",
@@ -868,7 +868,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     >
       Warum die Prime Home Care AG?
     </h2>
-    <p className='md:block hidden '
+    <p className='lg:block hidden '
       style={{
         fontSize: "20px",
         fontWeight: "400",
@@ -879,7 +879,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
       Wir sind die erste volldigitale Plattform in der Schweiz,<br></br> die Betreuung so einfach und modern macht. Mit uns<br></br> haben Sie die Kontrolle über Ihre Zeit – ohne <br></br>Kompromisse bei Qualität und Sicherheit.
     </p>
 
-    <p className='md:hidden block '
+    <p className='lg:hidden block '
       style={{
         fontSize: "20px",
         fontWeight: "400",
@@ -890,7 +890,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
       Wir sind die erste volldigitale Plattform in der Schweiz, die Betreuung so einfach und modern macht. Mit uns haben Sie die Kontrolle über Ihre Zeit – ohne Kompromisse bei Qualität und Sicherheit.
     </p>
     <p
-      className="bg-[#B99B5F] mt-[40px] md:text-left text-center px-[10px] md:px-[20px] py-[12px] rounded-[8px] md:rounded-[50px] inline-block"
+      className="bg-[#B99B5F] mt-[16px] lg:mt-[40px] lg:text-left text-center px-[10px] lg:px-[20px] py-[12px] rounded-[8px] lg:rounded-[50px] inline-block"
       style={{
         fontSize: "18px",
         fontWeight: "500",
@@ -905,7 +905,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 
 
 <section
-  className="md:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative md:flex flex-col items-center justify-center bg-cover mt-[100px] md:mb-[160px]"
+  className="lg:block hidden font-montserat rounded-[20px] max-w-[1290px] h-[360px] relative lg:flex flex-col items-center justify-center bg-cover mt-[100px] lg:mb-[160px]"
   style={{
     backgroundImage: "url('/images/goldboxes.png')", 
     marginLeft: 'auto', 
@@ -960,10 +960,10 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[50px] block md:hidden"
+  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[50px] block lg:hidden"
 >
   <h2
-    className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[16px]"
+    className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[4px]"
     style={{
       color: '#B99B5F',
       textAlign: 'center',
@@ -993,7 +993,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   <div className="flex flex-col items-center justify-center px-4 mb-[32px]">
   <Link href="/Form-page-3">
     <button
-      className="md:py-[12px] md:px-[30px] text-[18px] lg:text-[18px] font-[500] text-white bg-[#B99B5F] rounded-[10px] px-4 py-2 "
+      className="lg:py-[12px] lg:px-[30px] text-[18px] lg:text-[18px] font-[500] text-white bg-[#B99B5F] rounded-[10px] px-[15px] py-2 "
       style={{
         fontSize: '18px',
         fontWeight: '500',
@@ -1010,7 +1010,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     </Link>
   </div>
   <p
-    className="text-center text-[16px] font-[400] mb-[16px]"
+    className="text-center text-[16px] font-[400] mb-[4px]"
     style={{
       color: '#B99B5F',
       textAlign: 'center',
@@ -1024,7 +1024,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 (Frühbucher erhalten exklusive Angebote!)  </p>
 </section>
 
-<section className="md:block hidden mt-[160px] mb-[120px] md:flex flex-col justify-center items-center">
+<section className="lg:block hidden mt-[160px] mb-[120px] lg:flex flex-col justify-center items-center">
         {/* Main Content */}
         <div
             className="flex justify-between items-start w-[1238px] h-[193px] px-6"
@@ -1073,7 +1073,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 
             {/* Right Section */}
             <div
-        className="flex flex-col mt-[25px] items-left text-left gap-6"
+        className="flex flex-col mt-[14px] items-left text-left gap-8"
         style={{
             color: "#B99B5F",
             fontFamily: "Metropolis",
@@ -1111,7 +1111,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
                 </div>
                 </section>
 
-                <section className="block md:hidden mt-[160px] mb-[160px] flex flex-col justify-start items-left">
+                <section className="block lg:hidden mt-[160px] mb-[160px] flex flex-col justify-start items-left">
                 {/* Main Content */}
                 <div
                   className="flex flex-col justify-start items-left text-left px-2"
@@ -1158,7 +1158,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
                   </div>
 
                   {/* Right Section */}
-                  <div className="flex text-[#B99B5F] flex-col text-left gap-4">
+                  <div className="flex text-[#B99B5F] flex-col text-left gap-8">
                     <h2
                       className="font-bold"
                       style={{
