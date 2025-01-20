@@ -70,9 +70,9 @@ const FormPage4 = () => {
     ];
 
   return (
-    <div className="bg-[#F1F1F1] text-[#B99B5F] min-h-screen p-4 md:p-0">
+    <div className="bg-[#F1F1F1] text-[#B99B5F] min-h-screen p-4">
       {/* Section 1: Logo and Zuruk */}
-      <section className="md:block hidden md:flex justify-center items-center pt-[60px] md:pt-[60px]">
+      <section className="lg:block hidden lg:flex justify-center items-center pt-[25px] md:pt-[25px]">
       <div className="absolute top-6 left-4 lg:left-[170px]">
         <Link href="/Form-page-3">
           <button
@@ -118,7 +118,7 @@ const FormPage4 = () => {
                 </div>
       </section>
 
-      <section className='md:hidden block flex justify-center items-center '>
+      <section className='lg:hidden block flex justify-center items-center '>
       <div className=" mt-0">
         <div className="mb-[100px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="131" height="64" viewBox="0 0 131 64" fill="none">
@@ -174,14 +174,14 @@ const FormPage4 = () => {
       </section>
       
 
-      <section className="flex flex-col justify-center items-center md:pt-[100px] text-center">
+      <section className="flex flex-col justify-center items-center lg:pt-[110px] text-center">
   <p
-    className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
+    className="text-[#B99B5F] font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
   >
     Vielen Dank!
   </p>
   <p
-    className="text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
+    className="text-[#B99B5F] font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[32px] leading-[40px] font-semibold tracking-[-0.96px]"
   >
     Wir melden uns so schnell wie möglich
   </p>
@@ -195,12 +195,12 @@ const FormPage4 = () => {
 >
   FAQ
 </h2>
-<div className="space-y-4 max-w-[790px] mx-auto">
+<div className="space-y-4 lg:max-w-[790px] mx-auto">
           {/* Render FAQ items dynamically */}
           {faqData.map((faq, index) => (
             <div key={index} className="border-b p-[20px] rounded-[20px] bg-white flex flex-col items-start">
               <div className="flex justify-between w-full items-center">
-                <p className="font-semibold text-[#B99B5F] text-[20px] leading-[26px]">
+                <p className="font-semibold text-[#B99B5F] w-[270px] md:w-[400px] lg:w-[620px] text-[20px] leading-[26px]">
                   {faq.question}
                 </p>
                 <span
@@ -224,7 +224,7 @@ const FormPage4 = () => {
 
       {/* Section 3: Thank You and Input for Message */}
       <section className="text-center mb-[160px]">
-      <h2 className="text-[#B99B5F] text-center font-metropolis text-[24px] md:text-[55px] font-semibold leading-[71.5px] md:mb-4">
+      <h2 className="text-[#B99B5F] text-center font-metropolis text-[24px] lg:text-[55px] font-semibold leading-[71.5px] md:mb-4">
             Haben Sie noch weitere Fragen?
                 </h2>
                 <input
@@ -232,21 +232,21 @@ const FormPage4 = () => {
                 value={question}
                 onChange={handleInputChange}
                 placeholder="Hier Ihre Fragen eintippen"
-                className="text-center focus:outline-none text-[#B99B5F] w-full md:w-[890px] px-4 py-4 border rounded-[20px] mb-4 placeholder:text-[#B99B5F] placeholder:font-metropolis placeholder:text-[20px] placeholder:font-light placeholder:leading-[26px]"
+                className="text-center focus:outline-none text-[#B99B5F] w-full lg:w-[890px] px-4 py-4 border rounded-[20px] mb-4 placeholder:text-[#B99B5F] placeholder:font-metropolis placeholder:text-[20px] placeholder:font-light placeholder:leading-[26px]"
                 />
 
         <br />
-   <div className="md:min-w-[1280px] flex justify-center items-center">
+   <div className="lg:min-w-[1280px] flex justify-center items-center">
       {!isSubmitted ? (
         <button
           type="button"
-          className="bg-[#B99B5F] text-[#F5F5F5] font-metropolis font-bold text-[24px] md:text-[20px] leading-[21.6px] rounded-[8px] md:rounded-full px-8 py-4"
+          className="bg-[#B99B5F] text-[#F5F5F5] font-metropolis font-bold text-[24px] lg:text-[20px] leading-[21.6px] rounded-[8px] lg:rounded-full px-8 py-4"
           onClick={handleClick} // Trigger state change on click
         >
           Senden
         </button>
       ) : (
-        <p className="text-[ #B99B5F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[50px] leading-[26.2px] md:leading-[50.2px] text-center">
+        <p className="text-[ #B99B5F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[50px] leading-[26.2px] lg:leading-[50.2px] text-center">
           Vielen Dank - Wir melden uns so schnell wie möglich!
         </p>
       )}
