@@ -21,9 +21,9 @@ export default function FormPage01() {
       };
   return (
 
-    <div className="bg-[#F1F1F1] text-[#B99B5F] min-h-screen p-4 md:p-0">
+    <div className="bg-[#F1F1F1] text-[#B99B5F] min-h-screen p-4">
       {/* Section 1: Logo and Zuruk */}
-      <section className="md:block hidden md:flex justify-center items-center pt-[60px] md:pt-[60px]">
+      <section className="lg:block hidden lg:flex justify-center items-center pt-[25px] md:pt-[25px]">
         <div className="absolute top-6 left-4 lg:left-[170px]">
           <Link href="/Registrierung">
             <button
@@ -69,7 +69,7 @@ export default function FormPage01() {
         </div>
       </section>
 
-      <section className='md:hidden block flex justify-center items-center '>
+      <section className='lg:hidden block flex justify-center items-center '>
         <div className=" mt-0">
           <div className="mb-[100px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="131" height="64" viewBox="0 0 131 64" fill="none">
@@ -125,20 +125,20 @@ export default function FormPage01() {
       </section>
 
 
-      <section className="flex flex-col justify-center items-center md:pt-[160px] text-center mb-[16px]">
+      <section className="flex flex-col justify-center items-center lg:pt-[110px] text-center mb-[16px]">
         <p
-          className="md:block hidden text-[#B99B5F] font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
+          className="lg:block hidden text-[#B99B5F] font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
           Wählen Sie die gewünschte Region
         </p>
         <p
-          className="text-[#B99B5F] md:block hidden font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
+          className="text-[#B99B5F] lg:block hidden font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
 
         und geben Sie Ihre E-Mail Adresse an
         </p>
         <p
-          className="text-[#B99B5F] md:hidden block font-metropolis md:font-bold md:text-[48px] md:leading-[55.2px] md:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
+          className="text-[#B99B5F] lg:hidden block font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
         >
 
 Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Adresse an
@@ -225,7 +225,7 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
         />
       </div>
       <h2
-        className="text-center text-[#B99B5F] md:block hidden font-[700] text-[24px] leading-[30px] md:text-[48px] md:leading-[55px] mb-2 mt-[160px]"
+        className="text-center text-[#B99B5F] lg:block hidden font-[700] text-[24px] leading-[30px] lg:text-[48px] lg:leading-[55px] mb-2 mt-[160px]"
         style={{
           fontFamily: "Metropolis",
         }}
@@ -234,16 +234,16 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
 
       </h2>
       <h2
-        className="text-center text-[#B99B5F] md:hidden block font-[700] text-[24px] leading-[30px] md:text-[48px] md:leading-[55px] mb-2 mt-[160px]"
+        className="text-center text-[#B99B5F] lg:hidden block font-[700] text-[24px] leading-[30px] lg:text-[48px] lg:leading-[55px] mb-2 mt-[160px]"
         style={{
           fontFamily: "Metropolis",
         }}
       >
-        Ich interessiere mich für folgende Themen
+        Ich interessiere mich<br></br> für folgende Themen
 
       </h2>
       <div>
-        <div className="flex md:flex-row flex-col gap-8 md:gap-6 mt-10 w-[340px] md:min-w-[1280px] mx-auto items-start md:items-center md:justify-center  ">
+        <div className="flex lg:flex-row flex-col gap-8 lg:gap-6 mt-10 w-[340px] lg:min-w-[1280px] mx-auto items-start lg:items-center lg:justify-center  ">
           {[
             "Alltagsbegleitung und Besorgungen",
             "Freizeit und soziale Aktivitäten",
@@ -271,7 +271,7 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
                 isFormValid
                   ? "bg-[#04436F] text-[#F5F5F5]"
                   : "bg-gray-400 text-gray-200"
-              } bg-[#B99B5F] text-white font-bold text-lg md:text-[36px] md:leading-[22px] rounded-[50px] px-[50px] py-[14px]`}
+              } bg-[#B99B5F] text-white font-bold text-lg lg:text-[36px] lg:leading-[22px] rounded-[8px] lg:rounded-[50px] px-[50px] py-[14px]`}
               style={{
                 fontFamily: "Metropolis",
               }}
