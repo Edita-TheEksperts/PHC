@@ -152,7 +152,7 @@ export default function FormPage01() {
       
       {/* Heading */}
       <h1
-  className="lg:block hidden text-[#04436F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[48px] leading-[32px] md:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] md:mb-[40px]"
+  className="lg:block hidden text-[#04436F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[48px] leading-[32px] md:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] lg:mb-[40px]"
   style={{
     letterSpacing: "-0.96px", // Adjusted letter spacing
   }}
@@ -161,7 +161,7 @@ Wähle deine gewünschte Region in der du<br></br> arbeiten möchtest und gib de
 </h1>
 
 <h1
-  className="lg:hidden block text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[48px] leading-[32px] lg:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] md:mb-[40px]"
+  className="lg:hidden block text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[48px] leading-[32px] lg:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] lg:mb-[40px]"
   style={{
     letterSpacing: "-0.96px", // Adjusted letter spacing
   }}
