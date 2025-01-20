@@ -114,7 +114,7 @@ export default function FormPage02() {
 
       {/* Heading */}
       <h1
-        className="lg:block hidden text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[48px] leading-[32px] lg:leading-[55.2px] text-center lg:mb-10 lg:mt-[80px]"
+        className="lg:block hidden text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[48px] leading-[32px] lg:leading-[55.2px] text-center lg:mb-10 lg:mt-[110px]"
         style={{
           letterSpacing: "-0.96px", 
         }}
