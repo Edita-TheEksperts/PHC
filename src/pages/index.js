@@ -147,7 +147,7 @@ export default function Home() {
 
 <section className="max-w-[1290px] mx-auto md:mt-[160px] mt-[10px] mb-[160px]">
       {/* Heading Section */}
-      <h2 className="md:block hidden text-[#1C1B1D] text-center text-[32px] md:text-[55px] font-[600] leading-[32px] md:leading-[71.5px] mb-[32px] md:mb-8">
+      <h2 className="md:block hidden text-[#1C1B1D] text-center text-[32px] lg:text-[55px] font-[600] leading-[32px] lg:leading-[71.5px] mb-[32px] md:mb-8">
         Starten Sie mit der Prime Home Care AG <br></br> in eine sorgenfreie Zukunft
       </h2>
 
@@ -185,7 +185,7 @@ export default function Home() {
     </section>
 
 
-      <h2 className="text-center text-[#04436F] font-[Metropolis] text-[32px] md:text-[55px] font-[600] leading-[40px] md:leading-[71.5px] mb-[32px] md:mb-4 lg:mt-[30px] md:mt-[160px]">
+      <h2 className="text-center text-[#04436F] font-[Metropolis] text-[32px] lg:text-[55px] font-[600] leading-[40px] lg:leading-[71.5px] mb-[32px] md:mb-4 lg:mt-[30px] md:mt-[160px]">
         Warum die Prime Home Care AG wählen?
       </h2>
       <section className="max-w-[1280px] mx-auto flex justify-center items-center">
@@ -278,7 +278,7 @@ export default function Home() {
             Betreuung nach Mass             
             </h3>
 
-            <h3 className="md:hidden block text-[#04436F] text-[20px] md:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
+            <h3 className="md:hidden block text-[#04436F] text-[20px] lg:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
             Betreuung<br></br> nach Mass             
             </h3>
           </div>
@@ -305,7 +305,7 @@ export default function Home() {
             Verlässliche und qualifizierte Betreuungskräfte  
             </h3>
 
-            <h3 className="md:hidden blck text-[#04436F] text-[20px] md:text-[28px] w-[200px] md:w-[450px] font-semibold leading-[24px] md:leading-[33.6px]">
+            <h3 className="md:hidden blck text-[#04436F] text-[20px] lg:text-[28px] w-[200px] md:w-[450px] font-semibold leading-[24px] md:leading-[33.6px]">
             Verlässliche und qualifizierte Betreuungskräfte  
             </h3>
           </div>
@@ -335,10 +335,10 @@ export default function Home() {
 </svg>
             </div>
             {/* Heading */}
-            <h3 className="md:block hidden text-[#04436F] text-[20px] md:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
+            <h3 className="md:block hidden text-[#04436F] text-[20px] lg:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
             Digital und einfach <br></br>organisiert</h3>
 
-            <h3 className="md:hidden block text-[#04436F] text-[20px] md:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
+            <h3 className="md:hidden block text-[#04436F] text-[20px] lg:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
             Digital und<br></br> einfach <br></br>organisiert</h3>
           </div>
 
@@ -362,11 +362,11 @@ export default function Home() {
 </svg>
             </div>
             {/* Heading */}
-            <h3 className="md:block hidden text-[#04436F] text-[20px] md:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
+            <h3 className="md:block hidden text-[#04436F] text-[20px] lg:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
             Flexibel und <br></br> bedarfsorientiert  
             </h3>
 
-            <h3 className="md:hidden block text-[#04436F] text-[20px] md:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
+            <h3 className="md:hidden block text-[#04436F] text-[20px] lg:text-[28px] font-semibold leading-[24px] md:leading-[33.6px]">
             Flexibel und <br></br> bedarfsorientiert  
             </h3>
           </div>
@@ -383,7 +383,7 @@ export default function Home() {
 
     <section className="flex flex-col justify-center items-center gap-[32px] max-w-[900px] mx-auto  mb-[160px] mt-[160px]">
       {/* Section Heading */}
-      <h2 className="text-center text-[#04436F] leading-[37px] md:leading-[71px] text-[32px] md:text-[55px] font-[600] ">
+      <h2 className="text-center text-[#04436F] leading-[37px] lg:leading-[71px] text-[32px] lg:text-[55px] font-[600] ">
         Unser Angebot im Überblick
       </h2>
 
@@ -573,7 +573,7 @@ export default function Home() {
 
     <section className="max-w-[1290px] mx-auto">
       {/* Heading Section */}
-      <h2 className="md:block hidden text-[#1C1B1D] text-center text-[32px] md:text-[55px] font-[600] leading-[32px] md:leading-[71.5px] mb-[32px] md:mb-8">
+      <h2 className="md:block hidden text-[#1C1B1D] text-center text-[32px] lg:text-[55px] font-[600] leading-[32px] lg:leading-[71.5px] mb-[32px] md:mb-8">
         Starten Sie mit der Prime Home Care AG <br></br> in eine sorgenfreie Zukunft
       </h2>
 
