@@ -791,7 +791,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
       </li>
     </ul>
     <p className="text-[#B99B5F] font-metropolis text-[16px] font-normal leading-[26px] mt-[50px] ml-2">
-  Alles direkt über unsere <br></br> benutzerfreundliche Plattform.
+    Alles direkt über unsere<br></br> benutzerfreundliche online Plattform.
 </p>
   </div>
 
@@ -814,7 +814,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
         <div className='bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Geprüft und qualifiziert</div>
         <div className='bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Freundlich, erfahren und engagiert</div>
         <div className='bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Flexibel und an Ihre Bedürfnisse angepasst</div>
-        <div className='bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Ihre Bedürfnisse und Zufriedenheit stehen <br></br> für uns an erster Stelle</div>
+        <div className='lg:block hidden bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Ihre Bedürfnisse und Zufriedenheit stehen <br></br> für uns an erster Stelle</div>
+        <div className='lg:hidden block bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Ihre Bedürfnisse und<br></br> Zufriedenheit stehen<br></br>  für uns an erster Stelle</div>
       </div>
     </div>
 
