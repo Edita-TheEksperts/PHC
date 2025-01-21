@@ -921,11 +921,11 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
 
     {/* Title */}
-    <h2 className="text-[#04436F] text-center md:text-left font-metropolis text-[32px] md:text-[56px] font-[600] leading-[32px] md:leading-[71.5px]">
+    <h2 className="text-[#04436F] text-center lg:text-left font-metropolis text-[32px] lg:text-[56px] font-[600] leading-[32px] lg:leading-[71.5px]">
       So einfach startest du
     </h2>
 
-    <div className="md:hidden block md:flex-shrink-0 md:w-[550px]">
+    <div className="md:hidden block md:flex-shrink-0 lg:w-[550px]">
     <img
       src="/images/phceld.png"
       alt="Assisting elderly person"
@@ -936,31 +936,31 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
     {/* Steps */}
     <div className="flex flex-col gap-[22px]">
       {/* Step 1 */}
-      <div className="flex flex-col items-center md:items-start gap-2">
-        <span className="bg-[#04436F] text-white w-[200px] text-[20px] font-metropolis font-[700] md:font-[400] leading-[21.6px] px-4 py-1 rounded-full">
+      <div className="flex flex-col items-center lg:items-start gap-2">
+        <span className="bg-[#04436F] text-white w-[200px] text-[20px] font-metropolis font-[700] lg:font-[400] leading-[21.6px] px-4 py-1 rounded-full">
           Online bewerben
         </span>
-        <p className="text-[#04436F] text-[20px] md:text-[24px] text-center md:text-left font-metropolis font-[500] leading-[25.6px] md:ml-[20px]">
+        <p className="text-[#04436F] text-[20px] lg:text-[24px] text-center lg:text-left font-metropolis font-[500] leading-[25.6px] md:ml-[20px]">
           Erstelle dein Profil in wenigen Minuten.
         </p>
       </div>
 
       {/* Step 2 */}
-      <div className="flex flex-col items-center md:items-start gap-2">
-        <span className="bg-[#04436F] text-white w-[200px] text-center text-[20px] font-metropolis leading-[21.6px] font-[700] md:font-[400] px-4 py-1 rounded-full">
+      <div className="flex flex-col items-center lg:items-start gap-2">
+        <span className="bg-[#04436F] text-white w-[200px] text-center text-[20px] font-metropolis leading-[21.6px] font-[700] lg:font-[400] px-4 py-1 rounded-full">
           Schulung
         </span>
-        <p className="text-[#04436F] text-[20px] md:text-[24px] text-center md:text-left font-metropolis font-[500] leading-[25.6px] md:ml-[20px]">
+        <p className="text-[#04436F] text-[20px] lg:text-[24px] text-center lg:text-left font-metropolis font-[500] leading-[25.6px] md:ml-[20px]">
           Wir machen dich fit für deine Einsätze.
         </p>
       </div>
 
       {/* Step 3 */}
-      <div className="flex flex-col items-center md:items-start gap-2">
-        <span className="bg-[#04436F] text-white w-[200px] text-center text-[20px] font-metropolis font-[700] md:font-[400] leading-[21.6px] px-4 py-1 rounded-full">
+      <div className="flex flex-col items-center lg:items-start gap-2">
+        <span className="bg-[#04436F] text-white w-[200px] text-center text-[20px] font-metropolis font-[700] lg:font-[400] leading-[21.6px] px-4 py-1 rounded-full">
           Einsätze starten
         </span>
-        <p className="text-[#04436F] text-[20px] md:text-[24px] text-center md:text-left font-metropolis font-[500] leading-[25.6px] md:ml-[20px]">
+        <p className="text-[#04436F] text-[20px] lg:text-[24px] text-center lg:text-left font-metropolis font-[500] leading-[25.6px] md:ml-[20px]">
           Wähle, wann und wo du arbeiten möchtest.
         </p>
       </div>
@@ -968,7 +968,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
   </div>
 
   {/* Right Image */}
-  <div className="md:mt-[32px] lg:mt-0 md:block hidden md:flex-shrink-0 md:w-[550px]">
+  <div className="md:mt-[32px] lg:mt-0 md:block hidden lg:flex-shrink-0 md:w-[550px]">
     <img
       src="/images/phc-elderly.png"
       alt="Assisting elderly person"
