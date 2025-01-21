@@ -127,7 +127,7 @@ export default function FormPage02() {
       </h1>
 
       {/* Section */}
-      <section className="lg:block hidden lg:flex flex-col gap-[40px] w-full max-w-[1234px] mb-[160px]">
+      <section className="lg:block hidden lg:flex flex-col gap-[40px] w-full max-w-[1234px] ">
         {/* Two Divs Side by Side */}
         <div className="flex gap-[40px]">
           {/* Left Box */}
@@ -191,7 +191,7 @@ Wir bieten dir eine abwechslungsreiche Teilzeitbeschäftigung auf Stundenlohnbas
                 lineHeight: "162.5%",
               }}
             >
-Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann dein Arbeitsvolumen zwischen ca. 20 % und 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.            </p>
+Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann dein Arbeitsvolumen zwischen ca. 20 % und<br></br> 100 % liegen. Die Betreuung der Kunden erfolgt in einem regelmässigen Rhythmus.            </p>
           </div>
         </div>
       </section>
