@@ -40,7 +40,7 @@ export default function Home() {
             {/* Background Image */}
             <div className="absolute top-0 left-0 w-full h-full">
             <img
-              src="/images/New home.png"
+              src="/images/New-home.png"
               alt="Hero Image"
               className="object-cover w-full h-full"
             />
@@ -110,7 +110,7 @@ export default function Home() {
   {/* Background Image */}
   <div className="absolute w-[378px] md:w-auto h-[625px] mt-[70px]">
     <img
-      src="/images/New home mobile.png"
+      src="/images/New home mobile 2.png"
       alt="Hero Image"
       className="rounded-[20px] bg-[#F1F1F1] md:w-[1000px] md:h-[725px]"
     />
@@ -118,7 +118,7 @@ export default function Home() {
 
   <div className="absolute left-0 w-full h-full flex flex-col justify-center items-center text-[#F1F1F1]">
     <div className="w-[380px] md:w-[430px] text-center ">
-      <p className="mb-[32px] flex justify-center items-center w-[339px] p-[4px_10px_4px_10px] text-[#F1F1F1] text-[20px] font-[400] leading-[25.6px] border-[1px] border-transparent rounded-[20px] bg-[linear-gradient(93deg,_#000_0%,_rgba(0,_0,_0,_0.30)_100%)] mx-auto">
+      <p className="mb-[32px] mt-[40px] flex justify-center items-center w-[339px] p-[4px_10px_4px_10px] text-[#F1F1F1] text-[20px] font-[400] leading-[25.6px] border-[1px] border-transparent rounded-[20px] bg-[linear-gradient(93deg,_#000_0%,_rgba(0,_0,_0,_0.30)_100%)] mx-auto">
         Ab Frühsommer 2025 bringt die
       </p>
 
