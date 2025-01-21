@@ -42,7 +42,7 @@ export default function Home() {
             <img
               src="/images/New-home.png"
               alt="Hero Image"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full rounded-[20px]"
             />
           </div>
 
