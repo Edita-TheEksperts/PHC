@@ -200,11 +200,11 @@ const FormPage4 = () => {
           {faqData.map((faq, index) => (
             <div key={index} className="border-b p-[20px] rounded-[20px] bg-white flex flex-col items-start">
               <div className="flex justify-between w-full items-center">
-                <p className="font-semibold text-[#B99B5F] w-[270px] md:w-[400px] lg:w-[620px] text-[20px] leading-[26px]">
+                <p className="font-semibold text-[#B99B5F] w-[280px] md:w-[400px] lg:w-[620px] text-[20px] leading-[26px]">
                   {faq.question}
                 </p>
                 <span
-                  className="text-[#B99B5F] font-semibold text-[20px] leading-[26px] cursor-pointer"
+                  className="text-[#B99B5F] font-semibold text-[25px] leading-[26px] cursor-pointer"
                   onClick={() => toggleFAQ(index)}
                 >
                   {openFAQ === index ? '-' : '+'}
