@@ -40,7 +40,7 @@ export default function Home() {
             {/* Background Image */}
             <div className="absolute top-0 left-0 w-full h-full">
             <img
-              src="/images/Background (7).png"
+              src="/images/New home.png"
               alt="Hero Image"
               className="object-cover w-full h-full"
             />
@@ -110,7 +110,7 @@ export default function Home() {
   {/* Background Image */}
   <div className="absolute w-[378px] md:w-auto h-[625px] mt-[70px]">
     <img
-      src="/images/mobile1.png"
+      src="/images/New home mobile.png"
       alt="Hero Image"
       className="rounded-[20px] bg-[#F1F1F1] md:w-[1000px] md:h-[725px]"
     />
@@ -145,7 +145,7 @@ export default function Home() {
   </div>
 </section>
 
-<section className="max-w-[1290px] mx-auto md:mt-[160px] mt-[40px] mb-[160px]">
+<section className="max-w-[1290px] mx-auto md:mt-[160px] mt-[10px] mb-[160px]">
       {/* Heading Section */}
       <h2 className="md:block hidden text-[#1C1B1D] text-center text-[32px] md:text-[55px] font-[600] leading-[32px] md:leading-[71.5px] mb-[32px] md:mb-8">
         Starten Sie mit der Prime Home Care AG <br></br> in eine sorgenfreie Zukunft
@@ -185,7 +185,7 @@ export default function Home() {
     </section>
 
 
-      <h2 className="text-center text-[#04436F] font-[Metropolis] text-[32px] md:text-[55px] font-[600] leading-[40px] md:leading-[71.5px] mb-[32px] md:mb-4 mt-[30px] md:mt-[160px]">
+      <h2 className="text-center text-[#04436F] font-[Metropolis] text-[32px] md:text-[55px] font-[600] leading-[40px] md:leading-[71.5px] mb-[32px] md:mb-4 lg:mt-[30px] md:mt-[160px]">
         Warum die Prime Home Care AG wählen?
       </h2>
       <section className="max-w-[1280px] mx-auto flex justify-center items-center">
@@ -383,7 +383,7 @@ export default function Home() {
 
     <section className="flex flex-col justify-center items-center gap-[32px] max-w-[900px] mx-auto  mb-[160px] mt-[160px]">
       {/* Section Heading */}
-      <h2 className="text-center text-[#04436F] leading-[37px] md:leading-[71px] text-[32px] md:text-[55px] font-[600] mb-6 md:mb-0">
+      <h2 className="text-center text-[#04436F] leading-[37px] md:leading-[71px] text-[32px] md:text-[55px] font-[600] ">
         Unser Angebot im Überblick
       </h2>
 
