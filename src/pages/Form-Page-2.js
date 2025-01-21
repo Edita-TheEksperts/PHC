@@ -15,7 +15,7 @@ export default function FormPage02() {
         <div className="absolute top-6 left-4 lg:left-[170px]">
           <Link href="/Form-Page-1">
             <button
-              className="text-white text-[16px] font-[400] inline-flex items-center px-4 py-2 mt-[40px] "
+              className="text-[#003588] text-[16px] font-[400] inline-flex items-center px-4 py-2 mt-[40px] "
               style={{
                 fontFamily: "Metropolis",
                 background: "linear-gradient(93deg, #B2EAFF 0%, #A9B4B9 50%, rgba(0, 0, 0, 0.00) 100%)",
@@ -89,25 +89,19 @@ export default function FormPage02() {
           </div>
 
           <div className="mb-[16px] flex justify-center">
-            <Link href="/Form-Page-1">
-              <p
-                className="inline-flex items-center justify-center flex-col px-4 py-2"
-                style={{
-                  color: "white",
-                  fontFamily: "Metropolis",
-                  fontSize: "16px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "24px", // 150%
-                  background: "#B99B5F",
-                  borderRadius: "var(--opacity-50, 50px) 50px 50px var(--opacity-50, 50px)",
-                  padding: "6px 12px",
-                }}
-              >
-                &larr; Zurück
-              </p>
-
-            </Link>
+          <Link href="/Form-Page-1">
+            <button
+              className="text-[#003588] text-[16px] leading-[24px] font-[400] inline-flex items-center px-4 py-2 mt-[40px] "
+              style={{
+                fontFamily: "Metropolis",
+                background: "linear-gradient(93deg, #B2EAFF 0%, #A9B4B9 50%, rgba(0, 0, 0, 0.00) 100%)",
+                borderRadius: "var(--opacity-50, 50px) 0px 0px var(--opacity-50, 50px)",
+                padding: "6px 12px",
+              }}
+            >
+              &larr; Zurück
+            </button>
+          </Link>
           </div>
         </div>
       </section>
