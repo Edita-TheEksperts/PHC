@@ -202,9 +202,9 @@ Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann 
         </div>
       </section>
 
-      <section className="lg:hidden block mt-[50px] p-4">
+      <section className="lg:hidden block mt-[50px] ">
 
-      <div className="flex flex-col justify-center items-center p-[2px] mx-auto ">
+      <div className="flex flex-col justify-center items-center w-[381px] p-[2px] mx-auto ">
           <h2
             className="text-[#04436F] font-metropolis text-[24px] font-[400] leading-[51.5px] ml-[4px] self-start"
             style={{
@@ -220,11 +220,11 @@ Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann 
                 lineHeight: "162.5%",
               }}
             >
-Wir bieten dir eine abwechslungsreiche Teilzeitbeschäftigung auf Stundenlohnbasis. Du profitierst von viel Flexibilität, einem innovativen Unternehmen mit modernen Strukturen, fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser Backoffice und einem angenehmen Arbeitsklima. Dein Arbeitsort befindet sich immer in der Nähe deines Wohnortes.            </p>
+Wir bieten dir eine abwechslungsreiche Teilzeitbeschäftigung auf<br></br> Stundenlohnbasis. Du profitierst von viel Flexibilität, einem innovativen<br></br> Unternehmen mit modernen Strukturen, fortschrittlichen Anstellungsbedingungen, Unterstützung durch unser Backoffice<br></br> und einem angenehmen Arbeitsklima.<br></br> Dein Arbeitsort befindet sich immer in der Nähe deines Wohnortes.            </p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center p-[2px] mx-auto mt-[35px]">
+        <div className="flex flex-col justify-center items-center w-[381px] p-[2px] mx-auto mt-[35px]">
           <h2
             className="text-[#04436F] font-metropolis text-[24px] font-[400] leading-[51.5px] ml-[4px] self-start"
             style={{
@@ -244,7 +244,7 @@ Als engagierte Persönlichkeit arbeitest du selbstständig und effizient und set
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center p-[2px] mx-auto mt-[35px]">
+        <div className="flex flex-col justify-center items-center w-[381px] p-[2px] mx-auto mt-[35px]">
           <h2
             className="text-[#04436F] font-metropolis text-[24px] font-[400] leading-[51.5px] ml-[4px] self-start"
             style={{
