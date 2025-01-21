@@ -333,7 +333,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 <div className='flex flex-col w-[230px]'>
 
                                 <h3 className="text-[28px] text-[#04436F] font-metropolis font-[600] leading-[33.6px] mb-2">
-                                Flexibilität
+                                Flexibilität:
                                 </h3>
                                 <p className="text-[16px] text-[#1C1B1D] font-metropolis font-normal leading-[16px]">
                                 Plane deine Einsätze,<br></br> wie es dir passt.
@@ -373,7 +373,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 <div className='flex flex-col w-[230px]'>
 
                                 <h3 className="text-[28px] text-[#04436F] font-metropolis font-[600] leading-[33.6px] mb-2">
-                                Fairer Verdienst
+                                Fairer Verdienst:
                                 </h3>
                                 <p className="text-[16px] text-[#1C1B1D] font-metropolis font-normal leading-[18px]">
                                 Transparent und pünktlich.
@@ -393,7 +393,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                                 <div className='flex flex-col w-[230px]'>
 
                                 <h3 className="text-[28px] text-[#04436F] font-metropolis font-[600] leading-[33.6px] mb-2">
-                                Unterstützung
+                                Unterstützung:
                                 </h3>
                                 <p className="text-[16px] text-[#1C1B1D] font-metropolis font-normal leading-[18px]">
                                 Wir kümmern uns um die Organisation – du konzentrierst dich auf die Betreuung.
@@ -615,7 +615,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#1C1B1D] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#04436F] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
                             Deine Fürsorge macht den Unterschied.
                             </p>
                         </div>
@@ -649,7 +649,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#1C1B1D] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#04436F] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
                             Ob Profi oder Quereinsteiger –<br></br> wir bringen dich weiter. 
                             </p>
                         </div>
@@ -693,7 +693,7 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#1C1B1D] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
+                            <p className="text-[#04436F] md:w-[300px] font-metropolis text-[16px] font-normal leading-[16px]">
                             Du bestimmst, wann und wo du arbeitest.
                             </p>
                         </div>
@@ -895,9 +895,9 @@ Werde Teil unseres Teams und gestalte <br></br> Betreuung neu.  </p>
 
   {/* Bottom Section */}
   <div
-  className="flex flex-col justify-center items-center gap-[10px] px-[20px] py-[2px] mb-[30px] md:p-[10px] rounded-[10px] bg-white flex-shrink-0"
+  className="flex flex-col justify-center items-center gap-[10px] px-[16px] py-[2px] mb-[30px] md:p-[10px] rounded-[10px] bg-white flex-shrink-0"
 >
-  <p className="text-[#04436F] text-center font-metropolis text-[24px] font-[400] leading-[32px]">
+  <p className="text-[#04436F] text-left font-metropolis text-[24px] font-[400] leading-[32px]">
     Arbeiten mit Prime Home Care bedeutet, Freiheit und Erfüllung zu verbinden.
   </p>
 </div>
