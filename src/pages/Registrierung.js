@@ -147,7 +147,7 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
   {/* Background Image */}
   <div className="absolute w-[392px] md:w-auto h-[625px] mt-[80px]">
     <img
-      src="/images/mobile3.png"
+      src="/images/Herosection new.png"
       alt="Hero Image"
       className="rounded-[20px] bg-[#F1F1F1] w-[392px] md:w-[1000px] md:h-[725px]"
     />
@@ -239,7 +239,7 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
 </section>
 
 <section
-  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover md:mt-[150px] mt-[50px] block lg:hidden"
+  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-[rgba(185,155,95,0.07)] relative flex flex-col items-center justify-center bg-cover md:mt-[150px] mt-[50px] block lg:hidden"
 >
   <h2
     className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[4px]"
@@ -778,19 +778,19 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     />
   </div>
 
-    <ul className="space-y-6 text-[#1C1B1D] font-metropolis text-[20px] font-normal leading-[31px] gap-6">
+    <ul className="space-y-6 text-[#1C1B1D]  text-left font-metropolis text-[20px] font-normal leading-[31px] gap-6">
       <li>
-        <strong className="text-white text-[20px] leading-[21px] text-[700] bg-[#B99B5F] rounded-[5px] px-[20px] py-[10px]">Wunschzeit eingeben</strong> <br></br> <p className='mt-4 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>
+        <strong className="  block text-white text-[20px] leading-[21px] text-[700] bg-[#B99B5F] rounded-[5px] px-[16px] py-[10px] w-[331px]">Wunschzeit eingeben</strong> <br></br> <p className='mt-[-20px] text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>
         Wählen Sie Datum, Uhrzeit, Dauer und Regelmässigkeit online aus.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[20px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuungsperson auswählen</strong> <br></br> <p className='mt-4 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
+        <strong className="block text-white bg-[#B99B5F] text-[20px] text-[700] leading-[21px] rounded-[5px] px-[16px] py-[10px] w-[331px]">Betreuungsperson auswählen</strong> <br></br> <p className='mt-[-20px] text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Wir organisieren eine auf Ihre Bedürfnisse abgestimmte Betreuungsperson.</p>
       </li>
       <li>
-        <strong className="text-white bg-[#B99B5F] text-[20px] leading-[21px] rounded-[5px] px-[20px] py-[10px]">Betreuung geniessen</strong> <br></br> <p className='mt-4 text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Unser Team kümmert sich um den Rest <br></br> – einfach, sicher und zuverlässig.</p>
+        <strong className="block text-white bg-[#B99B5F] text-[20px] text-[700] leading-[21px] rounded-[5px] px-[16px] py-[10px] w-[331px]">Betreuung geniessen</strong> <br></br> <p className='mt-[-20px] text-[20px] leading-[24px] text-[400] text-[#B99B5F]'>Unser Team kümmert sich um den Rest <br></br> – einfach, sicher und zuverlässig.</p>
       </li>
     </ul>
-    <p className="text-[#B99B5F] font-metropolis text-[16px] font-normal leading-[26px] mt-[40px] ml-2">
+    <p className="text-[#B99B5F] font-metropolis text-[16px] font-normal leading-[26px] mt-[50px] ml-2">
   Alles direkt über unsere <br></br> benutzerfreundliche Plattform.
 </p>
   </div>
@@ -809,7 +809,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
         Unsere <br></br>Betreuungs­personen
       </h2>
       
-      <div className="text-[#B99B5F] font-metropolis text-[20px] font-[600] leading-[26px] md:space-y-[14px]">
+      <div className="text-[#B99B5F] font-metropolis text-[20px] font-[600] leading-[26px] lg:space-y-[14px]">
         <div className='bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Vertrauen Sie den Profis</div>
         <div className='bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Geprüft und qualifiziert</div>
         <div className='bg-white p-[20px] w-[370] md:w-[600px] rounded-[20px] mb-2'>Freundlich, erfahren und engagiert</div>
@@ -837,8 +837,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   className="lg:px-[50px] relative flex flex-col lg:flex-row justify-center items-center mb-[160px] w-full lg:max-w-[1167px] lg:gap-[100px] lg:flex-shrink-0 text-center mx-auto"
 >
   <div className='lg:block hidden'>
-    <img className='flex justify-center rounded-[20px]'
-      src="/images/Mobile-Experience 1.png" 
+    <img className='flex justify-center'
+      src="/images/Web-Experience.png" 
       alt="Warum Prime Home Care"
       style={{
         width: "467px", 
@@ -960,7 +960,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="mb-[160px] font-montserat rounded-[20px] max-w-[1290px] px-2 py-4 bg-white relative flex flex-col items-center justify-center bg-cover mt-[50px] block lg:hidden"
+  className="mb-[160px] font-montserat rounded-[20px] lg:max-w-[1290px] px-2 py-4 relative flex flex-col items-center justify-center mt-[50px] block lg:hidden bg-[rgba(185,155,95,0.07)]"
 >
   <h2
     className="text-[#B99B5F] text-center text-[32px] font-[600] mb-2 mt-[4px]"
