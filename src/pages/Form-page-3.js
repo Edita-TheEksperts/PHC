@@ -1,24 +1,23 @@
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useState, useContext } from "react";
+import { FormContext } from "./FormContext";
 import ServicesGrid from "./Servicesgrid";
 
 export default function FormPage01() {
-     const [region, setRegion] = useState("");
-      const [name, setName] = useState("");
-      const [email, setEmail] = useState("");
-      const [isFormValid, setIsFormValid] = useState(false);
-    
-      // Email validation regex
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    
-      // Form validation handler
-      const handleValidation = () => {
-        if (region && name && emailRegex.test(email)) {
-          setIsFormValid(true);
-        } else {
-          setIsFormValid(false);
-        }
-      };
+  const { formData, setFormData } = useContext(FormContext);
+
+  const handleValidation = () => {
+    return formData.region && formData.name && formData.email;
+  };
+
+  const handleCheckboxChange = (topic) => {
+    const selectedTopics = formData.selectedTopics.includes(topic)
+      ? formData.selectedTopics.filter((item) => item !== topic)
+      : [...formData.selectedTopics, topic];
+    setFormData({ ...formData, selectedTopics });
+  };
+
+  const isFormValid = handleValidation();
   return (
 
     <div className="bg-[#F1F1F1] text-[#B99B5F] min-h-screen p-4">
@@ -156,13 +155,10 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
     <select
   className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
   required
-  value={region}
-  onChange={(e) => {
-    setRegion(e.target.value);
-    handleValidation();
-  }}
+  value={formData.region}
+  onChange={(e) => setFormData({ ...formData, region: e.target.value })}
 >
-  <option value="" disabled selected>
+  <option value="" disabled>
     Region
   </option>
   <option>Kanton Aargau</option>
@@ -203,11 +199,8 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
           style={{
             fontFamily: "Metropolis",
           }}
-          value={name}
-            onChange={(e) => {
-                setName(e.target.value);
-                handleValidation();
-            }}
+          value={formData.name}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
         <input
           type="email"
@@ -217,11 +210,8 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
           style={{
             fontFamily: "Metropolis",
           }}
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-            handleValidation();
-          }}
+          value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
       </div>
       <h2
@@ -249,16 +239,18 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
             "Freizeit und soziale Aktivitäten",
             "Gesundheitsfürsorge",
             "Haushaltshilfe und Wohnpflege​​",
-          ].map((labelText, index) => (
+          ].map((topic, index) => (
             <label
               key={index}
               className="flex items-center gap-3 text-[#1C1B1D] text-[16px] leading-[24px] font-normal"
             >
               <input
-                type="checkbox"
                 className="h-[22px] w-[22px] border-2 border-gray-400 rounded-[3px] appearance-none checked:bg-[#B99B5F] checked:border-[#B99B5F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B99B5F]"
+                type="checkbox"
+                checked={formData.selectedTopics.includes(topic)}
+                onChange={() => handleCheckboxChange(topic)}
               />
-              <span>{labelText}</span>
+            <span>{topic}</span>
             </label>
           ))}
         </div>
