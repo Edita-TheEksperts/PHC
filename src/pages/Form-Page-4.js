@@ -1,21 +1,35 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from "react";
+import { FormContext } from "./FormContext";
 import Link from "next/link";
 
 
 const FormPage4 = () => {
+    const { formData, setFormData } = useContext(FormContext); // Merr të dhënat nga FormContext
     const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleClick = () => {
-    setIsSubmitted(true); // Update the state to show the thank-you message
-  };
-
-    const [question, setQuestion] = useState('');
-    const [openFAQ, setOpenFAQ] = useState(null); // Track the open FAQ
   
     const handleInputChange = (e) => {
-      setQuestion(e.target.value);
+      setFormData({ ...formData, additionalQuestion: e.target.value }); // Ruaj pyetjen shtesë
     };
   
+    const handleClick = async () => {
+      try {
+        const response = await fetch("/api/send3-4email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData), // Dërgo të dhënat e formës në API
+        });
+  
+        if (response.ok) {
+          setIsSubmitted(true);
+        } else {
+          console.error("Error submitting form");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+  
+    const [openFAQ, setOpenFAQ] = useState(null);
     const toggleFAQ = (index) => {
       // Toggle the FAQ visibility by checking if it's already open
       if (openFAQ === index) {
@@ -227,13 +241,14 @@ const FormPage4 = () => {
       <h2 className="text-[#B99B5F] text-center font-metropolis text-[24px] lg:text-[55px] font-semibold leading-[71.5px] md:mb-4">
             Haben Sie noch weitere Fragen?
                 </h2>
+                {!isSubmitted && (
                 <input
                 type="text"
-                value={question}
-                onChange={handleInputChange}
+                value={formData.additionalQuestion} // Merr pyetjen nga FormContext
+                onChange={handleInputChange} // Përditëso FormContext
                 placeholder="Hier Ihre Fragen eintippen"
                 className="text-center focus:outline-none text-[#B99B5F] w-full lg:w-[890px] px-4 py-4 border rounded-[20px] mb-4 placeholder:text-[#B99B5F] placeholder:font-metropolis placeholder:text-[20px] placeholder:font-light placeholder:leading-[26px]"
-                />
+                />     )}
 
         <br />
    <div className="lg:min-w-[1280px] flex justify-center items-center">
