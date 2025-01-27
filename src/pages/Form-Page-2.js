@@ -1,13 +1,39 @@
 import Link from "next/link";
-import { useState } from "react";
-  
+import { useState, useContext } from "react";
+import { FormContext } from "./FormContext";
 
 export default function FormPage02() {
+  const { formData, setFormData } = useContext(FormContext);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleClick = () => {
-    setIsSubmitted(true); // Update the state to show the thank-you message
+  const handleClick = async () => {
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("region", formData.region);
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("questions", formData.questions);
+  
+      // Kontrollo nëse skedari ekziston dhe shtoje në FormData
+      if (formData.cv) {
+        formDataToSend.append("cv", formData.cv, formData.cv.name); // Shto skedarin me emrin e tij
+      }
+  
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        body: formDataToSend, // Dërgo të dhënat
+      });
+  
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        console.error("Error submitting form");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
+  
   return (
     <div className="bg-[#F1F1F1] flex flex-col items-center justify-start p-4">
       {/* Back Button and Logo */}
@@ -270,11 +296,15 @@ Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann 
         >
           Hast du noch Fragen?
         </h1>
+        {!isSubmitted && (
         <input
           type="text"
           placeholder="Deine Fragen eintippen"
           className="flex flex-col items-start self-stretch text-center border-[1px] rounded-[20px] border-[#B7B6BA6A] p-[20px] placeholder:text-[#04436F] text-[#04436F] font-metropolis text-[20px] font-light leading-[26px] w-full lg:w-[826px] bg-transparent focus:outline-none"
+          value={formData.questions}
+          onChange={(e) => setFormData({ ...formData, questions: e.target.value })}
           />
+)}
 
 <div className="container flex justify-center items-center">
       {!isSubmitted ? (
@@ -286,7 +316,7 @@ Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann 
           Senden
         </button>
       ) : (
-        <p className="text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[50px] leading-[26.2px] lg:leading-[50.2px] text-center">
+        <p className="text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[50px] leading-[26.2px] lg:leading-[50.2px] text-center mt-[40px] mb-[160px]">
           Vielen Dank - Wir melden uns so schnell wie möglich!
         </p>
       )}
