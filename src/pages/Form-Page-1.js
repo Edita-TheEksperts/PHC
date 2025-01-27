@@ -1,49 +1,30 @@
 import Link from "next/link";
-import React, { useState } from 'react';
-
+import React, { useState, useContext, useEffect } from "react";
+import { FormContext } from "./FormContext";
 
 export default function FormPage01() {
-  const [cv, setCv] = useState(null);
-
-  const handleDrop = (event) => {
-    event.preventDefault();
-    const file = event.dataTransfer.files[0];
-    if (file && file.type === "application/pdf") {
-      setCv(file);
-    } else {
-      alert("Only PDF files are allowed.");
-    }
-  };
-
-  const handleDragOver = (event) => {
-    event.preventDefault();
-  };
-
-  const handleChange = (event) => {
-    const file = event.target.files[0];
-    if (file && file.type === "application/pdf") {
-      setCv(file);
-    } else {
-      alert("Only PDF files are allowed.");
-    }
-  };
-
-  const [region, setRegion] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [isFormValid, setIsFormValid] = useState(false);
-
-  // Email validation regex
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  // Form validation handler
-  const handleValidation = () => {
-    if (region && name && emailRegex.test(email)) {
-      setIsFormValid(true);
-    } else {
-      setIsFormValid(false);
-    }
-  };
+  const { formData, setFormData } = useContext(FormContext);
+   const [isFormValid, setIsFormValid] = useState(false);
+   const validateForm = () => {
+     return (
+       formData.region &&
+       formData.name &&
+       emailRegex.test(formData.email) &&
+       formData.cv
+     );
+   };
+   useEffect(() => {
+     setIsFormValid(validateForm());
+   }, [formData]);
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   const handleFileChange = (event) => {
+     const file = event.target.files[0];
+     if (file && file.type === "application/pdf") {
+       setFormData({ ...formData, cv: file });
+     } else {
+       alert("Only PDF files are allowed.");
+     }
+   };
   
   return (
     <div className=" bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
@@ -179,14 +160,13 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
   >
     <select
   className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
+  value={formData.region || ""}
+  onChange={(e) =>
+    setFormData({ ...formData, region: e.target.value })
+  }
   required
-  value={region}
-  onChange={(e) => {
-    setRegion(e.target.value);
-    handleValidation();
-  }}
 >
-  <option value="" disabled selected>
+  <option value="" disabled>
     Region
   </option>
   <option>Kanton Aargau</option>
@@ -229,11 +209,8 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
     border: "1px solid #B7B6BA",
     borderRadius: "8px",
   }}
-  value={name}
-  onChange={(e) => {
-    setName(e.target.value);
-    handleValidation();
-  }}
+  value={formData.name || ""}
+  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
 />
 
 
@@ -247,48 +224,42 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
       border: "1px solid #B7B6BA",
       borderRadius: "8px",
     }}
-    value={email}
-    onChange={(e) => {
-      setEmail(e.target.value);
-      handleValidation();
-    }}
+    value={formData.email || ""}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
   />
 
 <div
-      className="flex flex-col justify-between items-start w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
-      style={{
-        border: "1px solid #B7B6BA",
-        borderRadius: "8px",
-      }}
-      onDrop={handleDrop}
-      onDragOver={handleDragOver}
-    >
-      <p className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal">
-      Lebenslauf
-      </p>
-      <span className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal">
-      Zwingend
-      </span>
-
-      <input
-        type="file"
-        accept=".pdf"
-        onChange={handleChange}
-        style={{ display: 'none' }}
-        id="cv-upload"
-      />
-      <label htmlFor="cv-upload" className="cursor-pointer">
-        {cv ? (
-          <p className="text-[#1C1B1D] font-metropolis text-[14px] leading-[22px]">
-            {cv.name}
+          className="flex flex-col justify-between items-start w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
+          style={{
+            border: "1px solid #B7B6BA",
+            borderRadius: "8px",
+          }}
+        >
+          <p className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal">
+            Lebenslauf
           </p>
-        ) : (
-          <p >
-            
-          </p>
-        )}
-      </label>
-    </div>
+          <span className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal">
+            Zwingend
+          </span>
+          <input
+            type="file"
+            accept=".pdf"
+            onChange={handleFileChange}
+            style={{ display: "none" }}
+            id="cv-upload"
+          />
+          <label htmlFor="cv-upload" className="cursor-pointer">
+            {formData.cv ? (
+              <p className="text-[#1C1B1D] font-metropolis text-[14px] leading-[22px]">
+                {formData.cv.name}
+              </p>
+            ) : (
+              <p className="text-[#1C1B1D] font-metropolis text-[14px] leading-[22px]">
+                Upload CV
+              </p>
+            )}
+          </label>
+        </div>
 </div>
 
       {/* Submit Button */}
