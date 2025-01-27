@@ -28,7 +28,7 @@ const getAccessToken = async () => {
   }
 };
 
-// Trajtimi i kërkesës POST
+// Funksioni kryesor për trajtimin e kërkesave
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const form = formidable({ multiples: true });
@@ -43,14 +43,31 @@ export default async function handler(req, res) {
       console.log("Files:", files);
 
       try {
-        // Përgatitni emailin
         const accessToken = await getAccessToken();
+
+        // Përgatitni përmbajtjen e emailit
+        let emailContent = `You have received a new form submission:\n\n`;
+        emailContent += `Name: ${fields.name || "N/A"}\n`;
+        emailContent += `Email: ${fields.email || "N/A"}\n`;
+        emailContent += `Region: ${fields.region || "N/A"}\n`;
+
+        // Përfshi temat e zgjedhura nga Form-Page-3
+        if (fields.selectedTopics) {
+          const topics = Array.isArray(fields.selectedTopics)
+            ? fields.selectedTopics.join(", ")
+            : fields.selectedTopics;
+          emailContent += `Selected Topics: ${topics}\n`;
+        }
+
+        // Përfshi pyetjen shtesë nga Form-Page-4
+        emailContent += `Additional Question: ${fields.additionalQuestion || "N/A"}\n`;
+
         const emailBody = {
           message: {
             subject: `New Form Submission`,
             body: {
               contentType: "Text",
-              content: `You have received a new form submission:\n\nName: ${fields.name}\nEmail: ${fields.email}\nRegion: ${fields.region}\nQuestions: ${fields.questions}`,
+              content: emailContent,
             },
             toRecipients: [
               { emailAddress: { address: "edita.latifi@the-eksperts.com" } },
@@ -59,9 +76,9 @@ export default async function handler(req, res) {
           },
         };
 
-        // Kontrollo nëse ekziston skedari CV dhe shtoje si bashkëngjitje
+        // Kontrollo nëse ekziston ndonjë skedar për t'u bashkangjitur
         if (files.cv && Array.isArray(files.cv) && files.cv[0]?.filepath) {
-          const cvFile = files.cv[0]; // Merre elementin e parë të listës
+          const cvFile = files.cv[0];
           const cvFileContent = fs.readFileSync(cvFile.filepath, { encoding: "base64" });
           emailBody.message.attachments = [
             {
@@ -72,6 +89,7 @@ export default async function handler(req, res) {
           ];
         }
 
+        // Dërgo emailin
         const emailResponse = await axios.post(
           "https://graph.microsoft.com/v1.0/users/edita.latifi@the-eksperts.com/sendMail",
           emailBody,
