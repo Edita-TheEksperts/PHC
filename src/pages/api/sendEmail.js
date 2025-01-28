@@ -53,9 +53,7 @@ export default async function handler(req, res) {
               content: `Sie haben eine neue Formularübermittlung erhalten:\n\nName: ${fields.name}\nEmail: ${fields.email}\nRegion: ${fields.region}\nKommentar: ${fields.questions}`,
             },
             toRecipients: [
-              { emailAddress: { address: "edita.latifi@the-eksperts.com" } },
-              { emailAddress: { address: "fisnik.salihu@the-eksperts.com" } },
-
+              { emailAddress: { address: "jobs@phc.ch" } },
             ],
           },
         };
@@ -74,7 +72,7 @@ export default async function handler(req, res) {
         }
 
         const emailResponse = await axios.post(
-          "https://graph.microsoft.com/v1.0/users/edita.latifi@the-eksperts.com/sendMail",
+          "https://graph.microsoft.com/v1.0/users/jobs@phc.ch/sendMail",
           emailBody,
           {
             headers: {

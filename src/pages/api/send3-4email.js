@@ -70,8 +70,7 @@ export default async function handler(req, res) {
               content: emailContent,
             },
             toRecipients: [
-              { emailAddress: { address: "edita.latifi@the-eksperts.com" } },
-              { emailAddress: { address: "fisnik.salihu@the-eksperts.com" } },
+              { emailAddress: { address: "info@phc.ch" } },
 
             ],
           },
@@ -92,7 +91,7 @@ export default async function handler(req, res) {
 
         // Dërgo emailin
         const emailResponse = await axios.post(
-          "https://graph.microsoft.com/v1.0/users/edita.latifi@the-eksperts.com/sendMail",
+          "https://graph.microsoft.com/v1.0/users/info@phc.ch/sendMail",
           emailBody,
           {
             headers: {
