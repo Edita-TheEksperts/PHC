@@ -5,7 +5,7 @@ import qs from "querystring";
 
 export const config = {
   api: {
-    bodyParser: false, // Çaktivizo bodyParser për të përdorur formidable
+    bodyParser: false,
   },
 };
 
