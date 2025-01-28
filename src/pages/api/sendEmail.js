@@ -72,7 +72,7 @@ export default async function handler(req, res) {
         }
 
         const emailResponse = await axios.post(
-          "https://graph.microsoft.com/v1.0/users/jobs@phc.ch/Mail.Send",
+          "https://graph.microsoft.com/v1.0/users/jobs@phc.ch/sendMail",
           emailBody,
           {
             headers: {
