@@ -14,14 +14,13 @@ export default function FormPage02() {
       formDataToSend.append("email", formData.email);
       formDataToSend.append("questions", formData.questions);
   
-      // Kontrollo nëse skedari ekziston dhe shtoje në FormData
       if (formData.cv) {
-        formDataToSend.append("cv", formData.cv, formData.cv.name); // Shto skedarin me emrin e tij
+        formDataToSend.append("cv", formData.cv, formData.cv.name);
       }
   
       const response = await fetch("/api/sendEmail", {
         method: "POST",
-        body: formDataToSend, // Dërgo të dhënat
+        body: formDataToSend,
       });
   
       if (response.ok) {
