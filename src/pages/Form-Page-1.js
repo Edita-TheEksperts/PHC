@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState, useContext, useEffect } from "react";
-import { FormContext } from "./FormContext";
+import { FormContext } from "../context/FormContext";
 
 export default function FormPage01() {
   const { formData, setFormData } = useContext(FormContext);
@@ -227,6 +227,7 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
     value={formData.email || ""}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
   />
+          <label htmlFor="cv-upload" className="cursor-pointer">
 
 <div
           className="flex flex-col justify-between items-start w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
@@ -235,12 +236,7 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
             borderRadius: "8px",
           }}
         >
-          <p className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal">
-            Lebenslauf
-          </p>
-          <span className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal">
-            Zwingend
-          </span>
+       
           <input
             type="file"
             accept=".pdf"
@@ -248,18 +244,22 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
             style={{ display: "none" }}
             id="cv-upload"
           />
-          <label htmlFor="cv-upload" className="cursor-pointer">
             {formData.cv ? (
               <p className="text-[#1C1B1D] font-metropolis text-[14px] leading-[22px]">
                 {formData.cv.name}
               </p>
             ) : (
-              <p className="text-[#1C1B1D] font-metropolis text-[14px] leading-[22px]">
-                Upload CV
-              </p>
+               <p className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal">
+               Lebenslauf
+             </p>
+            
             )}
-          </label>
+          
+          <span className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal">
+               Zwingend
+             </span>
         </div>
+        </label>
 </div>
 
       {/* Submit Button */}

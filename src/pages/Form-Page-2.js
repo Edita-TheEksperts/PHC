@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState, useContext } from "react";
-import { FormContext } from "./FormContext";
+import { FormContext } from "../context/FormContext";
 
 export default function FormPage02() {
   const { formData, setFormData } = useContext(FormContext);

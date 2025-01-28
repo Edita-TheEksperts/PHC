@@ -47,14 +47,15 @@ export default async function handler(req, res) {
         const accessToken = await getAccessToken();
         const emailBody = {
           message: {
-            subject: `Neues Formular wird eingereicht`,
+            subject: `Formular: Jobs Landing Page`,
             body: {
               contentType: "Text",
-              content: `Sie haben eine neue Formularübermittlung erhalten:\n\nName: ${fields.name}\nEmail: ${fields.email}\nRegion: ${fields.region}\nQuestions: ${fields.questions}`,
+              content: `Sie haben eine neue Formularübermittlung erhalten:\n\nName: ${fields.name}\nEmail: ${fields.email}\nRegion: ${fields.region}\nKommentar: ${fields.questions}`,
             },
             toRecipients: [
               { emailAddress: { address: "edita.latifi@the-eksperts.com" } },
               { emailAddress: { address: "fisnik.salihu@the-eksperts.com" } },
+
             ],
           },
         };

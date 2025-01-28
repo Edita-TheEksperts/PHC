@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import { FormProvider } from "./FormContext";
+import { FormProvider } from "../context/FormContext";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,4 +10,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-

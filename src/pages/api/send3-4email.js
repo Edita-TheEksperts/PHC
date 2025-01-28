@@ -17,7 +17,7 @@ const getAccessToken = async () => {
       qs.stringify({
         grant_type: "client_credentials",
         client_id: "6b3c8303-3397-46d6-bee8-49192f0ad4f0",
-        client_secret: "I",
+        client_secret: "",
         scope: "https://graph.microsoft.com/.default",
       })
     );
@@ -56,15 +56,15 @@ export default async function handler(req, res) {
           const topics = Array.isArray(fields.selectedTopics)
             ? fields.selectedTopics.join(", ")
             : fields.selectedTopics;
-          emailContent += `Selected Topics: ${topics}\n`;
+          emailContent += `Ausgewählte Themen: ${topics}\n`;
         }
 
         // Përfshi pyetjen shtesë nga Form-Page-4
-        emailContent += `Additional Question: ${fields.additionalQuestion || "N/A"}\n`;
+        emailContent += `Kommentar: ${fields.additionalQuestion || "N/A"}\n`;
 
         const emailBody = {
           message: {
-            subject: `Neues Formular wird eingereicht`,
+            subject: `Formular: Kunden Landing Page`,
             body: {
               contentType: "Text",
               content: emailContent,

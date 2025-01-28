@@ -1092,8 +1092,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
         <p
             className="font-normal text-[24px] leading-[30.8px]"
           >
-            <a href="mailto:jobs@phc.ch">
-              jobs@phc.ch
+            <a href="mailto:info@phc.ch">
+              info@phc.ch
             </a>
           </p>
 
@@ -1170,8 +1170,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
                       Kontakt:
                     </h2>
                     <p className="font-normal text-[24px] leading-[30.8px]">
-                    <a href="mailto:jobs@phc.ch">
-                      jobs@phc.ch
+                    <a href="mailto:info@phc.ch">
+                      info@phc.ch
                     </a>
                   </p>
                     <p

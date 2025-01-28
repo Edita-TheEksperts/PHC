@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState, useContext } from "react";
-import { FormContext } from "./FormContext";
+import { FormContext } from "../context/FormContext";
 import ServicesGrid from "./Servicesgrid";
 
 export default function FormPage01() {
