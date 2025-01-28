@@ -16,8 +16,8 @@ const getAccessToken = async () => {
       `https://login.microsoftonline.com/5e12d93e-3010-46f9-a55f-17db43b3fcc9/oauth2/v2.0/token`,
       qs.stringify({
         grant_type: "client_credentials",
-        client_id: "7a2bb7b1-6482-47a3-a4b7-0f2550ab8c0b",
-        client_secret: "0a0df0f0-e290-4d34-a74f-cfdce2911301",
+        client_id: "49a0c77e-e164-4586-8367-cb8774526d0e",
+        client_secret: "8dd4526a-13c6-45dd-ba7b-a2b1cf1d3bae",
         scope: "https://graph.microsoft.com/.default",
       })
     );
