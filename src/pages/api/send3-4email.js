@@ -17,7 +17,7 @@ const getAccessToken = async () => {
       qs.stringify({
         grant_type: "client_credentials",
         client_id: "6b3c8303-3397-46d6-bee8-49192f0ad4f0",
-        client_secret: "kq58Q~2_COSQYEL8ytpD83woX80WmYeLd-JGfcdI",
+        client_secret: "I",
         scope: "https://graph.microsoft.com/.default",
       })
     );
