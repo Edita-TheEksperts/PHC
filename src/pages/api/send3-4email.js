@@ -91,7 +91,7 @@ export default async function handler(req, res) {
 
         // Dërgo emailin
         const emailResponse = await axios.post(
-          "https://graph.microsoft.com/v1.0/users/info@phc.ch/sendMail",
+          "https://graph.microsoft.com/v1.0/users/info@phc.ch/Mail.Send",
           emailBody,
           {
             headers: {
