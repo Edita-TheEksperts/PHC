@@ -1,7 +1,6 @@
+import nodemailer from 'nodemailer';
 import formidable from "formidable";
 import fs from "fs";
-import axios from "axios";
-import qs from "querystring";
 
 export const config = {
   api: {
@@ -9,28 +8,8 @@ export const config = {
   },
 };
 
-// Funksioni për të marrë Access Token
-const getAccessToken = async () => {
-  try {
-    const tokenResponse = await axios.post(
-      `https://login.microsoftonline.com/5e12d93e-3010-46f9-a55f-17db43b3fcc9/oauth2/v2.0/token`,
-      qs.stringify({
-        grant_type: "client_credentials",
-        client_id: "49a0c77e-e164-4586-8367-cb8774526d0e",
-        client_secret: "8dd4526a-13c6-45dd-ba7b-a2b1cf1d3bae",
-        scope: "https://graph.microsoft.com/.default",
-      })
-    );
-    return tokenResponse.data.access_token;
-  } catch (error) {
-    console.error("Error fetching access token:", error.response?.data || error.message);
-    throw new Error("Failed to fetch access token");
-  }
-};
-
-// Trajtimi i kërkesës POST
 export default async function handler(req, res) {
-  if (req.method === "POST") {
+  if (req.method === 'POST') {
     const form = formidable({ multiples: true });
 
     form.parse(req, async (err, fields, files) => {
@@ -42,55 +21,89 @@ export default async function handler(req, res) {
       console.log("Fields:", fields);
       console.log("Files:", files);
 
-      try {
-        // Përgatitni emailin
-        const accessToken = await getAccessToken();
-        const emailBody = {
-          message: {
-            subject: `Formular: Jobs Landing Page`,
-            body: {
-              contentType: "Text",
-              content: `Sie haben eine neue Formularübermittlung erhalten:\n\nName: ${fields.name}\nEmail: ${fields.email}\nRegion: ${fields.region}\nKommentar: ${fields.questions}`,
-            },
-            toRecipients: [
-              { emailAddress: { address: "jobs@phc.ch" } },
-            ],
-          },
-        };
+      const { name, email, region, questions } = fields;
 
-        // Kontrollo nëse ekziston skedari CV dhe shtoje si bashkëngjitje
+      // Validate required fields
+      if (!name || !email || !region || !questions) {
+        return res.status(400).json({ error: 'Missing required fields' });
+      }
+
+      // Create transporter for sending email using Nodemailer
+      const transporter = nodemailer.createTransport({
+        host: 'asmtp.mail.hostpoint.ch',
+        port: 465,
+        secure: true,
+        auth: {
+          user: 'landingpage@phc.ch',
+          pass: '45uYjTaR_N!x4AE',
+        },
+      });
+
+      try {
+        // Verify the connection configuration for Nodemailer
+        await transporter.verify();
+
+        // Prepare the email HTML body
+        const htmlContent = `
+          <div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+            <h2 style="color: #2c3e50; text-align: center;">Neues Formular aus dem Jobs-Kontaktformular</h2>
+            <p style="color: #34495e; text-align: center;">Nachfolgend finden Sie die Details:</p>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Name:</strong></td>
+                <td style="padding: 10px; border: 1px solid #ddd;">${name}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Email:</strong></td>
+                <td style="padding: 10px; border: 1px solid #ddd;">${email}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Region:</strong></td>
+                <td style="padding: 10px; border: 1px solid #ddd;">${region}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Kommentar:</strong></td>
+                <td style="padding: 10px; border: 1px solid #ddd;">${questions}</td>
+              </tr>
+            </table>
+            <p style="margin-top: 20px; color: #34495e; text-align: center;">Vielen Dank!</p>
+          </div>
+        `;
+
+        // Prepare the attachments array, checking if CV exists
+        let attachments = [];
         if (files.cv && Array.isArray(files.cv) && files.cv[0]?.filepath) {
-          const cvFile = files.cv[0]; // Merre elementin e parë të listës
+          const cvFile = files.cv[0]; // Get the first file from the list
           const cvFileContent = fs.readFileSync(cvFile.filepath, { encoding: "base64" });
-          emailBody.message.attachments = [
-            {
-              "@odata.type": "#microsoft.graph.fileAttachment",
-              name: cvFile.originalFilename,
-              contentBytes: cvFileContent,
-            },
-          ];
+          attachments.push({
+            filename: cvFile.originalFilename,
+            content: cvFileContent,
+            encoding: 'base64',
+          });
         }
 
-        const emailResponse = await axios.post(
-          "https://graph.microsoft.com/v1.0/users/jobs@phc.ch/sendMail",
-          emailBody,
-          {
-            headers: {
-              Authorization: `Bearer ${accessToken}`,
-              "Content-Type": "application/json",
-            },
-          }
-        );
+        // Send the email with the form data and attachment (if available)
+        const info = await transporter.sendMail({
+          from: `"Jobs Landing Page" <landingpage@phc.ch>`,
+          to: 'landingpage@phc.ch',
+          cc: ['edita.latifi@the-eksperts.com','jobs@phc.ch'],
+          subject: `Formular: Jobs Landing Page ${name}`,
+          html: htmlContent,
+          attachments: attachments,
+        });
 
-        console.log("Email sent:", emailResponse.status);
-        res.status(200).json({ message: "Email sent successfully" });
+        console.log("Message sent: %s", info.messageId);
+        console.log("Message sent details: ", info);  // Log the details of the sent email
+
+        res.status(200).json({ message: 'Email sent successfully!' });
+
       } catch (error) {
-        console.error("Error sending email:", error);
-        res.status(500).json({ message: "Failed to send email" });
+        console.error('Error sending email:', error.message);
+        res.status(500).json({ error: `Failed to send email: ${error.message}` });
       }
     });
   } else {
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    res.setHeader('Allow', ['POST']);
+    res.status(405).json({ error: 'Method not allowed' });
   }
 }
