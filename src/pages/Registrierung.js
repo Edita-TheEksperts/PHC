@@ -145,11 +145,11 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
   </div>
 
   {/* Background Image */}
-  <div className="absolute w-[392px] md:w-auto h-[625px] mt-[80px]">
+  <div className="absolute w-full md:w-auto h-[625px] mt-[80px]">
     <img
       src="/images/Herosection new.png"
       alt="Hero Image"
-      className="rounded-[20px] bg-[#F1F1F1] w-[392px] md:w-[1000px] md:h-[725px]"
+      className="rounded-[20px] bg-[#F1F1F1]  md:w-[1000px] md:h-[725px]"
     />
   </div>
 
@@ -188,7 +188,7 @@ Flexible Betreuung –  Ihre Unterstützung genau wie<br></br> Sie sie brauchen!
   style={{
     backgroundImage: "url('/images/goldboxes.png')", 
     marginLeft: 'auto', 
-    width:'1270px',
+    width: "100%", maxWidth: "1270px", minWidth: "1000px",
     backgroundRepeat: 'no-repeat', 
     marginRight: 'auto',
   }}
@@ -304,9 +304,9 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 </section>
 
 <section
-  className="lg:block hidden lg:flex items-center gap-[60px] bg-white rounded-[20px] md:max-w-[1300px] mx-auto mt-[160px] mb-[160px]"
+  className="lg:block hidden lg:flex items-center gap-[60px] bg-white rounded-[20px] lg:max-w-[1300px] mx-auto mt-[160px] mb-[160px]"
   style={{
-    height: "630px",
+    height: "730px",
   }}
 >
   {/* Image Section */}
@@ -323,13 +323,13 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   </div>
 
   {/* Text Section */}
-  <div className="text-left">
+  <div className="text-left ">
     {/* Heading */}
     <h2
   className="text-[#B99B5F] font-metropolis font-semibold"
   style={{
-    fontSize: "55px",
-    lineHeight: "71.5px", // 130%
+    fontSize: "54px",
+    lineHeight: "70.5px", // 130%
     fontStyle: "normal",
     display: "flex",
     height: "40px",
@@ -347,20 +347,23 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     {/* Description */}
     <p
   className="text-[#B99B5F] font-metropolis font-normal"
-  style={{
-    fontSize: "20px", // Adjusted to 20px
-    lineHeight: "31px", // 155%
-    display: "flex",
-    width: "804px",
-    height: "135px",
-    flexDirection: "column",
-    justifyContent: "center",
-    flexShrink: 0,
-    fontStyle: "normal",
-    color: "#B99B5F",
-    marginBottom: "40px", // Added to match your previous margin-bottom style
-  }}
->
+  style={{ 
+    fontSize: "20px", 
+    lineHeight: "31px", 
+    display: "flex", 
+    flexDirection: "column", 
+    justifyContent: "center", 
+    flexShrink: 0, 
+    fontStyle: "normal", 
+    color: "#B99B5F", 
+    marginBottom: "40px", 
+    width: "100%", 
+    maxWidth: "804px", 
+    minWidth: "604px", 
+    height: "100%", 
+    maxHeight: "135px", 
+    minHeight: "250px" 
+  }}>
   Prime Home Care AG – Betreuung neu gedacht<br />
   Unsere volldigitale Online-Plattform bietet Ihnen genau die Unterstützung,
   die Sie brauchen – stundenweise, flexibel und in bester Qualität. Egal, ob
@@ -566,7 +569,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
 <section
   className="lg:block hidden lg:flex flex-col items-center gap-[60px] max-w-[1920px] px-[100px] mx-auto"
   style={{
-    width: "1472px",
+    width: "100%", maxWidth: "1472px", minWidth: "1000px" ,
     height: "531px",
   }}
 >
@@ -590,13 +593,12 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   {/* Cards Section */}
   <div className="flex justify-between gap-[40px] w-full">
     {/* Card 1 */}
-    <div className="flex flex-col items-center text-center p-[10px]rounded-[20px] ">
+    <div className="flex flex-col items-center text-center p-[10px] rounded-[20px] ">
       <img
         src="/images/Link.png"
         alt="Familien"
         className="w-[352px] h-[352px] object-cover rounded-[20px]"
       />
-    
     </div>
 
     {/* Card 2 */}
@@ -650,7 +652,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     {/* Card 1 */}
     <div className="flex flex-col items-center text-center py-[2px] rounded-[20px] ">
       <img
-        src="/images/Link.png"
+        src="/images/Foto1.png"
         alt="Familien"
         className="w-full h-full object-cover rounded-[20px]"
       />
@@ -660,7 +662,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     {/* Card 2 */}
     <div className="flex flex-col items-center text-center py-[2px] rounded-[20px] ">
       <img
-        src="/images/Link (1).png"
+        src="/images/Foto2.png"
         alt="Senioren"
         className="w-full h-full object-cover rounded-[20px]"
       />
@@ -670,7 +672,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
     {/* Card 3 */}
     <div className="flex flex-col items-center text-center py-[2px] rounded-[20px] ">
       <img
-        src="/images/Link (2).png"
+        src="/images/Foto3.png"
         alt="Berufstätige"
         className="w-full h-full object-cover rounded-[20px]"
       />
@@ -910,7 +912,7 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   style={{
     backgroundImage: "url('/images/goldboxes.png')", 
     marginLeft: 'auto', 
-    width:'1270px',
+    width: "100%", maxWidth: "1270px", minWidth: "1000px",
     backgroundRepeat: 'no-repeat', 
     marginRight: 'auto',
   }}
@@ -1032,6 +1034,8 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
             style={{
             color: "#B99B5F",
             fontFamily: "Metropolis",
+            width: "100%", maxWidth: "1238px", minWidth: "1000px" ,
+
             }}
         >
             {/* Left Section */}
