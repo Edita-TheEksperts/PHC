@@ -591,32 +591,32 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
   </div>
 
   {/* Cards Section */}
-  <div className="flex justify-between gap-[40px] w-full">
+  <div className="flex justify-between gap-[20px] w-full">
     {/* Card 1 */}
-    <div className="flex flex-col items-center text-center p-[10px] rounded-[20px] ">
+    <div className="flex flex-col items-center text-center p-[4px] rounded-[20px] ">
       <img
         src="/images/Link.png"
         alt="Familien"
-        className="w-[352px] h-[352px] object-cover rounded-[20px]"
+        className="w-[352px] h-auto object-contain rounded-[20px]"
       />
     </div>
 
     {/* Card 2 */}
-    <div className="flex flex-col items-center text-center p-[10px] rounded-[20px] ">
+    <div className="flex flex-col items-center text-center p-[4px] rounded-[20px] ">
       <img
         src="/images/Link (1).png"
         alt="Senioren"
-        className="w-[352px] h-[352px] object-cover rounded-[20px]"
+        className="w-[352px] h-auto object-contain rounded-[20px]"
       />
      
     </div>
 
     {/* Card 3 */}
-    <div className="flex flex-col items-center text-center p-[10px] rounded-[20px] ">
+    <div className="flex flex-col items-center text-center p-[4px] rounded-[20px] ">
       <img
         src="/images/Link (2).png"
         alt="Berufstätige"
-        className="w-[352px] h-[352px] object-cover rounded-[20px]"
+        className="w-[352px] h-auto object-contain rounded-[20px]"
       />
    
     </div>
@@ -1195,4 +1195,6 @@ Seien Sie unter den Ersten, die von unserer innovativen Betreuung profitieren</p
             </div>
     );
   }
+  
+
   
