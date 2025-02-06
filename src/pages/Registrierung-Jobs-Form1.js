@@ -300,7 +300,7 @@ Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest u
           Senden
         </button>
       ) : (
-        <p className="text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[50px] leading-[26.2px] lg:leading-[50.2px] text-center mt-[40px] mb-[160px]">
+        <p className="text-[#04436F] font-metropolis font-[500] lg:font-[500] text-[24px] lg:text-[45px] leading-[26.2px] lg:leading-[50.2px] text-center mt-[40px] mb-[160px]">
           Vielen Dank - Wir melden uns so schnell wie möglich!
         </p>
       )}
