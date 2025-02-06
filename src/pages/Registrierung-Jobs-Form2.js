@@ -303,7 +303,7 @@ Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann 
         value={formData.email} 
         onChange={handleInputChange} // Handle input change
         // Ensure email is always defined
-        placeholder="Ihre E-Mail-Adresse"
+        placeholder="Ihre E-Mail Adresse"
         className="text-center focus:outline-none text-[#04436F] w-full lg:w-[890px] px-4 py-4 border rounded-[20px] mb-4 placeholder:text-[#04436F] placeholder:font-metropolis placeholder:text-[20px] placeholder:font-light placeholder:leading-[26px]"
       />
 
@@ -330,7 +330,7 @@ Du betreust fest zugewiesene Privatkunden in deiner Region. Je nach Bedarf kann 
         Senden
       </button>
     ) : (
-      <p className="text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[50px] leading-[26.2px] lg:leading-[50.2px] text-center">
+      <p className="text-[#04436F] font-metropolis font-[500] lg:font-[500] text-[24px] lg:text-[45px] leading-[26.2px] lg:leading-[50.2px] text-center">
         Vielen Dank - Wir melden uns so schnell wie möglich!
       </p>
     )}
