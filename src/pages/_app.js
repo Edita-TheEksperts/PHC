@@ -6,8 +6,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/Logo Icon.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/Logo Icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/PHCIcon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/PHCIcon.svg" type="image/svg+xml" />
         <title>PHC</title>
       </Head>
       <FormProvider>
@@ -18,3 +18,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
