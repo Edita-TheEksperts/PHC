@@ -1,32 +1,39 @@
 import Link from "next/link";
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { FormContext } from "../context/FormContext";
-import ServicesGrid from "./Servicesgrid";
 
 export default function FormPage01() {
   const { formData, setFormData } = useContext(FormContext);
-
-  const handleValidation = () => {
-    return formData.region && formData.name && formData.email;
-  };
-
-  const handleCheckboxChange = (topic) => {
-    const selectedTopics = formData.selectedTopics.includes(topic)
-      ? formData.selectedTopics.filter((item) => item !== topic)
-      : [...formData.selectedTopics, topic];
-    setFormData({ ...formData, selectedTopics });
-  };
-
-  const isFormValid = handleValidation();
+   const [isFormValid, setIsFormValid] = useState(false);
+   const validateForm = () => {
+     return (
+       formData.region &&
+       formData.name &&
+       emailRegex.test(formData.email) &&
+       formData.cv
+     );
+   };
+   useEffect(() => {
+     setIsFormValid(validateForm());
+   }, [formData]);
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   const handleFileChange = (event) => {
+     const file = event.target.files[0];
+     if (file && file.type === "application/pdf") {
+       setFormData({ ...formData, cv: file });
+     } else {
+       alert("Only PDF files are allowed.");
+     }
+   };
+  
   return (
-
-    <div className="bg-[#F1F1F1] text-[#B99B5F] min-h-screen p-4">
-      {/* Section 1: Logo and Zuruk */}
+    <div className=" bg-[#F1F1F1] flex flex-col items-center justify-center p-4">
+      {/* Back Button */}
       <section className="lg:block hidden lg:flex justify-center items-center pt-[25px] md:pt-[25px]">
         <div className="absolute top-6 left-4 lg:left-[170px]">
-          <Link href="/Registrierung">
+          <Link href="/Registrierung-Jobs">
             <button
-              className="text-white text-[16px] font-[400] inline-flex items-center px-4 py-2 mt-[40px] "
+              className="text-[#003588] text-[16px] font-[400] inline-flex items-center px-4 py-2 mt-[40px] "
               style={{
                 fontFamily: "Metropolis",
                 background: "linear-gradient(93deg, #B2EAFF 0%, #A9B4B9 50%, rgba(0, 0, 0, 0.00) 100%)",
@@ -100,51 +107,50 @@ export default function FormPage01() {
           </div>
 
           <div className="mb-[16px] flex justify-center">
-            <Link href="/Registrierung">
-              <p
-                className="inline-flex items-center justify-center flex-col px-4 py-2 mt-[40px]"
-                style={{
-                  color: "white",
-                  fontFamily: "Metropolis",
-                  fontSize: "16px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "24px", // 150%
-                  background: "#B99B5F",
-                  borderRadius: "var(--opacity-50, 50px) 50px 50px var(--opacity-50, 50px)",
-                  padding: "6px 12px",
-                }}
-              >
-                &larr; Zurück
-              </p>
+            <Link href="/Registrierung-Jobs">
+              <button
+              className="text-[#003588] text-[16px] leading-[24px]  font-[400] inline-flex items-center px-4 py-2 mt-[40px] "
+              style={{
+                fontFamily: "Metropolis",
+                background: "linear-gradient(93deg, #B2EAFF 0%, #A9B4B9 50%, rgba(0, 0, 0, 0.00) 100%)",
+                borderRadius: "var(--opacity-50, 50px) 0px 0px var(--opacity-50, 50px)",
+                padding: "6px 12px",
+              }}
+            >
+              &larr; Zurück
+            </button>
 
             </Link>
           </div>
         </div>
       </section>
 
+      
+      {/* Heading */}
+      <h1
+  className="lg:block hidden text-[#04436F] font-metropolis font-[600] md:font-[700] text-[24px] md:text-[48px] leading-[32px] md:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] lg:mb-[40px]"
+  style={{
+    letterSpacing: "-0.96px", // Adjusted letter spacing
+  }}
+>
+Wähle deine gewünschte Region in der du<br></br> arbeiten möchtest und gib deinen Namen<br></br> und E-Mail Adresse an
+</h1>
 
-      <section className="flex flex-col justify-center items-center lg:pt-[110px] text-center mb-[16px]">
-        <p
-          className="lg:block hidden text-[#B99B5F] font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
-        >
-          Wählen Sie die gewünschte Region
-        </p>
-        <p
-          className="text-[#B99B5F] lg:block hidden font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
-        >
+<h1
+  className="lg:hidden block text-[#04436F] font-metropolis font-[600] lg:font-[700] text-[24px] lg:text-[48px] leading-[32px] lg:leading-[55.2px] text-center lg:mt-[200px] mb-[16px] lg:mb-[40px]"
+  style={{
+    letterSpacing: "-0.96px", // Adjusted letter spacing
+  }}
+>
+Wähle deine gewünschte<br></br> Region in der du arbeiten<br></br> möchtest und gib deinen<br></br> Namen und E-Mail Adresse an
+</h1>
 
-        und geben Sie Ihre E-Mail Adresse an
-        </p>
-        <p
-          className="text-[#B99B5F] lg:hidden block font-metropolis lg:font-bold lg:text-[48px] lg:leading-[55.2px] lg:tracking-[-0.96px] text-[24px] leading-[32px] font-semibold tracking-[-0.96px]"
-        >
 
-Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Adresse an
-        </p>
-      </section>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-10 ">
-      {/* Region */}
+<div
+  className="flex flex-col lg:flex-row justify-between items-center gap-[11px] w-full lg:w-[1027px] h-auto"
+  style={{ opacity: 1 }}
+>
+  {/* Region */}
   <div
     className="flex justify-between items-center w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
     style={{
@@ -154,9 +160,11 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
   >
     <select
   className="w-full bg-transparent text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal"
+  value={formData.region || ""}
+  onChange={(e) =>
+    setFormData({ ...formData, region: e.target.value })
+  }
   required
-  value={formData.region}
-  onChange={(e) => setFormData({ ...formData, region: e.target.value })}
 >
   <option value="" disabled>
     Region
@@ -191,90 +199,96 @@ Wählen Sie die gewünschte <br></br>Region und geben Sie<br></br>Ihre E-Mail Ad
 
   </div>
 
-        <input
-          type="text"
-          placeholder="Name"
-          required
-          className="w-[271px] h-[75px] px-[13px] py-[17px] text-[18px] border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D]  placeholder-[#1C1B1D]"
-          style={{
-            fontFamily: "Metropolis",
-          }}
-          value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-        />
-        <input
-          type="email"
-          placeholder="E-Mail"
-          required
-          className="w-[271px] h-[75px] px-[13px] py-[17px]  border border-[#B7B6BA] rounded-lg bg-white text-[#1C1B1D] text-[18px] placeholder-[#1C1B1D]"
-          style={{
-            fontFamily: "Metropolis",
-          }}
-          value={formData.email}
+  {/* Name */}
+  <input
+  type="text"
+  placeholder="Name"
+  required
+  className="w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal placeholder-[#1C1B1D]"
+  style={{
+    border: "1px solid #B7B6BA",
+    borderRadius: "8px",
+  }}
+  value={formData.name || ""}
+  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+/>
+
+
+  {/* E-Mail */}
+  <input
+    type="email"
+    placeholder="E-Mail"
+    required
+    className="w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal placeholder-[#1C1B1D]"
+    style={{
+      border: "1px solid #B7B6BA",
+      borderRadius: "8px",
+    }}
+    value={formData.email || ""}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-        />
-      </div>
-      <h2
-        className="text-center text-[#B99B5F] lg:block hidden font-[700] text-[24px] leading-[30px] lg:text-[48px] lg:leading-[55px] mb-2 mt-[160px]"
-        style={{
-          fontFamily: "Metropolis",
-        }}
-      >
-       Ich interessiere mich für folgende Themen
+  />
+          <label htmlFor="cv-upload" className="cursor-pointer">
 
-      </h2>
-      <h2
-        className="text-center text-[#B99B5F] lg:hidden block font-[700] text-[24px] leading-[30px] lg:text-[48px] lg:leading-[55px] mb-2 mt-[160px]"
-        style={{
-          fontFamily: "Metropolis",
-        }}
-      >
-        Ich interessiere mich<br></br> für folgende Themen
-
-      </h2>
-      <div>
-        <div className="flex lg:flex-row flex-col gap-8 lg:gap-6 mt-10 w-[340px] lg:min-w-[1280px] mx-auto items-start lg:items-center lg:justify-center  ">
-          {[
-            "Alltagsbegleitung und Besorgungen",
-            "Freizeit und soziale Aktivitäten",
-            "Gesundheitsfürsorge",
-            "Haushaltshilfe und Wohnpflege​​",
-          ].map((topic, index) => (
-            <label
-              key={index}
-              className="flex items-center gap-3 text-[#1C1B1D] text-[16px] leading-[24px] font-normal"
-            >
-              <input
-                className="h-[22px] w-[22px] border-2 border-gray-400 rounded-[3px] appearance-none checked:bg-[#B99B5F] checked:border-[#B99B5F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B99B5F]"
-                type="checkbox"
-                checked={formData.selectedTopics.includes(topic)}
-                onChange={() => handleCheckboxChange(topic)}
-              />
-            <span>{topic}</span>
-            </label>
-          ))}
+<div
+          className="flex flex-col justify-between items-start w-[271px] h-[75px] px-[13px] py-[17px] border rounded-lg bg-white"
+          style={{
+            border: "1px solid #B7B6BA",
+            borderRadius: "8px",
+          }}
+        >
+       
+          <input
+            type="file"
+            accept=".pdf"
+            onChange={handleFileChange}
+            style={{ display: "none" }}
+            id="cv-upload"
+          />
+            {formData.cv ? (
+              <p className="text-[#1C1B1D] font-metropolis text-[14px] leading-[22px]">
+                {formData.cv.name}
+              </p>
+            ) : (
+               <p className="text-[#1C1B1D] font-metropolis text-[18px] leading-[26px] font-normal">
+               Lebenslauf
+             </p>
+            
+            )}
+          
+          <span className="text-[#1C1B1D] font-metropolis text-[10px] leading-[20px] font-normal">
+               Zwingend
+             </span>
         </div>
-        <div className="flex justify-center mt-10">
-        <Link href={isFormValid ? "/Form-Page-4" : "#"}>
-        <button
-            disabled={!isFormValid}
+        </label>
+</div>
 
-            className={`${
-                isFormValid
-                  ? "bg-[#04436F] text-[#F5F5F5]"
-                  : "bg-gray-400 text-gray-200"
-              } bg-[#B99B5F] text-white font-bold text-lg lg:text-[36px] lg:leading-[22px] rounded-[8px] lg:rounded-[50px] px-[50px] py-[14px]`}
-              style={{
-                fontFamily: "Metropolis",
-              }}
-            >
-              Weiter geht's!
-            </button>
-          </Link>
-        </div>
-      </div>
+      {/* Submit Button */}
+      <Link href={isFormValid ? "/Registrierung-Jobs-Form2" : "#"}>
+  <button
+    type="button"
+    disabled={!isFormValid}
 
-      <ServicesGrid />
+    className={`${
+      isFormValid
+        ? "bg-[#04436F] text-[#F5F5F5]"
+        : "bg-gray-400 text-gray-200"
+    } font-metropolis font-[700] text-[24px] md:text-[36px] leading-[21.6px] rounded-[8px] md:rounded-full mt-[50px]`}
+    style={{
+      display: "inline-flex",
+      padding: "18px 50px",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      lineHeight: "21.6px", // Explicit line height
+      cursor: isFormValid ? "pointer" : "not-allowed",
+
+    }}
+  >
+    Weiter geht's!
+  </button>
+</Link>
+
+
     </div>
   );
 }
